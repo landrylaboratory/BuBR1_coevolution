@@ -1,0 +1,13 @@
+#                                                                              --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name             accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----   -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBUB1_Dbox.fasta
+# Target file:     ../../../Sequences/Human_BUB1_orthologues_2018_12_05.fa
+# Option settings: jackhmmer --tblout EnsemblBUB1_Dbox_jackhmmer.tblout --domtblout EnsemblBUB1_Dbox_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBUB1_Dbox.fasta ../../../Sequences/Human_BUB1_orthologues_2018_12_05.fa 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BUB1/Dbox
+# Date:            Thu Aug  8 09:49:51 2019
+# [ok]

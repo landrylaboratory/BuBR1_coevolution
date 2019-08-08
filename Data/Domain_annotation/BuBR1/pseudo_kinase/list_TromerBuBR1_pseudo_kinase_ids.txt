@@ -1,0 +1,8 @@
+ACAR_MAD||_pseudo_kinase/776-1030
+CMIL_MAD||pseudo_kinase/909-1161
+FALB_MAD||pseudo_kinase/803-1058
+HSAP_MAD||_pseudo_kinase/784-1030
+MMUS_MAD||pseudo_kinase/759-1006
+XTRO_MAD||pseudo_kinase/755-1008
+LOCU_MAD||pseudo_kinase/809-1004
+DRER_MAD_B||pseudo_kinase/512-745

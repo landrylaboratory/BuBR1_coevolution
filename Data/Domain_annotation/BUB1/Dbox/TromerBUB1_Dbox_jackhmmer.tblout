@@ -1,0 +1,17 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name             accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------   -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+ABIS_BUB             -          ABIS_BUB||Dbox/412-424 -            1.7e-08   27.6   1.6   1.7e-08   27.6   1.6   2.2   2   0   0   2   2   2   1 -
+ACEY_BUB             -          ACEY_BUB||Dbox/258-270 -              5e-08   25.7   5.3   1.3e-07   24.5   5.3   1.8   1   0   0   1   1   1   1 -
+PSTI_BUB             -          PSTI_BUB||Dbox/513-525 -            4.2e-08   26.1   1.6   4.2e-08   26.1   1.6   2.2   2   0   0   2   2   2   1 -
+SPOM_BUB             -          SPOM_BUB||Dbox/199-211 -            7.1e-08   25.5   5.9   2.1e-07   24.0   5.9   1.9   1   0   0   1   1   1   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBUB1_Dbox.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBUB1_Dbox_jackhmmer.tblout --domtblout TromerBUB1_Dbox_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBUB1_Dbox.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BUB1/Dbox
+# Date:            Thu Aug  8 09:51:22 2019
+# [ok]

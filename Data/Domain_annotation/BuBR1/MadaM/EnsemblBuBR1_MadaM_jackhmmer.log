@@ -1,0 +1,399 @@
+# jackhmmer :: iteratively search a protein sequence against a protein database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             TromerBuBR1_MadaM.fasta
+# target sequence database:        ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa
+# per-seq hits tabular output:     EnsemblBuBR1_MadaM_jackhmmer.tblout
+# per-dom hits tabular output:     EnsemblBuBR1_MadaM_jackhmmer.domtblout
+# query <seqfile> format asserted: fasta
+# target <seqdb> format asserted:  fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ABIS_MAD||MadaM/444-463  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       ACOE_MAD||MadaM/397-416  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       ALAI_MAD||MadaM/359-378  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         1  (0.00680272); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       ATHA_MAD||MadaM/374-393  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       ATRI_MAD||MadaM/370-389  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       GLUX_MAD||MadaM/409-428  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       MLAR_MAD||MadaM/385-404  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 114.37
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       OSAT_MAD||MadaM/377-396  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         1  (0.00680272); expected 2.9 (0.02)
+Passed bias filter:                        1  (0.00680272); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       PPAT_MAD||MadaM/353-372  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       PSTI_MAD||MadaM/442-461  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       SMOE_MAD||MadaM/346-365  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                          147  (114366 residues searched)
+Passed MSV filter:                         0  (0); expected 2.9 (0.02)
+Passed bias filter:                        0  (0); expected 2.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 228.73
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+[ok]

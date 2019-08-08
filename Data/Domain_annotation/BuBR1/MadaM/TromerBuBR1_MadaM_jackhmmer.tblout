@@ -1,0 +1,104 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+ABIS_MAD             -          ABIS_MAD||MadaM/444-463 -            1.4e-14   46.8   2.1   3.4e-14   45.6   2.1   1.7   1   0   0   1   1   1   1 -
+GLUX_MAD             -          ABIS_MAD||MadaM/444-463 -            4.2e-13   42.1   1.3     1e-12   40.9   1.3   1.6   1   0   0   1   1   1   1 -
+PSTI_MAD             -          ABIS_MAD||MadaM/444-463 -              9e-11   34.6   0.4     9e-11   34.6   0.4   2.4   2   0   0   2   2   2   1 -
+CNEO_MADBUB          -          ABIS_MAD||MadaM/444-463 -            2.7e-09   29.9   0.5   5.7e-09   28.9   0.5   1.5   1   0   0   1   1   1   1 -
+EGLA_MADBUB          -          ABIS_MAD||MadaM/444-463 -            2.8e-09   29.9   0.0   6.2e-09   28.8   0.0   1.6   1   0   0   1   1   1   1 -
+RSOL_MADBUB          -          ABIS_MAD||MadaM/444-463 -            2.1e-08   27.1   0.1   5.3e-08   25.8   0.1   1.7   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          ABIS_MAD||MadaM/444-463 -            1.8e-07   24.1   0.2   6.6e-07   22.3   0.2   2.0   1   0   0   1   1   1   1 -
+ATHA_MAD             -          ABIS_MAD||MadaM/444-463 -            3.3e-07   23.3   0.2   3.3e-07   23.3   0.2   2.0   2   0   0   2   2   2   1 -
+WMEL_MADBUB          -          ABIS_MAD||MadaM/444-463 -            3.4e-07   23.2   0.5   3.4e-07   23.2   0.5   1.8   2   0   0   2   2   2   1 -
+ACOE_MAD             -          ABIS_MAD||MadaM/444-463 -            3.7e-07   23.1   0.8   1.1e-06   21.6   0.8   1.8   1   0   0   1   1   1   1 -
+OSAT_MAD             -          ABIS_MAD||MadaM/444-463 -            3.1e-05   17.0   1.7   5.7e-05   16.1   0.2   2.2   3   0   0   3   3   3   1 -
+ATRI_MAD             -          ABIS_MAD||MadaM/444-463 -            0.00024   14.1   1.9   0.00043   13.3   0.6   2.1   2   0   0   2   2   2   1 -
+TTRA_MADBUB          -          ABIS_MAD||MadaM/444-463 -            0.00055   13.0   0.1    0.0019   11.2   0.1   2.0   1   0   0   1   1   1   1 -
+MLAR_MAD             -          ABIS_MAD||MadaM/444-463 -             0.0052    9.9   3.6    0.0022   11.1   0.4   2.0   2   0   0   2   2   2   0 -
+ATHA_MAD             -          ACOE_MAD||MadaM/397-416 -            7.6e-14   44.2   1.7   7.6e-14   44.2   1.7   2.1   2   0   0   2   2   2   1 -
+ACOE_MAD             -          ACOE_MAD||MadaM/397-416 -            2.1e-13   42.8   4.5   2.1e-13   42.8   4.5   2.1   3   0   0   3   3   3   1 -
+OSAT_MAD             -          ACOE_MAD||MadaM/397-416 -            2.2e-13   42.8   2.4   2.2e-13   42.8   2.4   2.4   3   0   0   3   3   3   1 -
+ATRI_MAD             -          ACOE_MAD||MadaM/397-416 -            6.3e-12   38.1   6.3   6.3e-12   38.1   6.3   2.0   2   0   0   2   2   2   1 -
+SMOE_MAD             -          ACOE_MAD||MadaM/397-416 -            2.2e-11   36.4   0.0     6e-11   35.0   0.0   1.8   1   0   0   1   1   1   1 -
+CNEO_MADBUB          -          ACOE_MAD||MadaM/397-416 -            4.6e-09   29.0   0.1   1.1e-08   27.7   0.1   1.6   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          ACOE_MAD||MadaM/397-416 -            5.6e-07   22.3   0.4   1.7e-06   20.8   0.4   1.9   1   0   0   1   1   1   1 -
+MLAR_MAD             -          ACOE_MAD||MadaM/397-416 -            4.3e-06   19.5   0.3   1.1e-05   18.2   0.3   1.7   1   0   0   1   1   1   1 -
+ALAI_MAD             -          ALAI_MAD||MadaM/359-378 -            2.9e-14   46.1   3.1   6.9e-14   44.9   3.1   1.7   1   0   0   1   1   1   1 -
+ALIM_MADBUB          -          ALAI_MAD||MadaM/359-378 -            3.6e-10   33.1   0.9   1.2e-09   31.4   0.9   1.9   1   0   0   1   1   1   1 -
+HPAR_MADBUB          -          ALAI_MAD||MadaM/359-378 -            6.6e-10   32.2   3.7   6.7e-10   32.2   1.5   2.3   2   0   0   2   2   2   1 -
+PINF_MADBUB          -          ALAI_MAD||MadaM/359-378 -            1.6e-09   31.0   1.8   1.6e-09   31.0   1.8   2.0   2   0   0   2   2   2   1 -
+SMOE_MAD             -          ALAI_MAD||MadaM/359-378 -            2.2e-08   27.4   0.1   4.5e-08   26.4   0.1   1.5   1   0   0   1   1   1   1 -
+ACOE_MAD             -          ALAI_MAD||MadaM/359-378 -            1.1e-07   25.1   1.6   1.1e-07   25.1   1.6   2.0   2   0   0   2   2   2   1 -
+OSAT_MAD             -          ALAI_MAD||MadaM/359-378 -            3.3e-07   23.6   5.3   1.5e-06   21.5   4.3   2.4   2   0   0   2   2   2   1 -
+ATRI_MAD             -          ALAI_MAD||MadaM/359-378 -            4.4e-06   20.0   3.5     1e-05   18.8   3.5   1.6   1   0   0   1   1   1   1 -
+ATHA_MAD             -          ALAI_MAD||MadaM/359-378 -            0.00019   14.8   0.1   0.00065   13.1   0.1   1.8   1   0   0   1   1   1   1 -
+SARC_MADBUB          -          ALAI_MAD||MadaM/359-378 -             0.0017   11.7   5.0     0.001   12.4   1.3   2.2   1   1   1   2   2   2   0 -
+ATHA_MAD             -          ATHA_MAD||MadaM/374-393 -            4.9e-15   48.2   2.8   4.9e-15   48.2   2.8   2.0   2   0   0   2   2   2   1 -
+OSAT_MAD             -          ATHA_MAD||MadaM/374-393 -            2.7e-12   39.4   1.8   2.7e-12   39.4   1.8   2.4   2   0   0   2   2   2   1 -
+ACOE_MAD             -          ATHA_MAD||MadaM/374-393 -            2.8e-12   39.4   2.6   2.8e-12   39.4   2.6   1.9   2   0   0   2   2   2   1 -
+ATRI_MAD             -          ATHA_MAD||MadaM/374-393 -            1.9e-11   36.7   5.7   4.9e-11   35.4   5.7   1.8   1   0   0   1   1   1   1 -
+SMOE_MAD             -          ATHA_MAD||MadaM/374-393 -            1.2e-10   34.2   0.0   2.6e-10   33.1   0.0   1.6   1   0   0   1   1   1   1 -
+CNEO_MADBUB          -          ATHA_MAD||MadaM/374-393 -            1.7e-07   24.1   0.0   3.5e-07   23.1   0.0   1.5   1   0   0   1   1   1   1 -
+EGLA_MADBUB          -          ATHA_MAD||MadaM/374-393 -            1.1e-06   21.5   0.2   2.6e-06   20.3   0.2   1.7   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          ATHA_MAD||MadaM/374-393 -            1.3e-06   21.3   0.2   4.2e-06   19.7   0.2   1.9   1   0   0   1   1   1   1 -
+MLAR_MAD             -          ATHA_MAD||MadaM/374-393 -            1.3e-05   18.1   0.3   2.8e-05   17.0   0.3   1.6   1   0   0   1   1   1   1 -
+ATHA_MAD             -          ATRI_MAD||MadaM/370-389 -            3.4e-14   45.5   2.5   3.4e-14   45.5   2.5   2.2   2   0   0   2   2   2   1 -
+OSAT_MAD             -          ATRI_MAD||MadaM/370-389 -            9.5e-14   44.1   3.7   9.5e-14   44.1   3.7   2.6   3   0   0   3   3   3   1 -
+ACOE_MAD             -          ATRI_MAD||MadaM/370-389 -            3.1e-13   42.4   5.1   3.1e-13   42.4   5.1   2.2   3   0   0   3   3   3   1 -
+ATRI_MAD             -          ATRI_MAD||MadaM/370-389 -            6.6e-13   41.4   8.0   6.6e-13   41.4   8.0   1.8   2   0   0   2   2   2   1 -
+SMOE_MAD             -          ATRI_MAD||MadaM/370-389 -            2.9e-11   36.1   0.2   7.8e-11   34.8   0.0   1.8   2   0   0   2   2   2   1 -
+MLAR_MAD             -          ATRI_MAD||MadaM/370-389 -            1.5e-05   17.9   0.1   3.1e-05   16.9   0.1   1.6   1   0   0   1   1   1   1 -
+ALIM_MADBUB          -          ATRI_MAD||MadaM/370-389 -             0.0066    9.4   2.4    0.0055    9.7   0.1   2.1   2   0   0   2   2   2   0 -
+GLUX_MAD             -          GLUX_MAD||MadaM/409-428 -            4.2e-15   48.3   3.5   9.5e-15   47.2   3.5   1.7   1   0   0   1   1   1   1 -
+ABIS_MAD             -          GLUX_MAD||MadaM/409-428 -            1.4e-12   40.3   0.6   3.6e-12   39.0   0.6   1.7   1   0   0   1   1   1   1 -
+CNEO_MADBUB          -          GLUX_MAD||MadaM/409-428 -            2.6e-12   39.4   2.6   6.4e-12   38.1   2.6   1.7   1   0   0   1   1   1   1 -
+PSTI_MAD             -          GLUX_MAD||MadaM/409-428 -            5.4e-12   38.4   2.2   5.4e-12   38.4   2.2   2.5   2   0   0   2   2   2   1 -
+EGLA_MADBUB          -          GLUX_MAD||MadaM/409-428 -            1.1e-10   34.2   0.2   2.6e-10   33.0   0.2   1.6   1   0   0   1   1   1   1 -
+MLAR_MAD             -          MLAR_MAD||MadaM/385-404 -            8.2e-18   57.1   5.8   1.9e-17   55.9   5.8   1.7   1   0   0   1   1   1   1 -
+ATHA_MAD             -          MLAR_MAD||MadaM/385-404 -            7.1e-06   18.9   2.0   2.4e-05   17.3   0.5   2.5   2   0   0   2   2   2   1 -
+CNEO_MADBUB          -          MLAR_MAD||MadaM/385-404 -            1.8e-05   17.7   0.1     5e-05   16.2   0.1   1.7   1   0   0   1   1   1   1 -
+ACOE_MAD             -          MLAR_MAD||MadaM/385-404 -            0.00037   13.5   3.1   0.00045   13.2   0.6   2.4   2   0   0   2   2   2   1 -
+ATRI_MAD             -          MLAR_MAD||MadaM/385-404 -            0.00042   13.3   2.4    0.0071    9.4   0.6   2.9   2   0   0   2   2   2   1 -
+KFLA_MADBUB          -          MLAR_MAD||MadaM/385-404 -             0.0011   12.0   0.1    0.0091    9.0   0.0   2.3   2   0   0   2   2   2   0 -
+OSAT_MAD             -          OSAT_MAD||MadaM/377-396 -            4.9e-14   44.9   2.9   4.9e-14   44.9   2.9   2.4   3   0   0   3   3   3   1 -
+ATHA_MAD             -          OSAT_MAD||MadaM/377-396 -            7.1e-14   44.4   2.5   7.1e-14   44.4   2.5   2.2   2   0   0   2   2   2   1 -
+ACOE_MAD             -          OSAT_MAD||MadaM/377-396 -            5.1e-13   41.7   4.1   5.1e-13   41.7   4.1   2.2   3   0   0   3   3   3   1 -
+ATRI_MAD             -          OSAT_MAD||MadaM/377-396 -              3e-12   39.2   6.5     3e-12   39.2   6.5   2.0   2   0   0   2   2   2   1 -
+SMOE_MAD             -          OSAT_MAD||MadaM/377-396 -            5.6e-11   35.2   0.0   1.5e-10   33.8   0.0   1.8   1   0   0   1   1   1   1 -
+CNEO_MADBUB          -          OSAT_MAD||MadaM/377-396 -              2e-07   23.8   0.1   4.6e-07   22.7   0.1   1.6   1   0   0   1   1   1   1 -
+MLAR_MAD             -          OSAT_MAD||MadaM/377-396 -            4.4e-07   22.7   0.4   1.1e-06   21.4   0.4   1.7   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          OSAT_MAD||MadaM/377-396 -            5.6e-07   22.4   0.3   1.9e-06   20.7   0.3   1.9   1   0   0   1   1   1   1 -
+ALIM_MADBUB          -          OSAT_MAD||MadaM/377-396 -               0.22    4.5   7.2    0.0076    9.2   0.2   2.3   3   0   0   3   3   3   0 -
+PPAT_MAD             -          PPAT_MAD||MadaM/353-372 -            1.6e-17   56.0   2.9   4.2e-17   54.6   2.9   1.8   1   0   0   1   1   1   1 -
+PSTI_MAD             -          PSTI_MAD||MadaM/442-461 -            2.1e-13   43.3   4.0   2.1e-13   43.3   4.0   2.3   2   0   0   2   2   2   1 -
+GLUX_MAD             -          PSTI_MAD||MadaM/442-461 -            5.5e-12   38.7   0.7   1.3e-11   37.5   0.7   1.7   1   0   0   1   1   1   1 -
+ABIS_MAD             -          PSTI_MAD||MadaM/442-461 -            2.3e-10   33.6   2.4     3e-10   33.2   0.5   2.1   2   0   0   2   2   2   1 -
+CNEO_MADBUB          -          PSTI_MAD||MadaM/442-461 -            2.5e-09   30.2   0.6   5.3e-09   29.2   0.6   1.6   1   0   0   1   1   1   1 -
+EGLA_MADBUB          -          PSTI_MAD||MadaM/442-461 -            1.7e-08   27.6   0.1   4.2e-08   26.3   0.1   1.7   1   0   0   1   1   1   1 -
+RSOL_MADBUB          -          PSTI_MAD||MadaM/442-461 -            4.7e-08   26.2   0.1   1.4e-07   24.6   0.1   1.8   1   0   0   1   1   1   1 -
+TTRA_MADBUB          -          PSTI_MAD||MadaM/442-461 -              5e-08   26.1   0.7   1.7e-07   24.3   0.7   2.0   1   0   0   1   1   1   1 -
+WMEL_MADBUB          -          PSTI_MAD||MadaM/442-461 -            8.6e-08   25.3   0.1     2e-07   24.1   0.1   1.6   1   0   0   1   1   1   1 -
+ATHA_MAD             -          PSTI_MAD||MadaM/442-461 -            9.9e-08   25.1   0.8   9.9e-08   25.1   0.8   1.9   2   0   0   2   2   2   1 -
+KFLA_MADBUB          -          PSTI_MAD||MadaM/442-461 -            7.8e-07   22.3   0.1   3.2e-06   20.3   0.1   2.1   1   0   0   1   1   1   1 -
+ACOE_MAD             -          PSTI_MAD||MadaM/442-461 -            1.7e-06   21.1   1.5   4.2e-06   19.9   1.5   1.7   1   0   0   1   1   1   1 -
+OSAT_MAD             -          PSTI_MAD||MadaM/442-461 -            2.2e-05   17.6   1.5   3.1e-05   17.2   0.3   1.9   2   0   0   2   2   2   1 -
+ATRI_MAD             -          PSTI_MAD||MadaM/442-461 -            7.6e-05   15.9   0.8   0.00023   14.4   0.8   1.9   1   0   0   1   1   1   1 -
+MLAR_MAD             -          PSTI_MAD||MadaM/442-461 -             0.0012   12.1   0.4     0.004   10.4   0.4   1.9   1   0   0   1   1   1   0 -
+SMOE_MAD             -          SMOE_MAD||MadaM/346-365 -            5.2e-16   51.2   0.3   1.1e-15   50.2   0.3   1.6   1   0   0   1   1   1   1 -
+ATHA_MAD             -          SMOE_MAD||MadaM/346-365 -            1.2e-11   37.2   1.2   3.5e-11   35.7   1.2   1.8   1   0   0   1   1   1   1 -
+ACOE_MAD             -          SMOE_MAD||MadaM/346-365 -            1.8e-10   33.5   4.0   1.8e-10   33.5   4.0   1.9   2   0   0   2   2   2   1 -
+OSAT_MAD             -          SMOE_MAD||MadaM/346-365 -            5.5e-10   31.9   3.1   5.5e-10   31.9   3.1   2.7   3   0   0   3   3   3   1 -
+ATRI_MAD             -          SMOE_MAD||MadaM/346-365 -            2.8e-09   29.6   4.7   6.5e-09   28.5   4.7   1.6   1   0   0   1   1   1   1 -
+ALIM_MADBUB          -          SMOE_MAD||MadaM/346-365 -            5.6e-08   25.5   0.4   5.6e-08   25.5   0.4   2.3   2   0   0   2   2   2   1 -
+SARC_MADBUB          -          SMOE_MAD||MadaM/346-365 -            2.4e-05   17.1   1.2   4.9e-05   16.1   1.2   1.5   1   0   0   1   1   1   1 -
+MLAR_MAD             -          SMOE_MAD||MadaM/346-365 -            8.1e-05   15.4   0.0   0.00017   14.3   0.0   1.5   1   0   0   1   1   1   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBuBR1_MadaM.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBuBR1_MadaM_jackhmmer.tblout --domtblout TromerBuBR1_MadaM_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_MadaM.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BuBR1/MadaM
+# Date:            Thu Aug  8 09:54:44 2019
+# [ok]

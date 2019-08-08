@@ -1,0 +1,15 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+SPOM_BUB             -          SPOM_BUB||ABBA2/219-230 -            3.8e-07   23.4   5.3   1.4e-06   21.7   5.3   2.0   1   0   0   1   1   1   1 -
+AKER_MADBUB          -          SPOM_BUB||ABBA2/219-230 -               0.43    4.7  10.0      0.74    4.0   0.1   4.7   4   0   0   4   4   4   0 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBUB1_ABBA2.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBUB1_ABBA2_jackhmmer.tblout --domtblout TromerBUB1_ABBA2_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBUB1_ABBA2.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BUB1/ABBA2
+# Date:            Thu Aug  8 09:51:06 2019
+# [ok]

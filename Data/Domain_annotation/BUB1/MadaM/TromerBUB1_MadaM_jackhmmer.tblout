@@ -1,0 +1,14 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+MLAR_BUB             -          MLAR_BUB||MadaM/233-252 -            4.3e-17   54.6   1.0   9.5e-17   53.5   1.0   1.6   1   0   0   1   1   1   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBUB1_MadaM.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBUB1_MadaM_jackhmmer.tblout --domtblout TromerBUB1_MadaM_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBUB1_MadaM.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BUB1/MadaM
+# Date:            Thu Aug  8 09:52:24 2019
+# [ok]

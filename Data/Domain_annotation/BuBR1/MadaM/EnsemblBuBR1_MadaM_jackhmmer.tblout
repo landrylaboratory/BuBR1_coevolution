@@ -1,0 +1,13 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBuBR1_MadaM.fasta
+# Target file:     ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa
+# Option settings: jackhmmer --tblout EnsemblBuBR1_MadaM_jackhmmer.tblout --domtblout EnsemblBuBR1_MadaM_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_MadaM.fasta ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BuBR1/MadaM
+# Date:            Thu Aug  8 09:53:31 2019
+# [ok]

@@ -1,0 +1,2 @@
+ACAR_MAD||_pseudo_kinase/776-1030
+HSAP_MAD||_pseudo_kinase/784-1030

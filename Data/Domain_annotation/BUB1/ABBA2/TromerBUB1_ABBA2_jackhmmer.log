@@ -1,0 +1,143 @@
+# jackhmmer :: iteratively search a protein sequence against a protein database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             TromerBUB1_ABBA2.fasta
+# target sequence database:        ../../../Sequences/rsob160315supp3.fasta
+# per-seq hits tabular output:     TromerBUB1_ABBA2_jackhmmer.tblout
+# per-dom hits tabular output:     TromerBUB1_ABBA2_jackhmmer.domtblout
+# query <seqfile> format asserted: fasta
+# target <seqdb> format asserted:  fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SPOM_BUB||ABBA2/219-230  [L=12]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   0.00023   12.3   0.2     0.0025    9.8   0.2    2.6  1  SPOM_BUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> SPOM_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.2   1.6e-05    0.0025       1      12 []     219     230 ..     219     230 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 1.6e-05
+  SPOM_BUB||ABBA2/219-230   1 pksfqvfsdass 12 
+                              pksfqvfsdass
+                 SPOM_BUB 219 PKSFQVFSDASS 230
+                              9*********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (12 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        20  (0.131579); expected 3.0 (0.02)
+Passed bias filter:                       18  (0.118421); expected 3.0 (0.02)
+Passed Vit filter:                         3  (0.0197368); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00657895); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 174.17
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             12 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.8e-07   23.4   5.3    1.4e-06   21.7   5.3    2.0  1  SPOM_BUB     
+  ------ inclusion threshold ------
+       0.43    4.7  10.0       0.74    4.0   0.1    4.7  4  AKER_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> SPOM_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   5.3   1.8e-08   1.4e-06       1      12 []     219     230 ..     219     230 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 1.8e-08
+                                 xxxxxxxxxxxx RF
+  SPOM_BUB||ABBA2/219-230-i1   1 PKSFQVFSDASS 12 
+                                 PKSFQVFSDASS
+                    SPOM_BUB 219 PKSFQVFSDASS 230
+                                 9**********9 PP
+
+>> AKER_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0      0.13        10       3       9 ..     333     339 ..     332     340 .. 0.92
+   2 ?   -0.5   0.9      0.28        21       3      11 ..     424     432 ..     423     433 .. 0.91
+   3 ?    2.0   0.1     0.042       3.2       3       9 ..     465     471 ..     464     472 .. 0.93
+   4 ?    4.0   0.1    0.0097      0.74       3      10 ..     494     501 ..     493     502 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.13
+                                 xxxxxxx RF
+  SPOM_BUB||ABBA2/219-230-i1   3 SFQVFSD 9  
+                                 SF VF D
+                 AKER_MADBUB 333 SFGVFTD 339
+                                 9****99 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.28
+                                 xxxxxxxxx RF
+  SPOM_BUB||ABBA2/219-230-i1   3 SFQVFSDAS 11 
+                                 SF +F D S
+                 AKER_MADBUB 424 SFGIFNDSS 432
+                                 9******88 PP
+
+  == domain 3  score: 2.0 bits;  conditional E-value: 0.042
+                                 xxxxxxx RF
+  SPOM_BUB||ABBA2/219-230-i1   3 SFQVFSD 9  
+                                 SF +FSD
+                 AKER_MADBUB 465 SFGIFSD 471
+                                 9*****9 PP
+
+  == domain 4  score: 4.0 bits;  conditional E-value: 0.0097
+                                 xxxxxxxx RF
+  SPOM_BUB||ABBA2/219-230-i1   3 SFQVFSDA 10 
+                                 SF VF DA
+                 AKER_MADBUB 494 SFDVFNDA 501
+                                 9******9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (12 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        29  (0.190789); expected 3.0 (0.02)
+Passed bias filter:                       21  (0.138158); expected 3.0 (0.02)
+Passed Vit filter:                         7  (0.0460526); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 174.17
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+[ok]

@@ -1,0 +1,107 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+OSAT_MAD             -          OSAT_MAD||ABBA1/272-283 -            2.4e-09   30.1   0.6   8.2e-09   28.4   0.6   2.0   1   0   0   1   1   1   1 -
+PBLA_MAD             -          PBLA_MAD||ABBA1/281-292 -            3.8e-09   29.5   3.4   1.4e-08   27.7   3.4   2.1   1   0   0   1   1   1   1 -
+PPAT_MAD             -          PPAT_MAD||ABBA1/242-253 -               0.74    4.0  20.6   0.00085   11.4   0.3   6.4   7   0   0   7   7   7   0 -
+HSAP_MAD             -          MMUS_MAD||ABBA1/262-273 -            1.3e-08   27.6   1.2   4.2e-08   26.0   1.2   2.0   1   0   0   1   1   1   1 -
+MMUS_MAD             -          MMUS_MAD||ABBA1/262-273 -            2.5e-08   26.7   3.0   6.2e-08   25.5   3.0   1.7   1   0   0   1   1   1   1 -
+LOCU_MAD             -          MMUS_MAD||ABBA1/262-273 -              1e-06   21.7   0.7   2.6e-06   20.4   0.2   2.0   2   0   0   2   2   2   1 -
+XTRO_MAD             -          MMUS_MAD||ABBA1/262-273 -             0.0034   10.6   3.1    0.0076    9.5   0.3   2.3   2   0   0   2   2   2   0 -
+TTRA_MADBUB          -          MMUS_MAD||ABBA1/262-273 -                1.1    2.7  11.3      0.62    3.5   0.4   4.2   5   0   0   5   5   5   0 -
+MCIR_MAD             -          MCIR_MAD||ABBA1/303-314 -            4.8e-05   16.7  10.3   4.8e-05   16.7  10.3   2.5   2   0   0   2   2   2   1 -
+MLAR_MAD             -          MLAR_MAD||ABBA1/276-287 -            2.7e-11   36.1  10.3   4.1e-08   26.1   3.5   2.6   2   0   0   2   2   2   2 -
+NGRU_MAD             -          NGRU_MAD||ABBA1/477-488 -            4.4e-08   26.4   4.3   1.1e-07   25.1   4.3   1.8   1   0   0   1   1   1   1 -
+DRER_MAD_B           -          NGRU_MAD||ABBA1/477-488 -             0.0023   11.8   0.9       0.2    5.8   0.0   3.1   3   0   0   3   3   3   0 -
+TTRA_MADBUB          -          NGRU_MAD||ABBA1/477-488 -               0.47    4.7  11.9      0.12    6.5   0.2   4.6   6   0   0   6   6   6   0 -
+TRUB_MAD             -          TRUB_MAD||ABBA1/254-265 -            1.1e-08   27.9   1.9     3e-08   26.6   1.9   1.8   1   0   0   1   1   1   1 -
+TTRA_MADBUB          -          XTRO_MAD||ABBA1/256-267 -            1.8e-11   36.9  50.4   5.8e-05   16.4   1.7   7.0   7   0   0   7   7   7   4 -
+XTRO_MAD             -          XTRO_MAD||ABBA1/256-267 -            7.7e-07   22.3   3.9   7.7e-07   22.3   3.9   2.9   3   0   0   3   3   3   1 -
+ACAR_MAD             -          XTRO_MAD||ABBA1/256-267 -            0.00014   15.1   2.5    0.0023   11.4   0.1   2.6   2   0   0   2   2   2   1 -
+FALB_MAD             -          XTRO_MAD||ABBA1/256-267 -             0.0037   10.7  10.2   0.00049   13.5   0.7   2.9   3   0   0   3   3   3   0 -
+MMUS_MAD             -          XTRO_MAD||ABBA1/256-267 -             0.0079    9.7   3.3     0.072    6.7   0.2   2.6   2   0   0   2   2   2   0 -
+CGIG_MADBUB          -          XTRO_MAD||ABBA1/256-267 -               0.19    5.3   9.9     0.007    9.8   1.4   2.4   2   0   0   2   2   2   0 -
+SPOM_MAD             -          SPOM_MAD||ABBA1/239-250 -            4.6e-08   26.3   4.7   8.9e-08   25.4   4.1   1.9   2   0   0   2   2   2   1 -
+SBAT_MAD             -          SBAT_MAD||ABBA1/226-237 -            6.9e-08   25.7   6.5   1.5e-07   24.7   6.5   1.6   1   0   0   1   1   1   1 -
+RMIC_MAD             -          RMIC_MAD||ABBA1/272-283 -            1.7e-06   21.2   7.5   1.7e-06   21.2   7.5   3.2   3   0   0   3   3   3   1 -
+SMOE_MAD             -          SMOE_MAD||ABBA1/238-249 -            3.6e-08   26.3   1.7   3.6e-08   26.3   1.7   2.4   2   0   0   2   2   2   1 -
+EGLA_MADBUB          -          SMOE_MAD||ABBA1/238-249 -               0.71    3.8   9.4     0.011    9.3   0.2   3.2   4   0   0   4   4   4   0 -
+PSTI_MAD             -          PSTI_MAD||ABBA1/277-288 -            3.1e-09   29.6   0.3   1.1e-08   27.9   0.3   2.0   1   0   0   1   1   1   1 -
+GLUX_MAD             -          PSTI_MAD||ABBA1/277-288 -            4.4e-08   26.0   0.2   1.4e-07   24.5   0.2   1.9   1   0   0   1   1   1   1 -
+ABIS_MAD             -          PSTI_MAD||ABBA1/277-288 -            4.5e-08   26.0   0.3   4.5e-08   26.0   0.3   2.0   2   0   0   2   2   2   1 -
+PINF_MADBUB          -          PSTI_MAD||ABBA1/277-288 -               0.42    4.2   8.5    0.0088    9.4   0.1   2.8   3   0   0   3   3   3   0 -
+ATRI_MAD             -          ATRI_MAD||ABBA1/257-268 -              7e-08   25.4   3.5   1.9e-07   24.0   3.5   1.8   1   0   0   1   1   1   1 -
+SCER_MAD             -          SCER_MAD||ABBA1/256-267 -            9.5e-09   27.6   1.8   3.3e-08   25.9   1.8   2.0   1   0   0   1   1   1   1 -
+ATHA_MAD             -          ATHA_MAD||ABBA1/263-274 -            1.1e-08   28.0   1.4   2.7e-08   26.8   1.4   1.7   1   0   0   1   1   1   1 -
+CGLA_MAD             -          CGLA_MAD||ABBA1/240-251 -            1.3e-07   24.8   6.4   3.7e-07   23.4   6.4   1.8   1   0   0   1   1   1   1 -
+CELE_MAD             -          CELE_MAD||ABBA1/273-284 -            1.2e-09   30.9   0.4   2.9e-09   29.7   0.4   1.7   1   0   0   1   1   1   1 -
+BMAL_MAD             -          BMAL_MAD||ABBA1/253-264 -            7.4e-09   28.4   3.3   1.8e-08   27.1   3.3   1.7   1   0   0   1   1   1   1 -
+ACOE_MAD             -          ACOE_MAD||ABBA1/289-300 -            7.7e-08   25.4   2.6   1.9e-07   24.1   2.6   1.7   1   0   0   1   1   1   1 -
+CTEL_MADBUB          -          ACEY_MAD||ABBA1/309-320 -            1.6e-08   27.7  10.1   6.7e-05   16.4   1.2   3.7   3   0   0   3   3   3   2 -
+ACEY_MAD             -          ACEY_MAD||ABBA1/309-320 -            1.5e-06   21.5   6.6   1.5e-06   21.5   6.6   3.5   3   0   0   3   3   3   1 -
+HSAP_BUB             -          ACEY_MAD||ABBA1/309-320 -             0.0011   12.6   0.6    0.0063   10.2   0.6   2.3   1   0   0   1   1   1   0 -
+ACAR_BUB             -          ACEY_MAD||ABBA1/309-320 -             0.0023   11.6   0.1    0.0023   11.6   0.1   2.8   3   0   0   3   3   3   0 -
+AKER_MADBUB          -          ACEY_MAD||ABBA1/309-320 -             0.0057   10.3   3.4      0.65    3.9   0.1   3.9   3   0   0   3   3   3   0 -
+FALB_BUB             -          ACEY_MAD||ABBA1/309-320 -              0.068    6.9   7.1    0.0044   10.7   1.7   2.0   2   0   0   2   2   2   0 -
+HPAR_MADBUB          -          ACEY_MAD||ABBA1/309-320 -                3.8    1.5  11.9      0.19    5.6   0.5   3.5   3   0   0   3   3   3   0 -
+LANA_MADBUB          -          ACEY_MAD||ABBA1/309-320 -                5.3    1.0  19.8     0.042    7.6   0.0   4.5   4   0   0   4   4   4   0 -
+AANO_MAD             -          AANO_MAD||ABBA1/192-203 -            6.2e-08   25.8   3.9   6.2e-08   25.8   3.9   3.6   3   0   0   3   3   3   1 -
+OSAT_BUB_B           -          AANO_MAD||ABBA1/192-203 -            0.00078   13.0  12.5      0.15    5.9   0.1   5.6   5   0   0   5   5   5   0 -
+NVEC_MADBUB          -          AANO_MAD||ABBA1/192-203 -             0.0012   12.5   2.9    0.0038   10.9   2.9   1.9   1   0   0   1   1   1   0 -
+TTRA_MADBUB          -          AANO_MAD||ABBA1/192-203 -             0.0016   12.0  12.7      0.11    6.3   0.0   5.9   5   0   0   5   5   5   0 -
+EHUX_MADBUB          -          AANO_MAD||ABBA1/192-203 -             0.0027   11.4  29.7    0.0048   10.6   0.7   6.4   6   0   0   6   6   6   0 -
+PTRI_MADBUB          -          AANO_MAD||ABBA1/192-203 -                0.2    5.5   8.4     0.034    7.9   0.2   3.4   4   0   0   4   4   4   0 -
+PPAL_MADBUB          -          AANO_MAD||ABBA1/192-203 -               0.39    4.6  11.7      0.57    4.1   0.2   4.6   5   0   0   5   5   5   0 -
+DDIS_MADBUB          -          AANO_MAD||ABBA1/192-203 -                0.7    3.9   8.7      0.36    4.8   0.3   3.3   3   0   0   3   3   3   0 -
+MPOL_MADBUB          -          AANO_MAD||ABBA1/192-203 -                3.8    1.6  15.2     0.017    8.8   2.2   3.4   3   0   0   3   3   3   0 -
+SMOE_BUB             -          AANO_MAD||ABBA1/192-203 -                5.3    1.1  14.6      0.17    5.8   2.8   3.1   3   0   0   3   3   3   0 -
+ACAR_MAD             -          ACAR_MAD||ABBA1/258-269 -            9.5e-08   25.0   2.0   9.5e-08   25.0   2.0   2.8   2   0   0   2   2   2   1 -
+FALB_MAD             -          ACAR_MAD||ABBA1/258-269 -            6.3e-07   22.4   0.6   6.3e-07   22.4   0.6   2.9   3   0   0   3   3   3   1 -
+TTRA_MADBUB          -          ACAR_MAD||ABBA1/258-269 -            1.2e-06   21.5  38.0    0.0007   12.8   1.6   6.8   7   0   0   7   7   7   3 -
+CGIG_MADBUB          -          ACAR_MAD||ABBA1/258-269 -            0.00016   14.8   0.3   0.00053   13.2   0.3   1.9   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          ACAR_MAD||ABBA1/258-269 -             0.0015   11.8   0.9     0.025    8.0   0.0   2.7   2   0   0   2   2   2   0 -
+XTRO_MAD             -          ACAR_MAD||ABBA1/258-269 -             0.0016   11.7   5.1    0.0032   10.8   1.2   2.7   2   0   0   2   2   2   0 -
+ALAI_MAD             -          ALAI_MAD||ABBA1/255-266 -            6.6e-09   28.7   9.6   8.4e-08   25.2   3.6   3.3   3   0   0   3   3   3   1 -
+PSTI_MAD             -          ABIS_MAD||ABBA1/269-280 -            7.3e-09   28.5   0.2   2.6e-08   26.7   0.2   2.0   1   0   0   1   1   1   1 -
+ABIS_MAD             -          ABIS_MAD||ABBA1/269-280 -            2.3e-08   26.9   0.4   2.3e-08   26.9   0.4   2.0   2   0   0   2   2   2   1 -
+GLUX_MAD             -          ABIS_MAD||ABBA1/269-280 -            3.8e-08   26.2   0.2   1.2e-07   24.7   0.2   1.9   1   0   0   1   1   1   1 -
+PINF_MADBUB          -          ABIS_MAD||ABBA1/269-280 -               0.29    4.7   8.9    0.0048   10.3   0.1   2.8   3   0   0   3   3   3   0 -
+AGAM_MAD             -          AGAM_MAD||ABBA1/244-255 -            5.5e-07   23.0   3.6   1.6e-06   21.6   3.6   1.9   1   0   0   1   1   1   1 -
+FALB_MAD             -          FALB_MAD||ABBA1/260-271 -            4.4e-08   26.0   1.3   4.4e-08   26.0   1.3   3.0   3   0   0   3   3   3   1 -
+ACAR_MAD             -          FALB_MAD||ABBA1/260-271 -            1.1e-07   24.7   3.8   8.8e-07   21.9   0.3   2.8   2   0   0   2   2   2   1 -
+TTRA_MADBUB          -          FALB_MAD||ABBA1/260-271 -            3.8e-07   23.1  38.4   0.00062   13.0   1.9   6.8   7   0   0   7   7   7   3 -
+CGIG_MADBUB          -          FALB_MAD||ABBA1/260-271 -            0.00012   15.2   0.4   0.00039   13.6   0.4   1.9   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          FALB_MAD||ABBA1/260-271 -               0.19    5.2   7.4     0.034    7.5   0.0   2.8   3   0   0   3   3   3   0 -
+XTRO_MAD             -          FALB_MAD||ABBA1/260-271 -                1.1    2.8  14.3    0.0095    9.2   2.7   2.8   3   0   0   3   3   3   0 -
+ESIL_MAD             -          ESIL_MAD||ABBA1/335-346 -            9.1e-07   22.3   5.5   4.6e-06   20.1   5.5   2.3   1   0   0   1   1   1   1 -
+TTRA_MADBUB          -          ESIL_MAD||ABBA1/335-346 -            9.7e-05   16.0  13.8   0.00022   14.8   0.3   5.0   5   0   0   5   5   5   1 -
+GLUX_MAD             -          GLUX_MAD||ABBA1/254-265 -            7.2e-09   28.5   0.5   2.3e-08   26.9   0.5   2.0   1   0   0   1   1   1   1 -
+PSTI_MAD             -          GLUX_MAD||ABBA1/254-265 -              1e-08   28.0   0.1   3.2e-08   26.4   0.1   1.9   1   0   0   1   1   1   1 -
+ABIS_MAD             -          GLUX_MAD||ABBA1/254-265 -            4.7e-08   25.9   0.2   4.7e-08   25.9   0.2   2.0   2   0   0   2   2   2   1 -
+PINF_MADBUB          -          GLUX_MAD||ABBA1/254-265 -                2.8    1.6  11.4    0.0073    9.7   0.3   2.6   3   0   0   3   3   3   0 -
+LOCU_MAD             -          LOCU_MAD||ABBA1/257-268 -            1.3e-08   27.5   1.2   2.5e-08   26.6   0.3   2.0   2   0   0   2   2   2   1 -
+DRER_MAD_A           -          LOCU_MAD||ABBA1/257-268 -            3.2e-08   26.3   0.1   8.9e-08   24.9   0.1   1.8   1   0   0   1   1   1   1 -
+HSAP_MAD             -          LOCU_MAD||ABBA1/257-268 -            1.8e-06   20.9   2.2   2.3e-06   20.5   0.3   2.2   2   0   0   2   2   2   1 -
+MMUS_MAD             -          LOCU_MAD||ABBA1/257-268 -            5.3e-06   19.4   0.9   5.3e-06   19.4   0.9   2.0   2   0   0   2   2   2   1 -
+XTRO_MAD             -          LOCU_MAD||ABBA1/257-268 -             0.0015   11.7   2.5     0.009    9.3   0.1   2.6   2   0   0   2   2   2   0 -
+HSAP_MAD             -          HSAP_MAD||ABBA1/283-294 -            8.5e-09   28.2   1.4   2.8e-08   26.6   1.4   1.9   1   0   0   1   1   1   1 -
+MMUS_MAD             -          HSAP_MAD||ABBA1/283-294 -            3.6e-08   26.2   2.7     9e-08   25.0   2.7   1.7   1   0   0   1   1   1   1 -
+LOCU_MAD             -          HSAP_MAD||ABBA1/283-294 -              1e-06   21.7   0.7   2.7e-06   20.4   0.2   2.0   2   0   0   2   2   2   1 -
+XTRO_MAD             -          HSAP_MAD||ABBA1/283-294 -             0.0026   11.0   3.3    0.0053   10.0   0.3   2.3   2   0   0   2   2   2   0 -
+TTRA_MADBUB          -          HSAP_MAD||ABBA1/283-294 -                1.1    2.7  11.3      0.62    3.5   0.4   4.2   5   0   0   5   5   5   0 -
+CMIL_MAD             -          CMIL_MAD||ABBA1/251-262 -            2.8e-08   26.8   2.7   8.7e-08   25.3   2.7   1.9   1   0   0   1   1   1   1 -
+DRER_MAD_A           -          DRER_MAD_A||ABBA1/283-294 -            2.9e-09   29.4   0.8     7e-09   28.2   0.8   1.7   1   0   0   1   1   1   1 -
+TRUB_MAD             -          DRER_MAD_A||ABBA1/283-294 -             0.0012   12.1   0.1    0.0029   10.9   0.1   1.7   1   0   0   1   1   1   0 -
+TTRA_MADBUB          -          DRER_MAD_A||ABBA1/283-294 -                2.1    2.1  13.4      0.66    3.6   0.5   4.8   5   0   0   5   5   5   0 -
+DMEL_MAD             -          DMEL_MAD||ABBA1/254-265 -              6e-07   22.6   4.9     6e-07   22.6   4.9   2.7   3   0   0   3   3   3   1 -
+MPOL_MADBUB          -          DMEL_MAD||ABBA1/254-265 -            3.4e-05   17.2   0.6   0.00013   15.3   0.6   2.1   1   0   0   1   1   1   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBuBR1_ABBA1.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBuBR1_ABBA1_jackhmmer.tblout --domtblout TromerBuBR1_ABBA1_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_ABBA1.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BuBR1/ABBA1
+# Date:            Thu Aug  8 09:54:01 2019
+# [ok]

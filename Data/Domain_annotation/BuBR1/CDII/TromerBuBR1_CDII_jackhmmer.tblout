@@ -1,0 +1,67 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name             accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------   -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+MMUS_MAD             -          MMUS_MAD||CDII/708-740 -            7.4e-27   86.6   4.0   2.1e-26   85.2   4.0   1.9   1   0   0   1   1   1   1 -
+HSAP_MAD             -          MMUS_MAD||CDII/708-740 -            1.2e-25   82.8   6.0   3.4e-25   81.3   6.0   1.9   1   0   0   1   1   1   1 -
+ACAR_MAD             -          MMUS_MAD||CDII/708-740 -             0.0013   12.2   1.3    0.0039   10.8   1.3   1.9   1   0   0   1   1   1   0 -
+HSAP_MAD             -          HSAP_MAD||CDII/733-765 -            1.3e-26   85.8   6.6   3.9e-26   84.3   6.6   1.9   1   0   0   1   1   1   1 -
+MMUS_MAD             -          HSAP_MAD||CDII/733-765 -            7.4e-26   83.4   3.5   2.1e-25   82.0   3.5   1.9   1   0   0   1   1   1   1 -
+ACAR_MAD             -          HSAP_MAD||CDII/733-765 -             0.0024   11.4   1.4    0.0069    9.9   1.4   1.9   1   0   0   1   1   1   0 -
+FALB_MAD             -          FALB_MAD||CDII/751-784 -            3.5e-24   77.8   1.4   8.4e-24   76.5   1.4   1.7   1   0   0   1   1   1   1 -
+CMIL_MAD             -          FALB_MAD||CDII/751-784 -            1.8e-19   62.7   3.4   6.2e-19   61.0   3.4   2.0   1   0   0   1   1   1   1 -
+ACAR_MAD             -          FALB_MAD||CDII/751-784 -            1.8e-16   53.1   0.8   1.8e-16   53.1   0.8   2.1   2   0   0   2   2   2   1 -
+CMIL_MAD             -          CMIL_MAD||CDII/858-891 -              8e-16   51.3   1.5     8e-16   51.3   1.5   3.1   3   0   0   3   3   2   1 -
+FALB_BUB             -          CMIL_MAD||CDII/858-891 -            1.6e-15   50.3   4.5   1.7e-14   47.0   2.4   3.0   3   0   0   3   3   2   1 -
+HSAP_BUB             -          CMIL_MAD||CDII/858-891 -            2.2e-15   49.9   1.3   5.8e-15   48.5   1.3   1.8   1   0   0   1   1   1   1 -
+MMUS_BUB             -          CMIL_MAD||CDII/858-891 -            8.3e-15   48.0   1.5   2.5e-14   46.5   1.5   1.9   1   0   0   1   1   1   1 -
+TRUB_BUB             -          CMIL_MAD||CDII/858-891 -            1.8e-14   46.9   5.3   6.6e-14   45.1   5.3   2.0   1   0   0   1   1   1   1 -
+LOCU_BUB             -          CMIL_MAD||CDII/858-891 -            2.8e-14   46.3   1.5   9.4e-14   44.6   1.5   2.0   1   0   0   1   1   1   1 -
+DRER_BUB             -          CMIL_MAD||CDII/858-891 -            4.3e-14   45.7   4.9   4.3e-14   45.7   4.9   2.6   3   0   0   3   3   1   1 -
+LANA_MADBUB          -          CMIL_MAD||CDII/858-891 -            6.9e-14   45.1   0.1   4.3e-13   42.5   0.0   2.3   2   0   0   2   2   2   1 -
+CTEL_MADBUB          -          CMIL_MAD||CDII/858-891 -            9.1e-14   44.7   1.8   9.1e-14   44.7   1.8   2.4   2   0   0   2   2   2   1 -
+CMIL_BUB             -          CMIL_MAD||CDII/858-891 -            1.1e-13   44.4   0.4   2.7e-13   43.2   0.4   1.7   1   0   0   1   1   1   1 -
+ACAR_BUB             -          CMIL_MAD||CDII/858-891 -            2.3e-13   43.4   0.2     8e-13   41.7   0.2   2.0   1   0   0   1   1   1   1 -
+SKOW_MADBUB          -          CMIL_MAD||CDII/858-891 -            4.5e-13   42.4   0.5   1.4e-12   40.9   0.5   1.9   1   0   0   1   1   1   1 -
+XTRO_BUB             -          CMIL_MAD||CDII/858-891 -            1.1e-12   41.2   1.2   4.4e-12   39.3   1.2   2.2   1   0   0   1   1   1   1 -
+PCAU_MADBUB          -          CMIL_MAD||CDII/858-891 -            1.7e-12   40.6   0.0   4.6e-12   39.2   0.0   1.8   1   0   0   1   1   1   1 -
+OBIM_MADBUB          -          CMIL_MAD||CDII/858-891 -            2.1e-12   40.3   0.8     6e-12   38.8   0.8   1.8   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          CMIL_MAD||CDII/858-891 -            5.2e-12   39.0   0.1   1.4e-11   37.7   0.1   1.7   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          CMIL_MAD||CDII/858-891 -            5.4e-12   39.0   0.0   1.9e-11   37.3   0.0   1.9   1   0   0   1   1   1   1 -
+LAMPREY_MADBUB       -          CMIL_MAD||CDII/858-891 -            5.5e-12   39.0   0.7   9.8e-11   35.0   2.4   2.3   2   0   0   2   2   1   1 -
+MPOL_MADBUB          -          CMIL_MAD||CDII/858-891 -            6.7e-12   38.7   0.1   2.2e-11   37.1   0.1   1.9   1   0   0   1   1   1   1 -
+DHAN_MADBUB          -          CMIL_MAD||CDII/858-891 -            8.6e-11   35.1   0.5   2.1e-09   30.7   0.0   3.1   3   0   0   3   3   3   1 -
+KLAC_MADBUB          -          CMIL_MAD||CDII/858-891 -              1e-10   34.9   2.4   6.4e-10   32.4   1.2   2.9   2   0   0   2   2   2   1 -
+ATRI_BUB_A           -          CMIL_MAD||CDII/858-891 -            3.3e-10   33.3   0.1     1e-09   31.7   0.1   1.9   1   0   0   1   1   1   1 -
+AGOS_MADBUB          -          CMIL_MAD||CDII/858-891 -            3.5e-10   33.2   1.5   3.5e-10   33.2   1.5   2.7   2   0   0   2   2   2   1 -
+NCRA_MADBUB          -          CMIL_MAD||CDII/858-891 -            5.2e-10   32.7   0.0   1.5e-09   31.2   0.0   1.8   1   0   0   1   1   1   1 -
+SCER_BUB             -          CMIL_MAD||CDII/858-891 -            5.7e-10   32.5   1.0   2.7e-09   30.4   1.0   2.2   1   0   0   1   1   1   1 -
+BFLO_MADBUB          -          CMIL_MAD||CDII/858-891 -            7.7e-10   32.1   0.1   1.8e-09   30.9   0.1   1.7   1   0   0   1   1   1   1 -
+OSAT_BUB_A           -          CMIL_MAD||CDII/858-891 -              9e-10   31.9   0.0   1.9e-09   30.9   0.0   1.5   1   0   0   1   1   1   1 -
+RIRR_MADBUB          -          CMIL_MAD||CDII/858-891 -            9.9e-10   31.8   0.0   3.5e-09   30.0   0.0   2.0   1   0   0   1   1   1   1 -
+PPAT_BUB             -          CMIL_MAD||CDII/858-891 -            1.1e-09   31.6   1.7   4.4e-09   29.7   1.7   2.1   1   0   0   1   1   1   1 -
+CGLA_BUB             -          CMIL_MAD||CDII/858-891 -            3.9e-09   29.8   1.6   3.9e-09   29.8   1.6   2.8   2   0   0   2   2   2   1 -
+LSAL_MADBUB          -          CMIL_MAD||CDII/858-891 -              5e-09   29.5   0.0   1.3e-08   28.2   0.0   1.7   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          CMIL_MAD||CDII/858-891 -            7.8e-09   28.9   0.1   2.1e-08   27.5   0.1   1.8   1   0   0   1   1   1   1 -
+ACAR_MAD             -          CMIL_MAD||CDII/858-891 -              1e-08   28.5   0.3   3.4e-08   26.9   0.3   2.0   1   0   0   1   1   1   1 -
+CGIG_MADBUB          -          CMIL_MAD||CDII/858-891 -            6.9e-08   25.9   1.1   1.7e-07   24.6   0.2   2.1   2   0   0   2   2   1   1 -
+PCAR_MADBUB          -          CMIL_MAD||CDII/858-891 -            9.8e-08   25.4   0.2   3.6e-07   23.6   0.2   2.0   1   0   0   1   1   1   1 -
+CNEO_MADBUB          -          CMIL_MAD||CDII/858-891 -            1.5e-07   24.8   0.4   1.5e-07   24.8   0.4   2.1   2   0   0   2   2   1   1 -
+FALB_MAD             -          CMIL_MAD||CDII/858-891 -              2e-07   24.3   0.1   6.1e-07   22.8   0.1   1.9   1   0   0   1   1   1   1 -
+MLAR_BUB             -          CMIL_MAD||CDII/858-891 -            1.2e-05   18.7   2.3   1.4e-05   18.5   0.2   2.4   2   0   0   2   2   1   1 -
+ACOE_BUB_A           -          CMIL_MAD||CDII/858-891 -            0.00057   13.3   0.0    0.0021   11.5   0.0   2.0   1   0   0   1   1   1   1 -
+SMIM_MADBUB          -          CMIL_MAD||CDII/858-891 -            0.00094   12.6   0.3    0.0029   11.0   0.3   1.9   1   0   0   1   1   1   1 -
+ATHA_BUB_A           -          CMIL_MAD||CDII/858-891 -            0.00095   12.6   0.0    0.0035   10.8   0.0   2.1   1   0   0   1   1   1   1 -
+MLEI_MADBUB          -          CMIL_MAD||CDII/858-891 -               0.03    7.8   8.6     0.001   12.5   1.5   2.3   2   0   0   2   2   1   0 -
+DMEL_MAD             -          DMEL_MAD||CDII/1126-1156 -            1.5e-26   85.2   2.7   3.4e-26   84.1   2.7   1.7   1   0   0   1   1   1   1 -
+AGAM_MAD             -          AGAM_MAD||CDII/1164-1194 -            5.8e-26   83.4   2.0   1.1e-25   82.5   2.0   1.5   1   0   0   1   1   1   1 -
+XTRO_MAD             -          XTRO_MAD||CDII/713-724 -             0.0014   10.8   0.3     0.021    7.8   0.3   2.9   1   0   0   1   1   1   0 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerBuBR1_CDII.fasta
+# Target file:     ../../../Sequences/rsob160315supp3.fasta
+# Option settings: jackhmmer --tblout TromerBuBR1_CDII_jackhmmer.tblout --domtblout TromerBuBR1_CDII_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_CDII.fasta ../../../Sequences/rsob160315supp3.fasta 
+# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BuBR1/CDII
+# Date:            Thu Aug  8 09:54:04 2019
+# [ok]

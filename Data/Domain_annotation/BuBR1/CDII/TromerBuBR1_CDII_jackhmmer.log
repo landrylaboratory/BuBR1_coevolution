@@ -1,0 +1,3084 @@
+# jackhmmer :: iteratively search a protein sequence against a protein database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             TromerBuBR1_CDII.fasta
+# target sequence database:        ../../../Sequences/rsob160315supp3.fasta
+# per-seq hits tabular output:     TromerBuBR1_CDII_jackhmmer.tblout
+# per-dom hits tabular output:     TromerBuBR1_CDII_jackhmmer.domtblout
+# query <seqfile> format asserted: fasta
+# target <seqdb> format asserted:  fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       MMUS_MAD||CDII/708-740  [L=33]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   2.1e-19   60.1   0.4    1.5e-18   57.6   0.4    2.6  1  MMUS_MAD  
++     3e-14   44.7   0.4    1.8e-13   42.4   0.4    2.4  1  HSAP_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> MMUS_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.6   0.4   1.9e-20   1.5e-18       1      33 []     708     740 ..     708     740 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 57.6 bits;  conditional E-value: 1.9e-20
+  MMUS_MAD||CDII/708-740   1 qspwcsqyrlqllksllelsafaefsvedrpmp 33 
+                             qspwcsqyrlqllksllelsafaefsvedrpmp
+                MMUS_MAD 708 QSPWCSQYRLQLLKSLLELSAFAEFSVEDRPMP 740
+                             89******************************9 PP
+
+>> HSAP_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.4   2.3e-15   1.8e-13       1      33 []     733     765 ..     733     765 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 42.4 bits;  conditional E-value: 2.3e-15
+  MMUS_MAD||CDII/708-740   1 qspwcsqyrlqllksllelsafaefsvedrpmp 33 
+                             qspwcsqyr qllksl elsa ae+ +edrpmp
+                HSAP_MAD 733 QSPWCSQYRRQLLKSLPELSASAELCIEDRPMP 765
+                             89******************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (33 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        12  (0.0789474); expected 3.0 (0.02)
+Passed bias filter:                       10  (0.0657895); expected 3.0 (0.02)
+Passed Vit filter:                         4  (0.0263158); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.0131579); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 478.96
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             33 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    7.4e-27   86.6   4.0    2.1e-26   85.2   4.0    1.9  1  MMUS_MAD  
+    1.2e-25   82.8   6.0    3.4e-25   81.3   6.0    1.9  1  HSAP_MAD  
+  ------ inclusion threshold ------
+     0.0013   12.2   1.3     0.0039   10.8   1.3    1.9  1  ACAR_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> MMUS_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.2   4.0   4.1e-28   2.1e-26       1      33 []     708     740 ..     708     740 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 85.2 bits;  conditional E-value: 4.1e-28
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  MMUS_MAD||CDII/708-740-i1   1 QSPWCSQYRlQLLKSLlELSAfAElsvEDRPmP 33 
+                                QSPWCSQYRlQLLKSLlELSAfAE+svEDRPmP
+                   MMUS_MAD 708 QSPWCSQYRLQLLKSLLELSAFAEFSVEDRPMP 740
+                                9*******************************9 PP
+
+>> HSAP_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.3   6.0   6.8e-27   3.4e-25       1      33 []     733     765 ..     733     765 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 81.3 bits;  conditional E-value: 6.8e-27
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  MMUS_MAD||CDII/708-740-i1   1 QSPWCSQYRlQLLKSLlELSAfAElsvEDRPmP 33 
+                                QSPWCSQYR+QLLKSL+ELSA+AEl++EDRPmP
+                   HSAP_MAD 733 QSPWCSQYRRQLLKSLPELSASAELCIEDRPMP 765
+                                9*******************************9 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   1.3   7.7e-05    0.0039       2      33 .]     725     757 ..     724     757 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 7.7e-05
+                                xxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxx RF
+  MMUS_MAD||CDII/708-740-i1   2 SPWCSQYRlQLLKSLlE.LSAfAElsvEDRPmP 33 
+                                SP CS  R+ LL  LlE L    ++ +E  PmP
+                   ACAR_MAD 725 SPVCSEQRKLLLQPLLEtLTKCPDFILEAQPMP 757
+                                9***************9889999*********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (33 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                         7  (0.0460526); expected 3.0 (0.02)
+Passed bias filter:                        5  (0.0328947); expected 3.0 (0.02)
+Passed Vit filter:                         4  (0.0263158); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 159.65
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       HSAP_MAD||CDII/733-765  [L=33]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   6.5e-20   61.4   1.4    4.6e-19   58.8   1.4    2.6  1  HSAP_MAD  
++   1.8e-14   45.1   0.3    1.2e-13   42.5   0.3    2.6  1  MMUS_MAD  
+  ------ inclusion threshold ------
+     0.0013   12.5   0.4      0.019    8.9   0.1    3.2  2  XTRO_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> HSAP_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.8   1.4   9.1e-21   4.6e-19       1      33 []     733     765 ..     733     765 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 58.8 bits;  conditional E-value: 9.1e-21
+  HSAP_MAD||CDII/733-765   1 qspwcsqyrrqllkslpelsasaelciedrpmp 33 
+                             qspwcsqyrrqllkslpelsasaelciedrpmp
+                HSAP_MAD 733 QSPWCSQYRRQLLKSLPELSASAELCIEDRPMP 765
+                             89******************************9 PP
+
+>> MMUS_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.3   2.4e-15   1.2e-13       1      33 []     708     740 ..     708     740 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 2.4e-15
+  HSAP_MAD||CDII/733-765   1 qspwcsqyrrqllkslpelsasaelciedrpmp 33 
+                             qspwcsqyr qllksl elsa ae+ +edrpmp
+                MMUS_MAD 708 QSPWCSQYRLQLLKSLLELSAFAEFSVEDRPMP 740
+                             89******************************9 PP
+
+>> XTRO_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.1      0.98        50       3      22 ..     631     653 ..     629     658 .. 0.50
+   2 ?    8.9   0.1   0.00037     0.019       6      32 ..     709     735 ..     704     736 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.98
+  HSAP_MAD||CDII/733-765   3 pwcsq.yrrql.lksl.pelsas 22 
+                             p c + yr++l +k l p l as
+                XTRO_MAD 631 PVCEEsYRQELcIKKLsPILEAS 653
+                             77765266655233332445554 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 0.00037
+  HSAP_MAD||CDII/733-765   6 sqyrrqllkslpelsasaelciedrpm 32 
+                             ++ +rqll+slpel  s e+  e   m
+                XTRO_MAD 709 AELHRQLLESLPELLVSPEIQHEVGTM 735
+                             6789*************9997776555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (33 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        13  (0.0855263); expected 3.0 (0.02)
+Passed bias filter:                       12  (0.0789474); expected 3.0 (0.02)
+Passed Vit filter:                         6  (0.0394737); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 478.96
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             33 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.3e-26   85.8   6.6    3.9e-26   84.3   6.6    1.9  1  HSAP_MAD  
+    7.4e-26   83.4   3.5    2.1e-25   82.0   3.5    1.9  1  MMUS_MAD  
+  ------ inclusion threshold ------
+     0.0024   11.4   1.4     0.0069    9.9   1.4    1.9  1  ACAR_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> HSAP_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.3   6.6   7.6e-28   3.9e-26       1      33 []     733     765 ..     733     765 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 84.3 bits;  conditional E-value: 7.6e-28
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_MAD||CDII/733-765-i1   1 QSPWCSQYRrQLLKSLpELSAsAElciEDRPmP 33 
+                                QSPWCSQYRrQLLKSLpELSAsAElciEDRPmP
+                   HSAP_MAD 733 QSPWCSQYRRQLLKSLPELSASAELCIEDRPMP 765
+                                9*******************************9 PP
+
+>> MMUS_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.0   3.5   4.1e-27   2.1e-25       1      33 []     708     740 ..     708     740 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 82.0 bits;  conditional E-value: 4.1e-27
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_MAD||CDII/733-765-i1   1 QSPWCSQYRrQLLKSLpELSAsAElciEDRPmP 33 
+                                QSPWCSQYR+QLLKSL+ELSA+AE+++EDRPmP
+                   MMUS_MAD 708 QSPWCSQYRLQLLKSLLELSAFAEFSVEDRPMP 740
+                                9*******************************9 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   1.4   0.00014    0.0069       2      33 .]     725     757 ..     724     757 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.00014
+                                xxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxx RF
+  HSAP_MAD||CDII/733-765-i1   2 SPWCSQYRrQLLKSLpE.LSAsAElciEDRPmP 33 
+                                SP CS  R+ LL  L+E L    ++ +E  PmP
+                   ACAR_MAD 725 SPVCSEQRKLLLQPLLEtLTKCPDFILEAQPMP 757
+                                9***************9889999*********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (33 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        11  (0.0723684); expected 3.0 (0.02)
+Passed bias filter:                        6  (0.0394737); expected 3.0 (0.02)
+Passed Vit filter:                         4  (0.0263158); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 159.65
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       FALB_MAD||CDII/751-784  [L=34]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   2.2e-19   60.0   0.1    8.4e-19   58.2   0.1    2.1  1  FALB_MAD  
++   1.4e-05   18.5   0.0    0.00026   14.7   0.1    3.0  2  CMIL_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.2   0.1   1.1e-20   8.4e-19       1      34 []     751     784 ..     751     784 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 58.2 bits;  conditional E-value: 1.1e-20
+  FALB_MAD||CDII/751-784   1 qflwspeqrkkllgsvlsslvaspdfhletgalp 34 
+                             qflwspeqrkkllgsvlsslvaspdfhletgalp
+                FALB_MAD 751 QFLWSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                             8********************************9 PP
+
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   3.4e-06   0.00026       4      34 .]     861     891 ..     859     891 .. 0.96
+   2 ?   -0.9   0.0      0.52        39       7      29 ..     915     937 ..     912     942 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 3.4e-06
+  FALB_MAD||CDII/751-784   4 wspeqrkkllgsvlsslvaspdfhletgalp 34 
+                             ws e +k+llgs+  +l + p+fh++++ lp
+                CMIL_MAD 861 WSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                             **************************99987 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.52
+  FALB_MAD||CDII/751-784   7 eqrkkllgsvlsslvaspdfhle 29 
+                             eq +++ gs  sslv +  + ++
+                CMIL_MAD 915 EQCRRFYGSSTSSLVCNAIIKVD 937
+                             7889999*******998766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        10  (0.0657895); expected 3.0 (0.02)
+Passed bias filter:                        9  (0.0592105); expected 3.0 (0.02)
+Passed Vit filter:                         3  (0.0197368); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.0131579); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 493.47
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.4e-25   80.3   2.0    1.3e-24   79.0   2.0    1.7  1  FALB_MAD  
+      2e-20   65.7   6.0    4.3e-20   64.6   3.9    2.8  3  CMIL_MAD  
++   2.9e-05   17.2   0.0    7.7e-05   15.8   0.0    1.7  1  ACAR_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.0   2.0   2.7e-26   1.3e-24       1      34 []     751     784 ..     751     784 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 79.0 bits;  conditional E-value: 2.7e-26
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i1   1 qFLWSpEqrKkLLGSvlssLvasPdFHletgaLP 34 
+                                qFLWSpEqrKkLLGSvlssLvasPdFHletgaLP
+                   FALB_MAD 751 QFLWSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                9********************************9 PP
+
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.0       1.8        93      18      25 ..     475     482 ..     474     482 .. 0.86
+   2 !   64.6   3.9   8.5e-22   4.3e-20       4      34 .]     861     891 ..     860     891 .. 0.99
+   3 ?   -1.3   0.0      0.34        17       6      21 ..     914     929 ..     913     931 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 1.8
+                                xxxxxxxx RF
+  FALB_MAD||CDII/751-784-i1  18 ssLvasPd 25 
+                                ss va+P+
+                   CMIL_MAD 475 SSHVAFPE 482
+                                788****8 PP
+
+  == domain 2  score: 64.6 bits;  conditional E-value: 8.5e-22
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i1   4 WSpEqrKkLLGSvlssLvasPdFHletgaLP 34 
+                                WS+E++K+LLGS++++L+++P+FH+++++LP
+                   CMIL_MAD 861 WSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                ******************************9 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 0.34
+                                xxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i1   6 pEqrKkLLGSvlssLv 21 
+                                +Eq ++  GS  ssLv
+                   CMIL_MAD 914 REQCRRFYGSSTSSLV 929
+                                58999999*******9 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.0   1.5e-06   7.7e-05       7      34 .]     730     757 ..     727     757 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 1.5e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i1   7 EqrKkLLGSvlssLvasPdFHletgaLP 34 
+                                EqrK LL  +l +L   PdF le  ++P
+                   ACAR_MAD 730 EQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                9***********************9999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        10  (0.0657895); expected 3.0 (0.02)
+Passed bias filter:                        9  (0.0592105); expected 3.0 (0.02)
+Passed Vit filter:                         3  (0.0197368); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 164.49
+
+@@ New targets included:   1
+@@ New alignment includes: 4 subseqs (was 3), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        4 subsequences (query + 3 subseqs from 3 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.5e-24   77.8   1.4    8.4e-24   76.5   1.4    1.7  1  FALB_MAD  
+    1.8e-19   62.7   3.4    6.2e-19   61.0   3.4    2.0  1  CMIL_MAD  
+    1.8e-16   53.1   0.8    1.8e-16   53.1   0.8    2.1  2  ACAR_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.5   1.4   1.7e-25   8.4e-24       1      34 []     751     784 ..     751     784 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 76.5 bits;  conditional E-value: 1.7e-25
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i2   1 qFLWSpEqrKkLLgsllstLvasPdFhletgpLP 34 
+                                qFLWSpEqrKkLLgs+ls+LvasPdFhletg+LP
+                   FALB_MAD 751 QFLWSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                9********************************9 PP
+
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.0   3.4   1.2e-20   6.2e-19       4      34 .]     861     891 ..     860     891 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 61.0 bits;  conditional E-value: 1.2e-20
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i2   4 WSpEqrKkLLgsllstLvasPdFhletgpLP 34 
+                                WS+E++K+LLgsl++tL+++P+Fh++++pLP
+                   CMIL_MAD 861 WSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                ******************************9 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.1   0.8   3.5e-18   1.8e-16       7      34 .]     730     757 ..     727     757 .. 0.97
+   2 ?   -2.3   0.1      0.75        38      13      24 ..     934     945 ..     933     945 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 53.1 bits;  conditional E-value: 3.5e-18
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i2   7 EqrKkLLgsllstLvasPdFhletgpLP 34 
+                                EqrK+LL++ll+tL+++PdF+le++p+P
+                   ACAR_MAD 730 EQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                ***************************9 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.75
+                                xxxxxxxxxxxx RF
+  FALB_MAD||CDII/751-784-i2  13 LgsllstLvasP 24 
+                                L++  s+L+ +P
+                   ACAR_MAD 934 LQPGISSLTHFP 945
+                                78889******9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        13  (0.0855263); expected 3.0 (0.02)
+Passed bias filter:                       12  (0.0789474); expected 3.0 (0.02)
+Passed Vit filter:                         4  (0.0263158); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 164.49
+
+@@ New targets included:   0
+@@ New alignment includes: 4 subseqs (was 4), including original query
+@@
+@@ CONVERGED (in 3 rounds). 
+@@
+
+//
+Query:       CMIL_MAD||CDII/858-891  [L=34]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   4.4e-21   65.3   0.3    4.9e-20   62.1   0.4    2.9  2  CMIL_MAD     
++   3.1e-05   17.4   0.1     0.0002   15.0   0.1    2.5  1  FALB_MAD     
++   7.2e-05   16.3   0.3    0.00059   13.5   0.3    2.7  1  CTEL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.0         3   1.5e+02      20      31 ..     198     209 ..     183     211 .. 0.60
+   2 !   62.1   0.4   9.6e-22   4.9e-20       1      34 []     858     891 ..     858     891 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 3
+  CMIL_MAD||CDII/858-891  20 lnsfpefhvqss 31 
+                              +sfp+ ++q +
+                CMIL_MAD 198 KDSFPDTELQRT 209
+                             368999888765 PP
+
+  == domain 2  score: 62.1 bits;  conditional E-value: 9.6e-22
+  CMIL_MAD||CDII/858-891   1 ddpwskevqkqllgslhktlnsfpefhvqssplp 34 
+                             ddpwskevqkqllgslhktlnsfpefhvqssplp
+                CMIL_MAD 858 DDPWSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                             8********************************9 PP
+
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.1   3.9e-06    0.0002       4      34 .]     754     784 ..     751     784 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 3.9e-06
+  CMIL_MAD||CDII/858-891   4 wskevqkqllgslhktlnsfpefhvqssplp 34 
+                             ws e +k+llgs+  +l + p+fh+++  lp
+                FALB_MAD 754 WSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                             **************************99987 PP
+
+>> CTEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.3   1.2e-05   0.00059       2      34 .]     848     880 ..     847     880 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 1.2e-05
+  CMIL_MAD||CDII/858-891   2 dpwskevqkqllgslhktlnsfpefhvqssplp 34 
+                             dp+ k++ +++l+ lh  +   p fh  ssp+p
+             CTEL_MADBUB 848 DPFDKKLIERFLSRLHSPIELHPNFHSMSSPMP 880
+                             9******************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        45  (0.296053); expected 3.0 (0.02)
+Passed bias filter:                       40  (0.263158); expected 3.0 (0.02)
+Passed Vit filter:                        21  (0.138158); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 493.47
+
+@@ New targets included:   3
+@@ New alignment includes: 4 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        4 subsequences (query + 3 subseqs from 3 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    2.2e-24   78.3   2.8    1.5e-23   75.6   3.3    2.3  2  CMIL_MAD        
+    1.1e-19   63.3   5.8    2.9e-19   61.9   5.8    1.8  1  CTEL_MADBUB     
+    2.6e-17   55.7   0.5    9.5e-17   53.9   0.5    2.1  1  FALB_MAD        
++   4.2e-06   19.8   0.2    1.8e-05   17.8   0.1    2.2  2  LAMPREY_MADBUB  
++   6.5e-06   19.2   0.0    1.8e-05   17.8   0.0    1.7  1  PCAU_MADBUB     
++   7.3e-06   19.1   0.2    2.2e-05   17.5   0.2    1.9  1  FALB_BUB        
++   1.2e-05   18.4   0.1    3.3e-05   16.9   0.1    1.9  1  MPOL_MADBUB     
++   6.2e-05   16.1   2.9    0.00011   15.2   0.6    2.7  2  LOCU_BUB        
++   0.00015   14.9   1.2    0.00042   13.4   1.2    1.9  1  TRUB_BUB        
++    0.0002   14.5   0.1    0.00058   13.0   0.1    1.9  1  OBIM_MADBUB     
++   0.00025   14.2   0.3    0.00025   14.2   0.3    2.2  2  HSAP_BUB        
++    0.0003   13.9   0.0     0.0012   11.9   0.0    2.2  1  LANA_MADBUB     
++   0.00037   13.6   0.1      0.001   12.2   0.1    1.8  1  ACAR_MAD        
++   0.00039   13.5   0.0     0.0012   11.9   0.0    1.9  1  ACAR_BUB        
++   0.00044   13.4   0.1     0.0022   11.1   0.1    2.2  1  XTRO_BUB        
+  ------ inclusion threshold ------
+     0.0011   12.1   0.2     0.0033   10.6   0.2    1.9  1  MMUS_BUB        
+     0.0015   11.6   8.2    0.00024   14.2   2.2    2.8  2  DRER_BUB        
+
+
+Domain annotation for each sequence (and alignments):
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.6   3.3   1.7e-24   1.5e-23       1      34 []     858     891 ..     858     891 .. 0.99
+   2 ?   -3.3   0.0       8.2        73       7      21 ..     915     929 ..     914     930 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 75.6 bits;  conditional E-value: 1.7e-24
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   1 DDPwskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                DDPwskevqk+LLgsLh+tL+sfPeFHvqsSpLP
+                   CMIL_MAD 858 DDPWSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                9********************************9 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 8.2
+                                xxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   7 evqkkLLgsLhstLe 21 
+                                e+ +++ gs  s+L+
+                   CMIL_MAD 915 EQCRRFYGSSTSSLV 929
+                                88899****999997 PP
+
+>> CTEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.9   5.8   3.3e-20   2.9e-19       2      34 .]     848     880 ..     847     880 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 61.9 bits;  conditional E-value: 3.3e-20
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                DP++k++++++L++Lhs++e++P+FH++sSp+P
+                CTEL_MADBUB 848 DPFDKKLIERFLSRLHSPIELHPNFHSMSSPMP 880
+                                9*******************************9 PP
+
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.9   0.5   1.1e-17   9.5e-17       4      34 .]     754     784 ..     753     784 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 53.9 bits;  conditional E-value: 1.1e-17
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   4 wskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                ws+e++kkLLgs++s+L+++P+FH+++++LP
+                   FALB_MAD 754 WSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                ******************************9 PP
+
+>> LAMPREY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0       6.7        60      11      22 ..     132     143 ..     132     144 .. 0.84
+   2 !   17.8   0.1     2e-06   1.8e-05       3      27 ..     731     755 ..     729     762 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 6.7
+                                xxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1  11 kLLgsLhstLes 22 
+                                k+ +sL+ ++ +
+             LAMPREY_MADBUB 132 KFASSLLEPIDL 143
+                                6789*****987 PP
+
+  == domain 2  score: 17.8 bits;  conditional E-value: 2e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   3 PwskevqkkLLgsLhstLesfPeFH 27 
+                                Pw + +++ LL+ L  +Les P+F 
+             LAMPREY_MADBUB 731 PWNPCLIESLLSQLKTPLESLPNFF 755
+                                9***********************5 PP
+
+>> PCAU_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.8   0.0   2.1e-06   1.8e-05       2      23 ..    1068    1089 ..    1067    1093 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 2.1e-06
+                                 xxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1    2 DPwskevqkkLLgsLhstLesf 23  
+                                 DP+s+ev+++LL  L +++ s+
+                PCAU_MADBUB 1068 DPFSPEVIERLLAGLMKPVSSY 1089
+                                 9*****************9886 PP
+
+>> FALB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.2   2.5e-06   2.2e-05       3      34 .]     719     750 ..     717     750 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 2.5e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   3 PwskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                Pw+ke++ k+L+ L ++L    ++    SpLP
+                   FALB_BUB 719 PWDKELISKFLSELPKPLCTCANYFEWKSPLP 750
+                                ******************98888888888887 PP
+
+>> MPOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.1   3.7e-06   3.3e-05       2      23 ..     966     987 ..     965    1002 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 3.7e-06
+                                xxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesf 23 
+                                DPw+   +k LL+++hs+L  +
+                MPOL_MADBUB 966 DPWDESTIKGLLSRIHSSLSNY 987
+                                9*****************9765 PP
+
+>> LOCU_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.1       1.4        13       4      20 ..     268     285 ..     267     288 .. 0.72
+   2 !   15.2   0.6   1.3e-05   0.00011       2      26 ..     839     863 ..     838     865 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 1.4
+                                xxxxxxxx.xxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   4 wskevqkk.LLgsLhstL 20 
+                                w+k  ++k LL sL s L
+                   LOCU_BUB 268 WDKGNKEKsLLTSLESNL 285
+                                788665544999999887 PP
+
+  == domain 2  score: 15.2 bits;  conditional E-value: 1.3e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeF 26 
+                                DPw+  ++k+LL+ L  +L  + +F
+                   LOCU_BUB 839 DPWDETLIKRLLSDLPTPLHTSSNF 863
+                                9******************999998 PP
+
+>> TRUB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   1.2   4.7e-05   0.00042       2      34 .]     807     839 ..     806     839 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.7e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                DPw+  ++  LL+ L  +L s+P +   s  +P
+                   TRUB_BUB 807 DPWDNDLISDLLSALTPPLPSHPHYITWSCNMP 839
+                                9**********************8766666665 PP
+
+>> OBIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.1   6.4e-05   0.00058       2      28 ..     759     785 ..     758     791 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 6.4e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeFHv 28 
+                                DP+ ke qkk L  L  +Le +  +H 
+                OBIM_MADBUB 759 DPFCKEHQKKVLANLSEPLEYHDSYHC 785
+                                9********************999885 PP
+
+>> HSAP_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.3       6.2        56      15      22 ..     220     227 ..     220     228 .. 0.86
+   2 !   14.2   0.3   2.8e-05   0.00025       3      25 ..     741     763 ..     740     765 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 6.2
+                                xxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1  15 sLhstLes 22 
+                                s+hs+L s
+                   HSAP_BUB 220 SVHSSLAS 227
+                                89***976 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 2.8e-05
+                                xxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   3 PwskevqkkLLgsLhstLesfPe 25 
+                                Pw+ +++ kLL+ L +++ s+P+
+                   HSAP_BUB 741 PWDDKLIFKLLSGLSKPVSSYPN 763
+                                **********************8 PP
+
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.0   0.00014    0.0012       2      28 ..     968     994 ..     967    1000 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00014
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeFHv 28 
+                                DP++ e+  ++L +L  ++ sf ++H 
+                LANA_MADBUB 968 DPFDEELVARFLRRLPTPVSSFHNYHA 994
+                                9*************************6 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.1   0.00011     0.001       7      34 .]     730     757 ..     725     757 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.00011
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   7 evqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                e++k LL  L+ tL   P+F ++  p+P
+                   ACAR_MAD 730 EQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                9**************************9 PP
+
+>> ACAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.0   0.00014    0.0012       3      23 ..     710     730 ..     708     733 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00014
+                                xxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   3 PwskevqkkLLgsLhstLesf 23 
+                                Pw+  + ++LL+ L ++++++
+                   ACAR_BUB 710 PWDDSLTRQLLSALPKPINAY 730
+                                *******************97 PP
+
+>> XTRO_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.1   0.00025    0.0022       4      25 ..     784     805 ..     782     811 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00025
+                                xxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   4 wskevqkkLLgsLhstLesfPe 25 
+                                w+ +++ +LL+ L ++L s+ +
+                   XTRO_BUB 784 WDDKLIDRLLSELPKSLSSHEN 805
+                                *******************966 PP
+
+>> MMUS_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.2   0.00037    0.0033       3      23 ..     716     736 ..     714     744 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00037
+                                xxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   3 PwskevqkkLLgsLhstLesf 23 
+                                Pw+ e++ kLL+ L +++ s+
+                   MMUS_BUB 716 PWDDELILKLLSGLSKPVTSY 736
+                                *****************9886 PP
+
+>> DRER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.4       2.1        19       2       6 ..      24      28 ..      24      31 .. 0.85
+   2 ?   14.2   2.2   2.7e-05   0.00024       2      34 .]     859     891 ..     858     891 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 2.1
+                               xxxxx RF
+  CMIL_MAD||CDII/858-891-i1  2 DPwsk 6 
+                               DPw+k
+                   DRER_BUB 24 DPWDK 28
+                               9***9 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 2.7e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i1   2 DPwskevqkkLLgsLhstLesfPeFHvqsSpLP 34 
+                                DPw+ e++  LL+ L  +L s P+  v s  LP
+                   DRER_BUB 859 DPWDEELIVSLLSNLQPPLSSQPNLTVWSCHLP 891
+                                9***********************988887777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        48  (0.315789); expected 3.0 (0.02)
+Passed bias filter:                       43  (0.282895); expected 3.0 (0.02)
+Passed Vit filter:                        24  (0.157895); expected 0.2 (0.001)
+Passed Fwd filter:                        17  (0.111842); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):              17  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 123.37
+
+@@ New targets included:   12
+@@ New alignment includes: 16 subseqs (was 4), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        16 subsequences (query + 15 subseqs from 15 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      4e-19   62.0   1.8      4e-19   62.0   1.8    3.4  3  CMIL_MAD        
+    1.3e-17   57.2   3.4      4e-17   55.6   3.4    1.9  1  CTEL_MADBUB     
+    4.8e-16   52.2   6.4    1.5e-15   50.6   6.4    2.0  1  TRUB_BUB        
+    5.4e-16   52.0   3.4    5.4e-16   52.0   3.4    3.3  3  FALB_BUB        
+    3.3e-14   46.3   1.6    1.6e-13   44.1   1.6    2.3  1  LOCU_BUB        
+    7.7e-13   41.9   0.2    3.5e-12   39.8   0.0    2.3  1  LANA_MADBUB     
+    2.1e-12   40.5   0.7    6.2e-12   39.0   0.7    1.9  1  OBIM_MADBUB     
+    2.9e-12   40.1   1.5    9.7e-12   38.4   1.5    2.0  1  HSAP_BUB        
+    3.8e-12   39.7   0.1    1.5e-11   37.8   0.1    2.2  1  FALB_MAD        
+    3.9e-11   36.5   0.0    1.3e-10   34.8   0.0    1.9  1  PCAU_MADBUB     
+    4.7e-11   36.2   0.6    1.2e-10   34.9   0.6    1.8  1  ACAR_MAD        
+    7.2e-11   35.6   2.8    7.2e-11   35.6   2.8    2.6  2  LAMPREY_MADBUB  
++   7.6e-11   35.5   0.9    2.3e-10   34.0   0.9    1.9  1  MMUS_BUB        
+    1.4e-10   34.7   0.2    4.2e-10   33.2   0.2    1.9  1  ACAR_BUB        
+    2.4e-10   34.0   0.1    6.7e-10   32.5   0.1    1.8  1  MPOL_MADBUB     
+    2.5e-10   33.9   0.8    2.5e-10   33.9   0.8    2.2  1  XTRO_BUB        
++   1.1e-09   31.9   4.9    1.1e-09   31.9   4.9    2.7  2  DRER_BUB        
++   3.6e-07   23.8   0.1      9e-07   22.5   0.1    1.6  1  KFLA_MADBUB     
++   5.7e-07   23.1   0.6    1.4e-06   21.9   0.6    1.7  1  CMIL_BUB        
++   7.4e-07   22.8   0.2    2.6e-06   21.0   0.2    2.1  1  SKOW_MADBUB     
++   3.5e-06   20.6   0.7      5e-05   16.9   0.0    2.8  2  DHAN_MADBUB     
++   1.2e-05   18.9   0.0      3e-05   17.6   0.0    1.7  1  BFLO_MADBUB     
++   2.8e-05   17.7   0.0    7.7e-05   16.3   0.0    1.7  1  NVEC_MADBUB     
++   3.2e-05   17.6   0.3    0.00013   15.6   0.3    2.2  1  CGIG_MADBUB     
++   0.00026   14.6   0.0     0.0013   12.4   0.0    2.2  1  RIRR_MADBUB     
++   0.00031   14.4   0.0     0.0009   12.9   0.0    1.8  1  SPUR_MADBUB     
++   0.00042   14.0   0.3    0.00042   14.0   0.3    2.6  2  AGOS_MADBUB     
++   0.00053   13.6   0.0     0.0017   12.0   0.0    1.8  1  NCRA_MADBUB     
++    0.0007   13.3   0.8     0.0018   11.9   0.8    1.7  1  PPAT_BUB        
+  ------ inclusion threshold ------
+      0.064    7.0   7.7      0.002   11.8   0.7    2.1  1  MLEI_MADBUB     
+
+
+Domain annotation for each sequence (and alignments):
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1       2.6        13      21      28 ..     846     853 ..     846     856 .. 0.83
+   2 !   62.0   1.8   7.9e-20     4e-19       1      34 []     858     891 ..     858     891 .. 0.99
+   3 ?   -2.2   0.1       9.4        48       8      18 ..     987     997 ..     986     997 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 2.6
+                                xxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2  21 sshpnFhl 28 
+                                +s++nFh+
+                   CMIL_MAD 846 TSCENFHM 853
+                                59*****7 PP
+
+  == domain 2  score: 62.0 bits;  conditional E-value: 7.9e-20
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   1 DDPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DDPW+ke++k+LL+sL+k+L+s+p+Fh++ssplP
+                   CMIL_MAD 858 DDPWSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                8********************************9 PP
+
+  == domain 3  score: -2.2 bits;  conditional E-value: 9.4
+                                xxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   8 likkLLssLpk 18 
+                                +i +LL+ L++
+                   CMIL_MAD 987 TIQDLLQGLST 997
+                                799*****985 PP
+
+>> CTEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.6   3.4   7.9e-18     4e-17       2      34 .]     848     880 ..     847     880 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 55.6 bits;  conditional E-value: 7.9e-18
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DP+dk+li+++Ls+L++P++ hpnFh++ssp+P
+                CTEL_MADBUB 848 DPFDKKLIERFLSRLHSPIELHPNFHSMSSPMP 880
+                                9*******************************9 PP
+
+>> TRUB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.6   6.4   2.9e-16   1.5e-15       2      34 .]     807     839 ..     806     839 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 50.6 bits;  conditional E-value: 2.9e-16
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DPWd++li++LLs+L++PL+shp+++++s+++P
+                   TRUB_BUB 807 DPWDNDLISDLLSALTPPLPSHPHYITWSCNMP 839
+                                9*******************************9 PP
+
+>> FALB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.1      0.88       4.4      13      24 ..     110     121 ..     109     122 .. 0.93
+   2 !   52.0   3.4   1.1e-16   5.4e-16       3      34 .]     719     750 ..     718     750 .. 0.99
+   3 ?   -1.0   0.0       4.1        21       9      21 ..     812     824 ..     806     831 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.88
+                                xxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2  13 LssLpkPLsshp 24 
+                                L++L+ +L s++
+                   FALB_BUB 110 LQQLHRSLQSCD 121
+                                89********95 PP
+
+  == domain 2  score: 52.0 bits;  conditional E-value: 1.1e-16
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                PWdkeli+k+Ls+LpkPL+++ n+++++splP
+                   FALB_BUB 719 PWDKELISKFLSELPKPLCTCANYFEWKSPLP 750
+                                *******************************9 PP
+
+  == domain 3  score: -1.0 bits;  conditional E-value: 4.1
+                                xxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   9 ikkLLssLpkPLs 21 
+                                  +LL +L++++ 
+                   FALB_BUB 812 ATQLLERLSPSVR 824
+                                569******9986 PP
+
+>> LOCU_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   1.6   3.2e-14   1.6e-13       2      34 .]     839     871 ..     839     871 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 44.1 bits;  conditional E-value: 3.2e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DPWd++lik+LLs+Lp+PL++++nF++++ + P
+                   LOCU_BUB 839 DPWDETLIKRLLSDLPTPLHTSSNFFTWKRNTP 871
+                                9***************************98755 PP
+
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   0.0     7e-13   3.5e-12       2      34 .]     968    1000 ..     968    1000 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 39.8 bits;  conditional E-value: 7e-13
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34  
+                                 DP+d+el+ ++L++Lp+P+ss++n+h+    +P
+                LANA_MADBUB  968 DPFDEELVARFLRRLPTPVSSFHNYHAIQEEMP 1000
+                                 9*************************9888777 PP
+
+>> OBIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   0.7   1.2e-12   6.2e-12       2      34 .]     759     791 ..     758     791 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 1.2e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DP++ke++kk+L++L++PL++h+++h+    lP
+                OBIM_MADBUB 759 DPFCKEHQKKVLANLSEPLEYHDSYHCLNEDLP 791
+                                9*************************9766665 PP
+
+>> HSAP_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.4   1.5   1.9e-12   9.7e-12       3      34 .]     741     772 ..     740     772 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 38.4 bits;  conditional E-value: 1.9e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                PWd++li kLLs L+kP+ss+pn +++ + lP
+                   HSAP_BUB 741 PWDDKLIFKLLSGLSKPVSSYPNTFEWQCKLP 772
+                                ******************************99 PP
+
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.8   0.1     3e-12   1.5e-11       4      34 .]     754     784 ..     754     784 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 37.8 bits;  conditional E-value: 3e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   4 WdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                W++e++kkLL+s++++L ++p+Fhle+++lP
+                   FALB_MAD 754 WSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                ******************************9 PP
+
+>> PCAU_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.8   0.0   2.6e-11   1.3e-10       2      33 ..    1068    1099 ..    1068    1099 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 34.8 bits;  conditional E-value: 2.6e-11
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    2 DPWdkelikkLLssLpkPLsshpnFhlesspl 33  
+                                 DP+++e+i++LL+ L+kP+ss++n+     p+
+                PCAU_MADBUB 1068 DPFSPEVIERLLAGLMKPVSSYENYLIVDKPM 1099
+                                 9************************7766665 PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.6   2.4e-11   1.2e-10       5      34 .]     728     757 ..     726     757 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 2.4e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   5 dkelikkLLssLpkPLsshpnFhlessplP 34 
+                                + e++k LL++L+++L+++p+F+le++p+P
+                   ACAR_MAD 728 CSEQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                789**************************9 PP
+
+>> LAMPREY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0       6.4        33      14      26 ..     135     146 ..     132     148 .. 0.85
+   2 !   35.6   2.8   1.4e-11   7.2e-11       3      29 ..     731     757 ..     731     762 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 6.4
+                                xxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2  14 ssLpkPLsshpnF 26 
+                                ssL++P+  + n+
+             LAMPREY_MADBUB 135 SSLLEPIDLY-NY 146
+                                89*****999.77 PP
+
+  == domain 2  score: 35.6 bits;  conditional E-value: 1.4e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhle 29 
+                                PW+++li++LLs+L++PL+s pnF++ 
+             LAMPREY_MADBUB 731 PWNPCLIESLLSQLKTPLESLPNFFCS 757
+                                9************************94 PP
+
+>> MMUS_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   0.9   4.5e-11   2.3e-10       3      34 .]     716     747 ..     715     747 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 34.0 bits;  conditional E-value: 4.5e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                PWd+eli kLLs L+kP++s++n +++ s lP
+                   MMUS_BUB 716 PWDDELILKLLSGLSKPVTSYSNTFEWQSKLP 747
+                                *****************************999 PP
+
+>> ACAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.2   8.2e-11   4.2e-10       3      34 .]     710     741 ..     709     741 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 8.2e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                PWd++l+++LLs+LpkP+++++n +++ s+ P
+                   ACAR_BUB 710 PWDDSLTRQLLSALPKPINAYSNTFEWGSNVP 741
+                                *****************************998 PP
+
+>> MPOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.1   1.3e-10   6.7e-10       2      28 ..     966     992 ..     966    1002 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 32.5 bits;  conditional E-value: 1.3e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhl 28 
+                                DPWd+++ik LLs+++++Ls+++ F++
+                MPOL_MADBUB 966 DPWDESTIKGLLSRIHSSLSNYEGFFE 992
+                                9************************97 PP
+
+>> XTRO_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.9   0.8   4.9e-11   2.5e-10       4      30 ..     784     810 ..     784     814 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 33.9 bits;  conditional E-value: 4.9e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   4 WdkelikkLLssLpkPLsshpnFhles 30 
+                                Wd++li +LLs+Lpk+Lssh+n++ + 
+                   XTRO_BUB 784 WDDKLIDRLLSELPKSLSSHENYYQWH 810
+                                ***********************9885 PP
+
+>> DRER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.5       3.6        18       2       6 ..      24      28 ..      24      31 .. 0.89
+   2 !   31.9   4.9   2.1e-10   1.1e-09       2      34 .]     859     891 ..     859     891 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 3.6
+                               xxxxx RF
+  CMIL_MAD||CDII/858-891-i2  2 DPWdk 6 
+                               DPWdk
+                   DRER_BUB 24 DPWDK 28
+                               9***9 PP
+
+  == domain 2  score: 31.9 bits;  conditional E-value: 2.1e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                DPWd+eli +LLs+L +PLss pn  ++s+ lP
+                   DRER_BUB 859 DPWDEELIVSLLSNLQPPLSSQPNLTVWSCHLP 891
+                                9*******************************9 PP
+
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5   0.1   1.8e-07     9e-07       2      26 ..     896     920 ..     896     922 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 1.8e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnF 26 
+                                DPWd+ li +LL  L +PL+s++ F
+                KFLA_MADBUB 896 DPWDPALIASLLNTLNPPLTSYEGF 920
+                                9*********************876 PP
+
+>> CMIL_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   0.6   2.8e-07   1.4e-06       3      34 .]     805     836 ..     804     836 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 2.8e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlessplP 34 
+                                PWdk+ i   L++LpkP++s+++ + +  +lP
+                   CMIL_BUB 805 PWDKDIIAEHLANLPKPVNSYSSCFNWDKNLP 836
+                                ***************************99999 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.2   5.2e-07   2.6e-06       3      34 .]    1399    1430 ..    1398    1430 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 5.2e-07
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    3 PWdkelikkLLssLpkPLsshpnFhlessplP 34  
+                                 P+dk  i+ LL  +++PL s+p +++  s lP
+                SKOW_MADBUB 1399 PFDKNFISHLLTTISTPLQSYPGYFEIDSDLP 1430
+                                 9************************9999988 PP
+
+>> DHAN_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.1       1.3       6.8       3      11 ..     280     288 ..     280     292 .. 0.91
+   2 !   16.9   0.0   9.9e-06     5e-05       2      26 ..     546     570 ..     546     573 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 1.3
+                                xxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikk 11 
+                                PW+ e+ik+
+                DHAN_MADBUB 280 PWCGETIKQ 288
+                                9*******8 PP
+
+  == domain 2  score: 16.9 bits;  conditional E-value: 9.9e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnF 26 
+                                DP d++l+++LL +L +P+ss++ F
+                DHAN_MADBUB 546 DPVDESLRERLLDDLATPISSYSGF 570
+                                999*******************866 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   0.0   5.9e-06     3e-05       3      34 .]     990    1021 ..     989    1021 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 5.9e-06
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    3 PWdkelikkLLssLpkPLsshpnFhlessplP 34  
+                                 P+d+e++++LL  + ++L+sh  + +e + +P
+                BFLO_MADBUB  990 PFDPEVVSSLLTKVRSSLTSHQTYQEEEGHMP 1021
+                                 9***********************99999998 PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   1.5e-05   7.7e-05       3      26 ..     983    1006 ..     982    1007 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 1.5e-05
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    3 PWdkelikkLLssLpkPLsshpnF 26  
+                                 P+++ +++ LLs L++P+ss++ +
+                NVEC_MADBUB  983 PFSDHVVRELLSTLSSPVSSYEGY 1006
+                                 9********************766 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.3   2.6e-05   0.00013       3      28 ..     896     921 ..     895     923 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 2.6e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhl 28 
+                                P+d ++++  L +Lp+P+  hp++h+
+                CGIG_MADBUB 896 PFDVDTVRHILEQLPTPIKLHPSYHE 921
+                                9************************6 PP
+
+>> RIRR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   0.00025    0.0013       3      26 ..     682     705 ..     682     707 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 0.00025
+                                xxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnF 26 
+                                P d+++i++ L++L +PL+ +  F
+                RIRR_MADBUB 682 PIDPKVIEQILAALQPPLNHYKGF 705
+                                559****************99776 PP
+
+>> SPUR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   0.00018    0.0009       2      23 ..    1183    1204 ..    1182    1206 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 0.00018
+                                 xxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2    2 DPWdkelikkLLssLpkPLssh 23  
+                                 DP++  l+  LL+ L+kPLs +
+                SPUR_MADBUB 1183 DPFNAGLQNLLLAGLSKPLSMY 1204
+                                 9******************987 PP
+
+>> AGOS_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.1       8.1        41      13      28 ..      54      69 ..      54      70 .. 0.83
+   2 !   14.0   0.3   8.4e-05   0.00042       3      33 ..     594     624 ..     593     624 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 8.1
+                               xxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2 13 LssLpkPLsshpnFhl 28
+                               L +L  PL+ + ++ +
+                AGOS_MADBUB 54 LEELDDPLELYLEYLS 69
+                               678999*****99866 PP
+
+  == domain 2  score: 14.0 bits;  conditional E-value: 8.4e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhlesspl 33 
+                                P +k+l+ +LL sL + L ++++++  ++pl
+                AGOS_MADBUB 594 PLSKTLRQQLLESLQPDLKTYDDYYQYTQPL 624
+                                669***********************99998 PP
+
+>> NCRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   0.00033    0.0017       5      26 ..     854     875 ..     852     877 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 0.00033
+                                xxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   5 dkelikkLLssLpkPLsshpnF 26 
+                                d+ ++kk L+++++PL+s++ F
+                NCRA_MADBUB 854 DELVRKKILANVHPPLTSYEGF 875
+                                8889***************887 PP
+
+>> PPAT_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.8   0.00036    0.0018       3      28 ..     917     942 ..     917     945 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 0.00036
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   3 PWdkelikkLLssLpkPLsshpnFhl 28 
+                                PW  +l  +LL +L +PLs++  ++ 
+                   PPAT_BUB 917 PWEQSLLASLLKELDPPLSKYKGYIY 942
+                                9********************99986 PP
+
+>> MLEI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.7   0.00039     0.002       2      26 ..     931     955 ..     930     959 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 0.00039
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i2   2 DPWdkelikkLLssLpkPLsshpnF 26 
+                                DP+d +li++L +sL +PL + pnF
+                MLEI_MADBUB 931 DPYDLDLIERLVQSLDPPLFYRPNF 955
+                                9***********************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        70  (0.460526); expected 3.0 (0.02)
+Passed bias filter:                       67  (0.440789); expected 3.0 (0.02)
+Passed Vit filter:                        48  (0.315789); expected 0.2 (0.001)
+Passed Fwd filter:                        30  (0.197368); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):              30  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 123.37
+
+@@ New targets included:   14
+@@ New alignment includes: 30 subseqs (was 16), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  4
+@@ Included in MSA:        30 subsequences (query + 29 subseqs from 29 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      2e-16   53.2   1.9      2e-16   53.2   1.9    3.1  2  CMIL_MAD        
+    2.8e-16   52.7   1.7    9.4e-16   51.1   1.7    1.9  1  HSAP_BUB        
+    9.4e-16   51.1   7.9    2.3e-15   49.8   3.1    3.4  3  FALB_BUB        
+    1.3e-15   50.6   1.6    3.9e-15   49.1   1.6    1.8  1  MMUS_BUB        
+    1.6e-15   50.4   1.6    6.4e-15   48.4   1.6    2.1  1  LOCU_BUB        
+    4.6e-15   48.8   1.6    4.6e-15   48.8   1.6    2.4  2  CTEL_MADBUB     
+    4.8e-15   48.8   5.8    1.6e-14   47.1   5.8    2.1  1  TRUB_BUB        
+    5.7e-15   48.5   0.1    7.5e-14   45.0   0.0    2.6  2  LANA_MADBUB     
+      2e-14   46.8   0.4    5.3e-14   45.4   0.4    1.8  1  CMIL_BUB        
+    2.5e-14   46.5   5.4    2.5e-14   46.5   5.4    2.8  2  DRER_BUB        
+    2.7e-14   46.4   0.2      1e-13   44.6   0.2    2.0  1  ACAR_BUB        
+    1.3e-13   44.2   0.0    3.6e-13   42.8   0.0    1.8  1  PCAU_MADBUB     
+    1.6e-13   43.9   0.4    4.6e-13   42.4   0.4    1.8  1  SKOW_MADBUB     
+      3e-13   43.1   1.0    8.4e-13   41.6   1.0    1.8  1  OBIM_MADBUB     
+      6e-12   38.9   1.3      8e-11   35.3   2.5    2.4  1  LAMPREY_MADBUB  
+      1e-11   38.2   0.0    3.1e-11   36.6   0.0    1.8  1  KFLA_MADBUB     
+    1.1e-11   38.1   1.1    1.1e-11   38.1   1.1    2.3  1  XTRO_BUB        
+    1.2e-11   37.9   0.2    3.8e-11   36.3   0.2    1.9  1  MPOL_MADBUB     
+    7.6e-11   35.4   0.1    1.9e-10   34.1   0.1    1.7  1  BFLO_MADBUB     
+    1.5e-10   34.4   1.2      4e-09   29.9   0.1    3.2  3  DHAN_MADBUB     
+    3.5e-09   30.0   0.6    1.1e-08   28.4   0.6    2.0  1  ACAR_MAD        
+    3.6e-09   30.0   0.8    9.1e-09   28.7   0.0    2.1  1  RIRR_MADBUB     
+    4.3e-09   29.8   1.5    4.3e-09   29.8   1.5    2.9  2  AGOS_MADBUB     
+    4.6e-09   29.6   0.1    1.4e-08   28.2   0.1    1.8  1  NVEC_MADBUB     
+    1.2e-08   28.3   0.0    3.7e-08   26.8   0.0    1.8  1  NCRA_MADBUB     
+    1.4e-08   28.1   0.2      5e-08   26.3   0.2    2.0  1  CGIG_MADBUB     
+    1.8e-08   27.7   0.1    6.1e-08   26.1   0.1    2.0  1  FALB_MAD        
+    2.1e-08   27.6   1.4    2.1e-08   27.6   1.4    2.1  1  PPAT_BUB        
+    3.7e-08   26.7   0.0    1.2e-07   25.2   0.0    1.9  1  SPUR_MADBUB     
++   6.7e-07   22.7   5.3    6.9e-07   22.7   1.0    2.8  2  CGLA_BUB        
++     2e-06   21.2   5.8    2.2e-06   21.1   1.0    3.2  2  KLAC_MADBUB     
++   8.4e-06   19.2   0.3    3.3e-05   17.3   0.3    2.0  1  CNEO_MADBUB     
++   8.5e-06   19.2   0.5    3.8e-05   17.1   0.5    2.2  1  SCER_BUB        
++   2.4e-05   17.7   0.2    9.5e-05   15.8   0.1    2.1  1  ATRI_BUB_A      
++   4.7e-05   16.8   0.0    0.00012   15.5   0.0    1.7  1  LSAL_MADBUB     
++   5.5e-05   16.6   0.0    0.00012   15.6   0.0    1.5  1  OSAT_BUB_A      
++   0.00018   15.0   2.1    0.00025   14.5   0.2    2.4  1  MLAR_BUB        
++    0.0002   14.8   0.1    0.00065   13.2   0.1    1.9  1  PCAR_MADBUB     
+  ------ inclusion threshold ------
+     0.0012   12.3   0.1     0.0078    9.7   0.1    2.3  1  ACYR_MADBUB     
+
+
+Domain annotation for each sequence (and alignments):
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.2   1.9   5.2e-17     2e-16       1      34 []     858     891 ..     858     891 .. 0.99
+   2 ?   -1.5   0.0       6.7        26       8      18 ..     987     997 ..     985     997 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 53.2 bits;  conditional E-value: 5.2e-17
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   1 DDPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DDPw+ke++k+LL+sL+k+L+s+p+++++sspLP
+                   CMIL_MAD 858 DDPWSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                7********************************9 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 6.7
+                                xxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   8 likkLLssLpk 18 
+                                +i+ LL++L++
+                   CMIL_MAD 987 TIQDLLQGLST 997
+                                799******97 PP
+
+>> HSAP_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.1   1.7   2.4e-16   9.4e-16       3      34 .]     741     772 ..     741     772 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 51.1 bits;  conditional E-value: 2.4e-16
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                PwD++li kLLs+L+kP+ssypn+few+++LP
+                   HSAP_BUB 741 PWDDKLIFKLLSGLSKPVSSYPNTFEWQCKLP 772
+                                9******************************9 PP
+
+>> FALB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0       4.4        17      13      24 ..     110     121 ..     108     121 .. 0.91
+   2 !   49.8   3.1   5.8e-16   2.3e-15       3      34 .]     719     750 ..     719     750 .. 1.00
+   3 ?    1.1   0.0         1       3.9      10      20 ..     813     823 ..     806     830 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 4.4
+                                xxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3  13 LssLpkPLssyp 24 
+                                L++L+ +L+s++
+                   FALB_BUB 110 LQQLHRSLQSCD 121
+                                89********95 PP
+
+  == domain 2  score: 49.8 bits;  conditional E-value: 5.8e-16
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                PwDkeli+k+Ls+LpkPL+++ nyfew+spLP
+                   FALB_BUB 719 PWDKELISKFLSELPKPLCTCANYFEWKSPLP 750
+                                9******************************9 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 1
+                                xxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3  10 kkLLssLpkPL 20 
+                                 +LL++L++++
+                   FALB_BUB 813 TQLLERLSPSV 823
+                                69*******98 PP
+
+>> MMUS_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.1   1.6     1e-15   3.9e-15       3      34 .]     716     747 ..     716     747 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 49.1 bits;  conditional E-value: 1e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                PwD+eli kLLs+L+kP++sy+n+few+s+LP
+                   MMUS_BUB 716 PWDDELILKLLSGLSKPVTSYSNTFEWQSKLP 747
+                                9******************************9 PP
+
+>> LOCU_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.4   1.6   1.6e-15   6.4e-15       2      34 .]     839     871 ..     839     871 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 48.4 bits;  conditional E-value: 1.6e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DPwD++lik+LLs+Lp+PL++ +n+f+w+++ P
+                   LOCU_BUB 839 DPWDETLIKRLLSDLPTPLHTSSNFFTWKRNTP 871
+                                9******************************99 PP
+
+>> CTEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.8   1.6   1.2e-15   4.6e-15       2      34 .]     848     880 ..     847     880 .. 0.99
+   2 ?   -1.2   0.1       5.3        21      14      22 ..     959     967 ..     959     968 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 48.8 bits;  conditional E-value: 1.2e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DP+Dk+li+++Ls+L++P++ +pn++ +ssp+P
+                CTEL_MADBUB 848 DPFDKKLIERFLSRLHSPIELHPNFHSMSSPMP 880
+                                9*******************************9 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 5.3
+                                xxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3  14 ssLpkPLss 22 
+                                ++Lp+PL++
+                CTEL_MADBUB 959 AKLPPPLNM 967
+                                57*****97 PP
+
+>> TRUB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.1   5.8   4.2e-15   1.6e-14       2      34 .]     807     839 ..     806     839 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 47.1 bits;  conditional E-value: 4.2e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DPwD++li+ LLs+L +PL s+p+y++ws+++P
+                   TRUB_BUB 807 DPWDNDLISDLLSALTPPLPSHPHYITWSCNMP 839
+                                9*******************************9 PP
+
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.0       1.8       6.9      19      33 ..     366     380 ..     364     380 .. 0.92
+   2 !   45.0   0.0   1.9e-14   7.5e-14       2      34 .]     968    1000 ..     968    1000 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 1.8
+                                xxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3  19 PLssypnyfewsspL 33 
+                                PL+s + +++++ ++
+                LANA_MADBUB 366 PLQSISQFHQEDPNM 380
+                                9*********99887 PP
+
+  == domain 2  score: 45.0 bits;  conditional E-value: 1.9e-14
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34  
+                                 DP+D+el++++L +Lp+P+ss++ny+ +++++P
+                LANA_MADBUB  968 DPFDEELVARFLRRLPTPVSSFHNYHAIQEEMP 1000
+                                 9*******************************9 PP
+
+>> CMIL_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.4   0.4   1.4e-14   5.3e-14       3      34 .]     805     836 ..     805     836 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 45.4 bits;  conditional E-value: 1.4e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                PwDk+ i+++L++LpkP++sy+++f+w+++LP
+                   CMIL_BUB 805 PWDKDIIAEHLANLPKPVNSYSSCFNWDKNLP 836
+                                9******************************9 PP
+
+>> DRER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   1.0       9.7        38       2       6 ..      24      28 ..      24      30 .. 0.90
+   2 !   46.5   5.4   6.5e-15   2.5e-14       2      34 .]     859     891 ..     859     891 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 9.7
+                               xxxxx RF
+  CMIL_MAD||CDII/858-891-i3  2 DPwDk 6 
+                               DPwDk
+                   DRER_BUB 24 DPWDK 28
+                               9***8 PP
+
+  == domain 2  score: 46.5 bits;  conditional E-value: 6.5e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DPwD+eli +LLs+L++PLss pn  +ws++LP
+                   DRER_BUB 859 DPWDEELIVSLLSNLQPPLSSQPNLTVWSCHLP 891
+                                9*******************************9 PP
+
+>> ACAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.6   0.2   2.6e-14     1e-13       3      34 .]     710     741 ..     710     741 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 44.6 bits;  conditional E-value: 2.6e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                PwD++l ++LLs+LpkP++ y+n+few s+ P
+                   ACAR_BUB 710 PWDDSLTRQLLSALPKPINAYSNTFEWGSNVP 741
+                                9*****************************99 PP
+
+>> PCAU_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.0   9.4e-14   3.6e-13       2      33 ..    1068    1099 ..    1068    1099 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 42.8 bits;  conditional E-value: 9.4e-14
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    2 DPwDkelikkLLssLpkPLssypnyfewsspL 33  
+                                 DP+++e+i++LL++L+kP+ssy+ny  +++p+
+                PCAU_MADBUB 1068 DPFSPEVIERLLAGLMKPVSSYENYLIVDKPM 1099
+                                 9*****************************99 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.4   1.2e-13   4.6e-13       3      34 .]    1399    1430 ..    1399    1430 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 42.4 bits;  conditional E-value: 1.2e-13
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    3 PwDkelikkLLssLpkPLssypnyfewsspLP 34  
+                                 P+Dk+ i++LL+++++PL+syp+yfe++s+LP
+                SKOW_MADBUB 1399 PFDKNFISHLLTTISTPLQSYPGYFEIDSDLP 1430
+                                 9******************************9 PP
+
+>> OBIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.6   1.0   2.2e-13   8.4e-13       2      34 .]     759     791 ..     759     791 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 41.6 bits;  conditional E-value: 2.2e-13
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                DP++ke++kk L++L++PL+++++y++ +++LP
+                OBIM_MADBUB 759 DPFCKEHQKKVLANLSEPLEYHDSYHCLNEDLP 791
+                                9*******************************9 PP
+
+>> LAMPREY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   2.5     2e-11     8e-11       3      31 ..     731     759 ..     731     762 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 35.3 bits;  conditional E-value: 2e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewss 31 
+                                Pw+++li++LLs+L +PL+s pn+f+ ++
+             LAMPREY_MADBUB 731 PWNPCLIESLLSQLKTPLESLPNFFCSNE 759
+                                9*************************775 PP
+
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.0   7.9e-12   3.1e-11       2      27 ..     896     921 ..     896     925 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 36.6 bits;  conditional E-value: 7.9e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyf 27 
+                                DPwD+ li++LL +L +PL+sy+++ 
+                KFLA_MADBUB 896 DPWDPALIASLLNTLNPPLTSYEGFV 921
+                                9************************5 PP
+
+>> XTRO_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   1.1   2.8e-12   1.1e-11       4      31 ..     784     811 ..     784     814 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 38.1 bits;  conditional E-value: 2.8e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   4 wDkelikkLLssLpkPLssypnyfewss 31 
+                                wD++li +LLs+Lpk+Lss++ny++w+ 
+                   XTRO_BUB 784 WDDKLIDRLLSELPKSLSSHENYYQWHT 811
+                                **************************86 PP
+
+>> MPOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.2   9.7e-12   3.8e-11       2      29 ..     966     993 ..     966    1002 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 36.3 bits;  conditional E-value: 9.7e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfew 29 
+                                DPwD+++ik LLs+++++Ls y+++fe 
+                MPOL_MADBUB 966 DPWDESTIKGLLSRIHSSLSNYEGFFES 993
+                                9*************************95 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.1   0.1   4.9e-11   1.9e-10       3      34 .]     990    1021 ..     990    1021 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 34.1 bits;  conditional E-value: 4.9e-11
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    3 PwDkelikkLLssLpkPLssypnyfewsspLP 34  
+                                 P+D+e++++LL+++ ++L+s++ y+e+++++P
+                BFLO_MADBUB  990 PFDPEVVSSLLTKVRSSLTSHQTYQEEEGHMP 1021
+                                 9******************************9 PP
+
+>> DHAN_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0       1.6       6.4      15      31 ..      63      79 ..      62      81 .. 0.87
+   2 ?    0.1   0.0         2       7.9       3      11 ..     280     288 ..     280     292 .. 0.87
+   3 !   29.9   0.1     1e-09     4e-09       2      26 ..     546     570 ..     546     573 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 1.6
+                               xxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3 15 sLpkPLssypnyfewss 31
+                               +L  PL+ + +y++w+ 
+                DHAN_MADBUB 63 ELDDPLQVFLDYINWTH 79
+                               7999***********86 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 2
+                                xxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikk 11 
+                                Pw+ e+ik+
+                DHAN_MADBUB 280 PWCGETIKQ 288
+                                9*******9 PP
+
+  == domain 3  score: 29.9 bits;  conditional E-value: 1e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypny 26 
+                                DP D++l+++LL +L +P+ssy+++
+                DHAN_MADBUB 546 DPVDESLRERLLDDLATPISSYSGF 570
+                                9************************ PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.4   0.6   2.9e-09   1.1e-08       3      34 .]     726     757 ..     726     757 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 28.4 bits;  conditional E-value: 2.9e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                P + e++k LL+ L ++L+++p+++++ +p+P
+                   ACAR_MAD 726 PVCSEQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                89*****************************9 PP
+
+>> RIRR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.7   0.0   2.3e-09   9.1e-09       3      27 ..     682     706 ..     682     709 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 28.7 bits;  conditional E-value: 2.3e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyf 27 
+                                P D+++i+++L++L++PL++y++++
+                RIRR_MADBUB 682 PIDPKVIEQILAALQPPLNHYKGFY 706
+                                99**********************6 PP
+
+>> AGOS_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.5       1.1       4.3      13      29 ..      54      70 ..      54      72 .. 0.92
+   2 !   29.8   1.5   1.1e-09   4.3e-09       3      33 ..     594     624 ..     594     624 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 1.1
+                               xxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3 13 LssLpkPLssypnyfew 29
+                               L++L  PL+ y +y  w
+                AGOS_MADBUB 54 LEELDDPLELYLEYLSW 70
+                               899*********99887 PP
+
+  == domain 2  score: 29.8 bits;  conditional E-value: 1.1e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspL 33 
+                                P +k+l+++LL+sL++ L++y++y+++++pL
+                AGOS_MADBUB 594 PLSKTLRQQLLESLQPDLKTYDDYYQYTQPL 624
+                                99***************************98 PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.2   0.1   3.5e-09   1.4e-08       3      26 ..     983    1006 ..     983    1009 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 28.2 bits;  conditional E-value: 3.5e-09
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    3 PwDkelikkLLssLpkPLssypny 26  
+                                 P++++++++LLs+L++P+ssy++y
+                NVEC_MADBUB  983 PFSDHVVRELLSTLSSPVSSYEGY 1006
+                                 9*********************** PP
+
+>> NCRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.0   9.4e-09   3.7e-08       3      27 ..     852     876 ..     852     878 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 9.4e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyf 27 
+                                P D+ ++kk+L+++++PL+sy++++
+                NCRA_MADBUB 852 PVDELVRKKILANVHPPLTSYEGFY 876
+                                99**********************6 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.2   1.3e-08     5e-08       3      28 ..     896     921 ..     896     924 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 1.3e-08
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfe 28 
+                                P+D ++++++L++Lp+P++ +p+y+e
+                CGIG_MADBUB 896 PFDVDTVRHILEQLPTPIKLHPSYHE 921
+                                9************************9 PP
+
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.1   0.1   1.6e-08   6.1e-08       4      34 .]     754     784 ..     754     784 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 26.1 bits;  conditional E-value: 1.6e-08
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   4 wDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                w++e++kkLL+s+ ++L   p+++++++ LP
+                   FALB_MAD 754 WSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                ******************************9 PP
+
+>> PPAT_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.6   1.4   5.3e-09   2.1e-08       3      31 ..     917     945 ..     917     946 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 27.6 bits;  conditional E-value: 5.3e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewss 31 
+                                Pw ++l ++LL++L +PLs+y++y++ s+
+                   PPAT_BUB 917 PWEQSLLASLLKELDPPLSKYKGYIYSSK 945
+                                9***********************99775 PP
+
+>> SPUR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   0.0     3e-08   1.2e-07       2      34 .]    1183    1215 ..    1182    1215 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 3e-08
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3    2 DPwDkelikkLLssLpkPLssypnyfewsspLP 34  
+                                 DP++  l++ LL++L+kPLs+y++ ++ +  +P
+                SPUR_MADBUB 1183 DPFNAGLQNLLLAGLSKPLSMYKGIYQHDHMMP 1215
+                                 9***********************988777776 PP
+
+>> CGLA_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.2       1.4       5.6      13      27 ..      32      46 ..      32      49 .. 0.90
+   2 !   22.7   1.0   1.8e-07   6.9e-07       5      33 ..     561     589 ..     559     589 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 1.4
+                               xxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3 13 LssLpkPLssypnyf 27
+                               L++L  PL+ y +y+
+                   CGLA_BUB 32 LENLDDPLQLYLEYI 46
+                               89*********9996 PP
+
+  == domain 2  score: 22.7 bits;  conditional E-value: 1.8e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   5 DkelikkLLssLpkPLssypnyfewsspL 33 
+                                +k+ + +LL+++++PLs+y+ ++ ++++L
+                   CGLA_BUB 561 SKKFRLSLLTNIQPPLSTYSTFYSYNQNL 589
+                                8999***********************98 PP
+
+>> KLAC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0       1.3       5.1      13      29 ..      54      70 ..      50      72 .. 0.92
+   2 !   21.1   1.0   5.7e-07   2.2e-06       3      33 ..     598     628 ..     598     628 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 1.3
+                               xxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3 13 LssLpkPLssypnyfew 29
+                               L +L  PL+ + +y++w
+                KLAC_MADBUB 54 LDELDDPLQLFLEYINW 70
+                               899***********999 PP
+
+  == domain 2  score: 21.1 bits;  conditional E-value: 5.7e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspL 33 
+                                P + el+++LL+sL + L syp y+e+s+ L
+                KLAC_MADBUB 598 PLSLELRRELLESLDPALASYPTYYEYSQQL 628
+                                7888***********************9976 PP
+
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   0.3   8.4e-06   3.3e-05       2      26 ..     872     896 ..     872     898 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 8.4e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypny 26 
+                                DP ++ +i+ LLs++ +PLss p+ 
+                CNEO_MADBUB 872 DPISEQTISALLSAIDPPLSSLPGL 896
+                                9*********************986 PP
+
+>> SCER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.5   9.6e-06   3.8e-05       3      33 ..     644     674 ..     644     674 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 9.6e-06
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspL 33 
+                                P +++l++k+Ls++++PL  y  +++++++L
+                   SCER_BUB 644 PLSNNLRAKFLSEISPPLFQYNTFYNYNQEL 674
+                                899***********************99987 PP
+
+>> ATRI_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.1   2.4e-05   9.5e-05       3      28 ..     168     193 ..     168     197 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 2.4e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfe 28 
+                                Pw++ +i++LL++L + +++y +yf 
+                 ATRI_BUB_A 168 PWSDYTINSLLEKLNPFIKKYNGYFR 193
+                                9***********************96 PP
+
+>> LSAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   3.2e-05   0.00012       3      34 .]     946     977 ..     946     977 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 3.2e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfewsspLP 34 
+                                P+++++++ +L sL +PL+  +++ + ++ +P
+                LSAL_MADBUB 946 PFNEKVQRDILRSLKTPLTERHGFSYSEELMP 977
+                                9******************9999977776666 PP
+
+>> OSAT_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0     3e-05   0.00012       2      28 ..     351     377 ..     351     380 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 3e-05
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   2 DPwDkelikkLLssLpkPLssypnyfe 28 
+                                DPw++++ + LL+++   L+++ +y+ 
+                 OSAT_BUB_A 351 DPWSESTMNNLLENINVDLKKFAGYHK 377
+                                9************************96 PP
+
+>> MLAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.2   6.3e-05   0.00025       6      26 ..     905     925 ..     902     929 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 6.3e-05
+                                xxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   6 kelikkLLssLpkPLssypny 26 
+                                +e  + LL++L +PLs yp++
+                   MLAR_BUB 905 EEILSVLLEGLDPPLSAYPGF 925
+                                677888**************9 PP
+
+>> PCAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   0.00017   0.00065       3      28 ..     595     620 ..     595     624 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00017
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpkPLssypnyfe 28 
+                                P   + +  +Ls+L +P++sy++ ++
+                PCAR_MADBUB 595 PLERSIRDTILSNLNPPIHSYDGLYN 620
+                                566678899*************9876 PP
+
+>> ACYR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.1     0.002    0.0078       3      34 .]     819     852 ..     819     852 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 0.002
+                                xxxxxxxxxxxxxxxx.xxxxx.xxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i3   3 PwDkelikkLLssLpk.PLssy.pnyfewsspLP 34 
+                                P+D+eli kLL+++ k P +++ ++y+e++s+LP
+                ACYR_MADBUB 819 PFDDELITKLLQRVIKfPNEHHkSGYIEQESDLP 852
+                                9***********9876354444346777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        73  (0.480263); expected 3.0 (0.02)
+Passed bias filter:                       69  (0.453947); expected 3.0 (0.02)
+Passed Vit filter:                        54  (0.355263); expected 0.2 (0.001)
+Passed Fwd filter:                        39  (0.256579); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):              39  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 98.69
+
+@@ New targets included:   9
+@@ New alignment includes: 39 subseqs (was 30), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  5
+@@ Included in MSA:        39 subsequences (query + 38 subseqs from 38 targets)
+@@ Model size:             34 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      8e-16   51.3   1.5      8e-16   51.3   1.5    3.1  2  CMIL_MAD        
+    1.6e-15   50.3   4.5    1.7e-14   47.0   2.4    3.0  2  FALB_BUB        
+    2.2e-15   49.9   1.3    5.8e-15   48.5   1.3    1.8  1  HSAP_BUB        
+    8.3e-15   48.0   1.5    2.5e-14   46.5   1.5    1.9  1  MMUS_BUB        
+    1.8e-14   46.9   5.3    6.6e-14   45.1   5.3    2.0  1  TRUB_BUB        
+    2.8e-14   46.3   1.5    9.4e-14   44.6   1.5    2.0  1  LOCU_BUB        
+    4.3e-14   45.7   4.9    4.3e-14   45.7   4.9    2.6  1  DRER_BUB        
+    6.9e-14   45.1   0.1    4.3e-13   42.5   0.0    2.3  2  LANA_MADBUB     
+    9.1e-14   44.7   1.8    9.1e-14   44.7   1.8    2.4  2  CTEL_MADBUB     
+    1.1e-13   44.4   0.4    2.7e-13   43.2   0.4    1.7  1  CMIL_BUB        
+    2.3e-13   43.4   0.2      8e-13   41.7   0.2    2.0  1  ACAR_BUB        
+    4.5e-13   42.4   0.5    1.4e-12   40.9   0.5    1.9  1  SKOW_MADBUB     
+    1.1e-12   41.2   1.2    4.4e-12   39.3   1.2    2.2  1  XTRO_BUB        
+    1.7e-12   40.6   0.0    4.6e-12   39.2   0.0    1.8  1  PCAU_MADBUB     
+    2.1e-12   40.3   0.8      6e-12   38.8   0.8    1.8  1  OBIM_MADBUB     
+    5.2e-12   39.0   0.1    1.4e-11   37.7   0.1    1.7  1  KFLA_MADBUB     
+    5.4e-12   39.0   0.0    1.9e-11   37.3   0.0    1.9  1  SPUR_MADBUB     
+    5.5e-12   39.0   0.7    9.8e-11   35.0   2.4    2.3  1  LAMPREY_MADBUB  
+    6.7e-12   38.7   0.1    2.2e-11   37.1   0.1    1.9  1  MPOL_MADBUB     
+    8.6e-11   35.1   0.5    2.1e-09   30.7   0.0    3.1  3  DHAN_MADBUB     
+      1e-10   34.9   2.4    6.4e-10   32.4   1.2    2.9  2  KLAC_MADBUB     
+    3.3e-10   33.3   0.1      1e-09   31.7   0.1    1.9  1  ATRI_BUB_A      
+    3.5e-10   33.2   1.5    3.5e-10   33.2   1.5    2.7  2  AGOS_MADBUB     
+    5.2e-10   32.7   0.0    1.5e-09   31.2   0.0    1.8  1  NCRA_MADBUB     
+    5.7e-10   32.5   1.0    2.7e-09   30.4   1.0    2.2  1  SCER_BUB        
+    7.7e-10   32.1   0.1    1.8e-09   30.9   0.1    1.7  1  BFLO_MADBUB     
+      9e-10   31.9   0.0    1.9e-09   30.9   0.0    1.5  1  OSAT_BUB_A      
+    9.9e-10   31.8   0.0    3.5e-09   30.0   0.0    2.0  1  RIRR_MADBUB     
+    1.1e-09   31.6   1.7    4.4e-09   29.7   1.7    2.1  1  PPAT_BUB        
+    3.9e-09   29.8   1.6    3.9e-09   29.8   1.6    2.8  2  CGLA_BUB        
+      5e-09   29.5   0.0    1.3e-08   28.2   0.0    1.7  1  LSAL_MADBUB     
+    7.8e-09   28.9   0.1    2.1e-08   27.5   0.1    1.8  1  NVEC_MADBUB     
+      1e-08   28.5   0.3    3.4e-08   26.9   0.3    2.0  1  ACAR_MAD        
+    6.9e-08   25.9   1.1    1.7e-07   24.6   0.2    2.1  1  CGIG_MADBUB     
+    9.8e-08   25.4   0.2    3.6e-07   23.6   0.2    2.0  1  PCAR_MADBUB     
+    1.5e-07   24.8   0.4    1.5e-07   24.8   0.4    2.1  1  CNEO_MADBUB     
+      2e-07   24.3   0.1    6.1e-07   22.8   0.1    1.9  1  FALB_MAD        
+    1.2e-05   18.7   2.3    1.4e-05   18.5   0.2    2.4  1  MLAR_BUB        
++   0.00057   13.3   0.0     0.0021   11.5   0.0    2.0  1  ACOE_BUB_A      
++   0.00094   12.6   0.3     0.0029   11.0   0.3    1.9  1  SMIM_MADBUB     
++   0.00095   12.6   0.0     0.0035   10.8   0.0    2.1  1  ATHA_BUB_A      
+  ------ inclusion threshold ------
+       0.03    7.8   8.6      0.001   12.5   1.5    2.3  1  MLEI_MADBUB     
+
+
+Domain annotation for each sequence (and alignments):
+>> CMIL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.3   1.5   2.2e-16     8e-16       1      34 []     858     891 ..     858     891 .. 0.99
+   2 ?   -1.2   0.0       5.6        20       7      18 ..     986     997 ..     985     997 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 51.3 bits;  conditional E-value: 2.2e-16
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   1 DDPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DDPw++e++k+LL++L+++L+s+p+f+++sspLP
+                   CMIL_MAD 858 DDPWSKEVQKQLLGSLHKTLNSFPEFHVQSSPLP 891
+                                7********************************9 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 5.6
+                                xxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   7 elikkLLsnLsp 18 
+                                ++i +LL++Ls+
+                   CMIL_MAD 986 KTIQDLLQGLST 997
+                                689*******96 PP
+
+>> FALB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   2.4   4.8e-15   1.7e-14       3      34 .]     719     750 ..     719     750 .. 1.00
+   2 ?    1.8   0.0      0.63       2.3       3      20 ..     806     823 ..     806     831 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 47.0 bits;  conditional E-value: 4.8e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                Pwd+eli+k+Ls+L++PL+++ ++few+spLP
+                   FALB_BUB 719 PWDKELISKFLSELPKPLCTCANYFEWKSPLP 750
+                                9******************************9 PP
+
+  == domain 2  score: 1.8 bits;  conditional E-value: 0.63
+                                xxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPL 20 
+                                Pw+  +  +LL++Lsp++
+                   FALB_BUB 806 PWEFYIATQLLERLSPSV 823
+                                777777789*******97 PP
+
+>> HSAP_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.5   1.3   1.6e-15   5.8e-15       3      34 .]     741     772 ..     741     772 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 48.5 bits;  conditional E-value: 1.6e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                Pwd++li kLLs+Ls+P+ssyp++few+++LP
+                   HSAP_BUB 741 PWDDKLIFKLLSGLSKPVSSYPNTFEWQCKLP 772
+                                9******************************9 PP
+
+>> MMUS_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.5   1.5   6.9e-15   2.5e-14       3      34 .]     716     747 ..     716     747 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 46.5 bits;  conditional E-value: 6.9e-15
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                Pwd+eli kLLs+Ls+P++sy+++few+s+LP
+                   MMUS_BUB 716 PWDDELILKLLSGLSKPVTSYSNTFEWQSKLP 747
+                                9******************************9 PP
+
+>> TRUB_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.1   5.3   1.8e-14   6.6e-14       2      34 .]     807     839 ..     807     839 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 45.1 bits;  conditional E-value: 1.8e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DPwd++li++LLs+L pPL s+p++++ws+++P
+                   TRUB_BUB 807 DPWDNDLISDLLSALTPPLPSHPHYITWSCNMP 839
+                                9*******************************9 PP
+
+>> LOCU_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.6   1.5   2.6e-14   9.4e-14       2      34 .]     839     871 ..     839     871 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 44.6 bits;  conditional E-value: 2.6e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DPwde+lik+LLs+L++PL++ ++ff+w+ + P
+                   LOCU_BUB 839 DPWDETLIKRLLSDLPTPLHTSSNFFTWKRNTP 871
+                                9*****************************998 PP
+
+>> DRER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.7   4.9   1.2e-14   4.3e-14       2      34 .]     859     891 ..     859     891 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 45.7 bits;  conditional E-value: 1.2e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DPwdeeli +LLsnL+pPLss p+  +ws++LP
+                   DRER_BUB 859 DPWDEELIVSLLSNLQPPLSSQPNLTVWSCHLP 891
+                                9*******************************9 PP
+
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.1       4.9        18      19      33 ..     366     380 ..     365     380 .. 0.92
+   2 !   42.5   0.0   1.2e-13   4.3e-13       2      34 .]     968    1000 ..     968    1000 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 4.9
+                                xxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4  19 PLssypgffewsspL 33 
+                                PL s + f++++ ++
+                LANA_MADBUB 366 PLQSISQFHQEDPNM 380
+                                9*********99887 PP
+
+  == domain 2  score: 42.5 bits;  conditional E-value: 1.2e-13
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    2 DPwdeelikkLLsnLspPLssypgffewsspLP 34  
+                                 DP+deel++++L++L++P+ss+++++ +++++P
+                LANA_MADBUB  968 DPFDEELVARFLRRLPTPVSSFHNYHAIQEEMP 1000
+                                 9*******************************9 PP
+
+>> CTEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.7   1.8   2.5e-14   9.1e-14       2      34 .]     848     880 ..     847     880 .. 0.99
+   2 ?   -1.3   0.1       5.9        21      15      22 ..     960     967 ..     959     968 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 44.7 bits;  conditional E-value: 2.5e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DP+d++li+++Ls+L++P++ +p+f+ +ssp+P
+                CTEL_MADBUB 848 DPFDKKLIERFLSRLHSPIELHPNFHSMSSPMP 880
+                                9*******************************9 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 5.9
+                                xxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4  15 nLspPLss 22 
+                                +L+pPL++
+                CTEL_MADBUB 960 KLPPPLNM 967
+                                7*****96 PP
+
+>> CMIL_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.2   0.4   7.4e-14   2.7e-13       3      34 .]     805     836 ..     805     836 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 43.2 bits;  conditional E-value: 7.4e-14
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                Pwd+++i+++L+nL++P++sy+++f+w+++LP
+                   CMIL_BUB 805 PWDKDIIAEHLANLPKPVNSYSSCFNWDKNLP 836
+                                9******************************9 PP
+
+>> ACAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.2   2.2e-13     8e-13       3      34 .]     710     741 ..     710     741 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 41.7 bits;  conditional E-value: 2.2e-13
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                Pwd++l ++LLs+L++P+++y+++few s+ P
+                   ACAR_BUB 710 PWDDSLTRQLLSALPKPINAYSNTFEWGSNVP 741
+                                9*****************************98 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   0.5   3.9e-13   1.4e-12       3      34 .]    1399    1430 ..    1399    1430 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 40.9 bits;  conditional E-value: 3.9e-13
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    3 PwdeelikkLLsnLspPLssypgffewsspLP 34  
+                                 P+d+++i++LL+++s+PL sypg+fe++s+LP
+                SKOW_MADBUB 1399 PFDKNFISHLLTTISTPLQSYPGYFEIDSDLP 1430
+                                 9******************************9 PP
+
+>> XTRO_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   1.2   1.2e-12   4.4e-12       4      34 .]     784     814 ..     784     814 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 39.3 bits;  conditional E-value: 1.2e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   4 wdeelikkLLsnLspPLssypgffewsspLP 34 
+                                wd++li +LLs+L+++Lss++++++w+ + P
+                   XTRO_BUB 784 WDDKLIDRLLSELPKSLSSHENYYQWHTMVP 814
+                                ***************************9988 PP
+
+>> PCAU_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.0   1.3e-12   4.6e-12       2      33 ..    1068    1099 ..    1068    1099 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 39.2 bits;  conditional E-value: 1.3e-12
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    2 DPwdeelikkLLsnLspPLssypgffewsspL 33  
+                                 DP+++e+i++LL++L +P+ssy+++   ++p+
+                PCAU_MADBUB 1068 DPFSPEVIERLLAGLMKPVSSYENYLIVDKPM 1099
+                                 9**************************99999 PP
+
+>> OBIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   0.8   1.7e-12     6e-12       2      34 .]     759     791 ..     759     791 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 38.8 bits;  conditional E-value: 1.7e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                DP+++e++kk L+nLs+PL++++++++ +++LP
+                OBIM_MADBUB 759 DPFCKEHQKKVLANLSEPLEYHDSYHCLNEDLP 791
+                                9*******************************9 PP
+
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.1   3.8e-12   1.4e-11       2      28 ..     896     922 ..     896     925 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 37.7 bits;  conditional E-value: 3.8e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffe 28 
+                                DPwd+ li++LL +L+pPL+sy+gf +
+                KFLA_MADBUB 896 DPWDPALIASLLNTLNPPLTSYEGFVN 922
+                                9************************86 PP
+
+>> SPUR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   5.2e-12   1.9e-11       2      34 .]    1183    1215 ..    1183    1215 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 5.2e-12
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    2 DPwdeelikkLLsnLspPLssypgffewsspLP 34  
+                                 DP++  l++ LL++Ls+PLs+y+g +++++++P
+                SPUR_MADBUB 1183 DPFNAGLQNLLLAGLSKPLSMYKGIYQHDHMMP 1215
+                                 9*******************************9 PP
+
+>> LAMPREY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.0   2.4   2.7e-11   9.8e-11       3      31 ..     731     759 ..     731     762 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 35.0 bits;  conditional E-value: 2.7e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewss 31 
+                                Pw+++li++LLs+L++PL+s p+ff++++
+             LAMPREY_MADBUB 731 PWNPCLIESLLSQLKTPLESLPNFFCSNE 759
+                                9*************************997 PP
+
+>> MPOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   0.1     6e-12   2.2e-11       2      30 ..     966     994 ..     966     996 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 37.1 bits;  conditional E-value: 6e-12
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffews 30 
+                                DPwde++ik LLs+++++Ls y+gffe++
+                MPOL_MADBUB 966 DPWDESTIKGLLSRIHSSLSNYEGFFESE 994
+                                9*************************976 PP
+
+>> DHAN_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0       2.5         9      15      32 ..      63      80 ..      62      81 .. 0.88
+   2 ?   -0.4   0.0       3.1        11       3      11 ..     280     288 ..     280     292 .. 0.88
+   3 !   30.7   0.0   5.8e-10   2.1e-09       2      28 ..     546     572 ..     546     574 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 2.5
+                               xxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4 15 nLspPLssypgffewssp 32
+                               +L+ PL  + ++++w+++
+                DHAN_MADBUB 63 ELDDPLQVFLDYINWTHD 80
+                               7999***********985 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 3.1
+                                xxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 Pwdeelikk 11 
+                                Pw+ e+ik+
+                DHAN_MADBUB 280 PWCGETIKQ 288
+                                9******98 PP
+
+  == domain 3  score: 30.7 bits;  conditional E-value: 5.8e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffe 28 
+                                DP+de+l+++LL +L +P+ssy+gf +
+                DHAN_MADBUB 546 DPVDESLRERLLDDLATPISSYSGFCN 572
+                                9************************76 PP
+
+>> KLAC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0         3        11      13      29 ..      54      70 ..      52      73 .. 0.91
+   2 !   32.4   1.2   1.8e-10   6.4e-10       3      33 ..     598     628 ..     598     628 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 3
+                               xxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4 13 LsnLspPLssypgffew 29
+                               L +L+ PL  + ++++w
+                KLAC_MADBUB 54 LDELDDPLQLFLEYINW 70
+                               789************99 PP
+
+  == domain 2  score: 32.4 bits;  conditional E-value: 1.8e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspL 33 
+                                P++ el+++LL++L+p L syp+++e+s++L
+                KLAC_MADBUB 598 PLSLELRRELLESLDPALASYPTYYEYSQQL 628
+                                99***************************87 PP
+
+>> ATRI_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   0.1   2.9e-10     1e-09       3      30 ..     168     195 ..     168     197 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 31.7 bits;  conditional E-value: 2.9e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffews 30 
+                                Pw++ +i++LL++L+p +++y+g+f + 
+                 ATRI_BUB_A 168 PWSDYTINSLLEKLNPFIKKYNGYFRSA 195
+                                9************************875 PP
+
+>> AGOS_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.4       1.9       6.9      13      29 ..      54      70 ..      54      71 .. 0.91
+   2 !   33.2   1.5   9.8e-11   3.5e-10       3      33 ..     594     624 ..     594     624 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 1.9
+                               xxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4 13 LsnLspPLssypgffew 29
+                               L++L+ PL+ y ++  w
+                AGOS_MADBUB 54 LEELDDPLELYLEYLSW 70
+                               89*********999877 PP
+
+  == domain 2  score: 33.2 bits;  conditional E-value: 9.8e-11
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspL 33 
+                                P++++l+ +LL++L+p+L++y++++++++pL
+                AGOS_MADBUB 594 PLSKTLRQQLLESLQPDLKTYDDYYQYTQPL 624
+                                9****************************98 PP
+
+>> NCRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.2   0.0   4.1e-10   1.5e-09       3      28 ..     852     877 ..     852     881 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 31.2 bits;  conditional E-value: 4.1e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffe 28 
+                                P+de ++kk+L+n++pPL+sy+gf+ 
+                NCRA_MADBUB 852 PVDELVRKKILANVHPPLTSYEGFYD 877
+                                99**********************96 PP
+
+>> SCER_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   1.0   7.3e-10   2.7e-09       3      33 ..     644     674 ..     644     674 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 7.3e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspL 33 
+                                P++++l++k+Ls++spPL  y++f++++++L
+                   SCER_BUB 644 PLSNNLRAKFLSEISPPLFQYNTFYNYNQEL 674
+                                99***************************87 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.9   0.1     5e-10   1.8e-09       3      34 .]     990    1021 ..     990    1021 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 30.9 bits;  conditional E-value: 5e-10
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    3 PwdeelikkLLsnLspPLssypgffewsspLP 34  
+                                 P+d+e++++LL+++ ++L+s++++ e+++++P
+                BFLO_MADBUB  990 PFDPEVVSSLLTKVRSSLTSHQTYQEEEGHMP 1021
+                                 9******************************9 PP
+
+>> OSAT_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.9   0.0   5.2e-10   1.9e-09       2      30 ..     351     379 ..     351     380 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 30.9 bits;  conditional E-value: 5.2e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffews 30 
+                                DPw+e+++++LL+n++ +L+++ g+++++
+                 OSAT_BUB_A 351 DPWSESTMNNLLENINVDLKKFAGYHKSN 379
+                                9*************************987 PP
+
+>> RIRR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   0.0   9.7e-10   3.5e-09       3      27 ..     682     706 ..     682     710 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 9.7e-10
+                                xxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgff 27 
+                                P+d+++i+++L++L+pPL++y+gf+
+                RIRR_MADBUB 682 PIDPKVIEQILAALQPPLNHYKGFY 706
+                                99**********************9 PP
+
+>> PPAT_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   1.7   1.2e-09   4.4e-09       3      31 ..     917     945 ..     917     946 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 1.2e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewss 31 
+                                Pw+ +l ++LL +L+pPLs+y+g++++s+
+                   PPAT_BUB 917 PWEQSLLASLLKELDPPLSKYKGYIYSSK 945
+                                9************************9986 PP
+
+>> CGLA_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.3      0.81       2.9      13      28 ..      32      47 ..      32      51 .. 0.89
+   2 !   29.8   1.6   1.1e-09   3.9e-09       5      33 ..     561     589 ..     559     589 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.81
+                               xxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4 13 LsnLspPLssypgffe 28
+                               L+nL+ PL  y ++++
+                   CGLA_BUB 32 LENLDDPLQLYLEYIK 47
+                               99*********99986 PP
+
+  == domain 2  score: 29.8 bits;  conditional E-value: 1.1e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   5 deelikkLLsnLspPLssypgffewsspL 33 
+                                +++++ +LL+n++pPLs+y++f+ ++++L
+                   CGLA_BUB 561 SKKFRLSLLTNIQPPLSTYSTFYSYNQNL 589
+                                99*************************98 PP
+
+>> LSAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.2   0.0   3.5e-09   1.3e-08       3      34 .]     946     977 ..     946     977 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 28.2 bits;  conditional E-value: 3.5e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                P++e++++++L++L++PL+  +gf ++++ +P
+                LSAL_MADBUB 946 PFNEKVQRDILRSLKTPLTERHGFSYSEELMP 977
+                                9******************************9 PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.1   5.9e-09   2.1e-08       3      26 ..     983    1006 ..     983    1009 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 5.9e-09
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4    3 PwdeelikkLLsnLspPLssypgf 26  
+                                 P+++ ++++LLs+Ls+P+ssy+g+
+                NVEC_MADBUB  983 PFSDHVVRELLSTLSSPVSSYEGY 1006
+                                 9*********************** PP
+
+>> ACAR_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.9   0.3   9.3e-09   3.4e-08       3      34 .]     726     757 ..     726     757 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 26.9 bits;  conditional E-value: 9.3e-09
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewsspLP 34 
+                                P++ e++k LL+ L ++L+++p+f+ + +p+P
+                   ACAR_MAD 726 PVCSEQRKLLLQPLLETLTKCPDFILEAQPMP 757
+                                99*****************************9 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   0.2   4.6e-08   1.7e-07       3      28 ..     896     921 ..     896     923 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 4.6e-08
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffe 28 
+                                P+d ++++++L++L++P++ +p+++e
+                CGIG_MADBUB 896 PFDVDTVRHILEQLPTPIKLHPSYHE 921
+                                9************************8 PP
+
+>> PCAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   0.2     1e-07   3.6e-07       3      28 ..     595     620 ..     595     624 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 1e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffe 28 
+                                P++ +++  +LsnL+pP++sy+g ++
+                PCAR_MADBUB 595 PLERSIRDTILSNLNPPIHSYDGLYN 620
+                                88999*******************98 PP
+
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.4   4.1e-08   1.5e-07       2      27 ..     872     897 ..     872     898 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 4.1e-08
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgff 27 
+                                DP++e++i+ LLs+++pPLss pg +
+                CNEO_MADBUB 872 DPISEQTISALLSAIDPPLSSLPGLI 897
+                                9**********************975 PP
+
+>> FALB_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.8   0.1   1.7e-07   6.1e-07       4      34 .]     754     784 ..     754     784 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 22.8 bits;  conditional E-value: 1.7e-07
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   4 wdeelikkLLsnLspPLssypgffewsspLP 34 
+                                w++e++kkLL+++ ++L + p+f+ +++ LP
+                   FALB_MAD 754 WSPEQRKKLLGSVLSSLVASPDFHLETGALP 784
+                                ***************************9999 PP
+
+>> MLAR_BUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.2   3.8e-06   1.4e-05       6      26 ..     905     925 ..     902     929 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 3.8e-06
+                                xxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   6 eelikkLLsnLspPLssypgf 26 
+                                ee+ + LL++L+pPLs+ypgf
+                   MLAR_BUB 905 EEILSVLLEGLDPPLSAYPGF 925
+                                688999**************9 PP
+
+>> ACOE_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   0.00059    0.0021       3      31 ..     168     196 ..     168     197 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 0.00059
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewss 31 
+                                Pw+ ++i++LL +  p   +++g++ +++
+                 ACOE_BUB_A 168 PWSLDTINDLLKKMMPNMMKFKGYYASTK 196
+                                9************************9877 PP
+
+>> SMIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.3   0.00081    0.0029       2      27 ..     880     905 ..     880     910 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 0.00081
+                                xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgff 27 
+                                DP+d +l++kLL++L+ + s y++f 
+                SMIM_MADBUB 880 DPFDIKLQNKLLESLKLSESFYNNFV 905
+                                9**************87766666665 PP
+
+>> ATHA_BUB_A  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.0   0.00096    0.0035       3      31 ..     167     195 ..     167     198 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00096
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   3 PwdeelikkLLsnLspPLssypgffewss 31 
+                                Pw+ ++++ L  +++p L +y+g++++++
+                 ATHA_BUB_A 167 PWETSTVNGLIHKIKPQLVKYDGYHVSNK 195
+                                9************************9986 PP
+
+>> MLEI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   1.5   0.00029     0.001       2      29 ..     931     958 ..     931     962 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00029
+                                xxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  CMIL_MAD||CDII/858-891-i4   2 DPwdeelikkLLsnLspPLssypgffew 29 
+                                DP d +li++L ++L+pPL + p+f ++
+                MLEI_MADBUB 931 DPYDLDLIERLVQSLDPPLFYRPNFNQH 958
+                                899**********************665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (34 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        75  (0.493421); expected 3.0 (0.02)
+Passed bias filter:                       71  (0.467105); expected 3.0 (0.02)
+Passed Vit filter:                        56  (0.368421); expected 0.2 (0.001)
+Passed Fwd filter:                        42  (0.276316); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):              42  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 98.69
+
+@@ New targets included:   3
+@@ New alignment includes: 42 subseqs (was 39), including original query
+//
+Query:       DMEL_MAD||CDII/1126-1156  [L=31]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   1.7e-17   53.8   0.2    9.2e-17   51.6   0.2    2.3  1  DMEL_MAD  
+  ------ inclusion threshold ------
+     0.0014   12.6   0.0     0.0065   10.6   0.0    2.2  1  AGAM_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> DMEL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.6   0.2   1.2e-18   9.2e-17       1      31 []    1126    1156 ..    1126    1156 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 51.6 bits;  conditional E-value: 1.2e-18
+  DMEL_MAD||CDII/1126-1156    1 knpfnvelissllesidfsmyieklphcqlv 31  
+                                knpfnvelissllesidfsmyieklphcqlv
+                  DMEL_MAD 1126 KNPFNVELISSLLESIDFSMYIEKLPHCQLV 1156
+                                8****************************97 PP
+
+>> AGAM_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   8.5e-05    0.0065       2      31 .]    1165    1194 ..    1164    1194 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 8.5e-05
+  DMEL_MAD||CDII/1126-1156    2 npfnvelissllesidfsmyieklphcqlv 31  
+                                +pf   l+ ++l+ +df  yi +lp c +v
+                  AGAM_MAD 1165 DPFERSLLEAFLDRVDFLGYIAELPTCLMV 1194
+                                69999**********************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (31 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        23  (0.151316); expected 3.0 (0.02)
+Passed bias filter:                       23  (0.151316); expected 3.0 (0.02)
+Passed Vit filter:                         7  (0.0460526); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.0131579); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 449.93
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             31 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-26   85.2   2.7    3.4e-26   84.1   2.7    1.7  1  DMEL_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> DMEL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.1   2.7   2.3e-28   3.4e-26       1      31 []    1126    1156 ..    1126    1156 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 84.1 bits;  conditional E-value: 2.3e-28
+                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  DMEL_MAD||CDII/1126-1156-i1    1 KNPFNVELISSLLESIDFSmYIEKLPHCQLV 31  
+                                   KNPFNVELISSLLESIDFSmYIEKLPHCQLV
+                     DMEL_MAD 1126 KNPFNVELISSLLESIDFSMYIEKLPHCQLV 1156
+                                   9*****************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (31 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        20  (0.131579); expected 3.0 (0.02)
+Passed bias filter:                       19  (0.125); expected 3.0 (0.02)
+Passed Vit filter:                         5  (0.0328947); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00657895); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 149.98
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       AGAM_MAD||CDII/1164-1194  [L=31]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
++   2.3e-17   53.8   0.2    7.6e-17   52.2   0.2    1.9  1  AGAM_MAD  
+  ------ inclusion threshold ------
+     0.0012   12.8   0.0     0.0046   11.1   0.0    2.0  1  DMEL_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> AGAM_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.2   0.2     1e-18   7.6e-17       1      31 []    1164    1194 ..    1164    1194 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 52.2 bits;  conditional E-value: 1e-18
+  AGAM_MAD||CDII/1164-1194    1 idpferslleafldrvdflgyiaelptclmv 31  
+                                idpferslleafldrvdflgyiaelptclmv
+                  AGAM_MAD 1164 IDPFERSLLEAFLDRVDFLGYIAELPTCLMV 1194
+                                7****************************97 PP
+
+>> DMEL_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   6.1e-05    0.0046       2      31 .]    1127    1156 ..    1126    1156 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 6.1e-05
+  AGAM_MAD||CDII/1164-1194    2 dpferslleafldrvdflgyiaelptclmv 31  
+                                +pf   l+ ++l+ +df  yi +lp c +v
+                  DMEL_MAD 1127 NPFNVELISSLLESIDFSMYIEKLPHCQLV 1156
+                                69999**********************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (31 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                        12  (0.0789474); expected 3.0 (0.02)
+Passed bias filter:                       12  (0.0789474); expected 3.0 (0.02)
+Passed Vit filter:                         6  (0.0394737); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.0131579); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 449.93
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             31 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.8e-26   83.4   2.0    1.1e-25   82.5   2.0    1.5  1  AGAM_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> AGAM_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.5   2.0     7e-28   1.1e-25       1      31 []    1164    1194 ..    1164    1194 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 82.5 bits;  conditional E-value: 7e-28
+                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  AGAM_MAD||CDII/1164-1194-i1    1 IDPFERSLLEAFLDRVDFLGYIAELPTCLmV 31  
+                                   IDPFERSLLEAFLDRVDFLGYIAELPTCLmV
+                     AGAM_MAD 1164 IDPFERSLLEAFLDRVDFLGYIAELPTCLMV 1194
+                                   9*****************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (31 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                         8  (0.0526316); expected 3.0 (0.02)
+Passed bias filter:                        8  (0.0526316); expected 3.0 (0.02)
+Passed Vit filter:                         6  (0.0394737); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00657895); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 149.98
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       XTRO_MAD||CDII/713-724  [L=12]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+     0.0014   10.8   0.3      0.021    7.8   0.3    2.9  1  XTRO_MAD  
+
+
+Domain annotation for each sequence (and alignments):
+>> XTRO_MAD  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8   0.3   0.00014     0.021       1      12 []     713     724 ..     713     724 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00014
+  XTRO_MAD||CDII/713-724   1 rqlleslpellv 12 
+                             rqlleslpellv
+                XTRO_MAD 713 RQLLESLPELLV 724
+                             8*********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (12 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                         5  (0.0328947); expected 3.0 (0.02)
+Passed bias filter:                        4  (0.0263158); expected 3.0 (0.02)
+Passed Vit filter:                         2  (0.0131579); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00657895); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       ACAR_MAD||CDII/735-744  [L=10]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (10 nodes)
+Target sequences:                          152  (145138 residues searched)
+Passed MSV filter:                         3  (0.0197368); expected 3.0 (0.02)
+Passed bias filter:                        3  (0.0197368); expected 3.0 (0.02)
+Passed Vit filter:                         1  (0.00657895); expected 0.2 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                152  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 145.14
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+[ok]
