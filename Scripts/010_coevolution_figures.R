@@ -273,6 +273,7 @@ all_entropies %<>%
 #### Plot the entropy distributions of the common domains ####
 
 plot_entropies2 <- all_entropies %>% 
+  mutate(protein = gsub(pattern = 'BuBR1', replacement = 'BUBR1', x = protein)) %>%
   mutate(domain = gsub(pattern = 'kinase-like', replacement = 'Kinase', x = domain)) %>%
   filter(domain %in% c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', 'Kinase', 'TPR', 'Non-domain')) %>%
   ggplot(aes(x = factor(domain, levels = c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', 'Kinase', 'TPR', 'Non-domain')), 
