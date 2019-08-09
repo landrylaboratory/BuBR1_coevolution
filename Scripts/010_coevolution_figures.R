@@ -258,15 +258,15 @@ sorted_entropy_MDAT_BUB1$protein <- 'BUB1'
 all_entropies <- rbind(sorted_entropy_MDAT_BUB1, sorted_entropy_MDAT_BuBR1)
 
 all_entropies %<>% 
-  mutate(key_res = ifelse(and(protein == 'BUB1', position %in% c(655, 661, 665, 821, 917, 946)),
+  mutate(key_res = ifelse(and(protein == 'BUB1', position %in% c(821, 917, 946)),
                           0, 
-                          ifelse(and(protein == 'BuBR1', position %in% c(670, 676, 680, 795, 882, 911)), 
+                          ifelse(and(protein == 'BuBR1', position %in% c(795, 882, 911)), 
                                  0, 
                                  ifelse(protein == 'BUB1', 1, 2)))) %>%
   mutate(key_res = as.factor(key_res)) %>%
-  mutate(label = ifelse(and(protein == 'BUB1', position %in% c(655, 661, 665, 821, 917, 946)),
+  mutate(label = ifelse(and(protein == 'BUB1', position %in% c(821, 917, 946)),
                         position, 
-                        ifelse(and(protein == 'BuBR1', position %in% c(670, 676, 680, 795, 882, 911)), 
+                        ifelse(and(protein == 'BuBR1', position %in% c(795, 882, 911)), 
                                position, 
                                NA)))
 
