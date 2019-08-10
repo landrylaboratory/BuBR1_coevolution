@@ -21,19 +21,12 @@ setwd(<path_to_scripts>)
 
 # Remove the pseudo_kinase and X_pseudo_kinase assignments
 domains_BuBR1 <- read.table('../Data/Domain_annotation/BuBR1/domain_table_BuBR1.txt',
-                            h = T, sep = '\t') %>%
-  select(-X_pseudo_kinase, -pseudo_kinase)
+                            h = T, sep = '\t')
 
 domain_counts <- domains_BuBR1 %>% select(-Sequence) %>% colSums()
-# ABBA1      ABBA2 ABBA_other       CDII       KEN1       KEN2        TPR      GLEBS       KARD       Dbox 
-#   140        146         85         96        152        146        157        148         92        149 
-# CMI     kinase      MadaM  Other_KEN 
-#   4         93         11          1 
 
-names(domain_counts)[3] <- "Other ABBA"
-names(domain_counts)[10] <- "D-Box"
-names(domain_counts)[12] <- "Kinase-like"
-names(domain_counts)[14] <- "Other KEN"
+names(domain_counts) <- c("ABBA1", "ABBA2", "CDII", "KEN1", "KEN2", "TPR", "Kinase-like", "GLEBS1", "KARD",
+                          "D-Box1", "D-Box2", "Other ABBA", "MadaM", "CMI", "Other KEN", "GLEBS2")
 
 new_labels <- c('Sequence')
 for(i in 1:length(domain_counts)){
@@ -96,13 +89,10 @@ domains_BUB1 <- read.table('../Data/Domain_annotation/BUB1/domain_table_BUB1.txt
                            h = T, sep = '\t')
 
 domain_counts_BUB1 <- domains_BUB1 %>% select(-Sequence) %>% colSums()
-# BUB1
-# ABBA2 ABBA_other       CDII        TPR     kinase      GLEBS        CMI       Dbox       KARD      MadaM 
-#     1        123        163        139        164        125        122          4        104          1 
 
-names(domain_counts_BUB1)[2] <- "Other ABBA"
-names(domain_counts_BUB1)[8] <- "D-Box"
-names(domain_counts_BUB1)[5] <- "Kinase"
+names(domain_counts_BUB1) <- c("ABBA1", "CDII1", "CMI1", "D-Box", "GLEBS", "KARD", "Kinase", "TPR", "ABBA2", 
+                               "CDII2", "Other ABBA", "CMI2", "Other CMI", "MadaM")
+
 
 new_labels <- c('Sequence')
 for(i in 1:length(domain_counts_BUB1)){

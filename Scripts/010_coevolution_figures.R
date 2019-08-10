@@ -164,7 +164,8 @@ BuBR1_KARD_kinase <- domain_mean_mut_info_corr_MDAT_BuBR1$tidy_data_norm %>%
 
 p_BUBR1 <- ggplot(BuBR1_KARD_kinase, aes(x = variable, y = var1)) +
   geom_tile(aes(fill = norm), colour = 'black', size = 1.1) +
-  scale_fill_gradient2(name = 'Normalized MIp', low = muted('blue'), mid = 'white', high = muted('red')) +
+  scale_fill_gradient2(name = 'Normalized MIp', low = muted('blue'), mid = 'white', high = muted('red'),
+                       limits = c(-1.8, 1)) +
   xlab('') + ylab('') + 
   ggtitle('BUBR1 co-evolution, KARD and kinase') + 
   theme(plot.title = element_text(hjust = 0.5, face = 'plain', size = 18), 
@@ -188,7 +189,8 @@ BUB1_KARD_kinase <- domain_mean_mut_info_corr_MDAT_BUB1$tidy_data_norm %>%
 
 p_BUB1 <- ggplot(BUB1_KARD_kinase, aes(x = variable, y = var1)) +
   geom_tile(aes(fill = norm), colour = 'black', size = 1.1) +
-  scale_fill_gradient2(name = 'Normalized MIp', low = muted('blue'), mid = 'white', high = muted('red')) +
+  scale_fill_gradient2(name = 'Normalized MIp', low = muted('blue'), mid = 'white', high = muted('red'),
+                       limits = c(-1.8, 1)) +
   xlab('') + ylab('') + 
   ggtitle('BUB1 co-evolution, KARD and kinase') + 
   theme(plot.title = element_text(hjust = 0.5, face = 'plain', size = 18), 
