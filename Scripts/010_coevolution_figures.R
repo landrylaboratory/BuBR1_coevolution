@@ -115,7 +115,7 @@ domains_human$GLEBS <- c(393:426)
 domains_human$`Other ABBA` <- c(525:536)
 domains_human$KARD <- c(665:686)
 domains_human$CDII <- c(719:751)
-domains_human$`Kinase-like` <- c(770:1016)
+domains_human$`Pseudokinase` <- c(770:1016)
 
 #### Plotting ####
 
@@ -124,7 +124,7 @@ domain_mean_mut_info_corr_MDAT_BuBR1 <- evol_heatmap(mut_info_corr_MDAT_BuBR1, '
 
 domain_mean_mut_info_corr_MDAT_BuBR1$plot
 
-ggsave(filename = '../../Figures/Fig1B.pdf',
+ggsave(filename = '../../Figures/FigSuppl1A.pdf',
        plot = domain_mean_mut_info_corr_MDAT_BuBR1$plot,
        device = cairo_pdf, width = 10, height = 10, dpi = 500)
 
@@ -160,7 +160,7 @@ ggsave(filename = '../../Figures/FigSuppl1E.pdf',
 
 # BuBR1 #
 BuBR1_KARD_kinase <- domain_mean_mut_info_corr_MDAT_BuBR1$tidy_data_norm %>%
-  filter(var1 %in% c('KARD', 'Kinase-like'))
+  filter(var1 %in% c('KARD', 'Pseudokinase'))
 
 p_BUBR1 <- ggplot(BuBR1_KARD_kinase, aes(x = variable, y = var1)) +
   geom_tile(aes(fill = norm), colour = 'black', size = 1.1) +
@@ -209,7 +209,7 @@ p_BUB1
 
 p_KARD_kinase <- plot_grid(p_BUBR1, p_BUB1, nrow = 2)
 
-ggsave(filename = '../../Figures/Fig1B_only_KARD_kinase.pdf',
+ggsave(filename = '../../Figures/Fig1B.pdf',
        plot = p_KARD_kinase,
        device = cairo_pdf, width = 10, height = 10, dpi = 500)
 
@@ -227,7 +227,7 @@ sorted_entropy_MDAT_BuBR1$domain <- ifelse(sorted_entropy_MDAT_BuBR1$position %i
                                               ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$KEN1, 'KEN1',
                                                      ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$KEN2, 'KEN2',
                                                             ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$TPR, 'TPR',
-                                                                   ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$`Kinase-like`, 'kinase-like',
+                                                                   ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$Pseudokinase, '(Pseudo)kinase',
                                                                           ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$GLEBS, 'GLEBS',
                                                                                  ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$ABBA1, 'ABBA1',
                                                                                         ifelse(sorted_entropy_MDAT_BuBR1$position %in% domains_human$`Other ABBA`, 'Other ABBA',
@@ -245,7 +245,7 @@ colnames(entropy_MDAT_BUB1)[1] <- 'entropy'
 sorted_entropy_MDAT_BUB1 <- entropy_MDAT_BUB1[order(entropy_MDAT_BUB1$entropy, decreasing = TRUE),]
 sorted_entropy_MDAT_BUB1$domain <- ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$KARD, 'KARD',
                                           ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$TPR, 'TPR',
-                                                 ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$Kinase, 'Kinase',
+                                                 ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$Kinase, '(Pseudo)kinase',
                                                         ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$GLEBS, 'GLEBS',
                                                                ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$ABBA1, 'ABBA1',
                                                                       ifelse(sorted_entropy_MDAT_BUB1$position %in% domains_human_BUB1$ABBA2, 'ABBA2',
@@ -260,15 +260,15 @@ sorted_entropy_MDAT_BUB1$protein <- 'BUB1'
 all_entropies <- rbind(sorted_entropy_MDAT_BUB1, sorted_entropy_MDAT_BuBR1)
 
 all_entropies %<>% 
-  mutate(key_res = ifelse(and(protein == 'BUB1', position %in% c(821, 917, 946)),
+  mutate(key_res = ifelse(and(protein == 'BUB1', position %in% c(917)),
                           0, 
-                          ifelse(and(protein == 'BuBR1', position %in% c(795, 882, 911)), 
+                          ifelse(and(protein == 'BuBR1', position %in% c(882)), 
                                  0, 
                                  ifelse(protein == 'BUB1', 1, 2)))) %>%
   mutate(key_res = as.factor(key_res)) %>%
-  mutate(label = ifelse(and(protein == 'BUB1', position %in% c(821, 917, 946)),
+  mutate(label = ifelse(and(protein == 'BUB1', position %in% c(917)),
                         position, 
-                        ifelse(and(protein == 'BuBR1', position %in% c(795, 882, 911)), 
+                        ifelse(and(protein == 'BuBR1', position %in% c(882)), 
                                position, 
                                NA)))
 
@@ -276,23 +276,22 @@ all_entropies %<>%
 
 plot_entropies2 <- all_entropies %>% 
   mutate(protein = gsub(pattern = 'BuBR1', replacement = 'BUBR1', x = protein)) %>%
-  mutate(domain = gsub(pattern = 'kinase-like', replacement = 'Kinase', x = domain)) %>%
-  filter(domain %in% c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', 'Kinase', 'TPR', 'Non-domain')) %>%
-  ggplot(aes(x = factor(domain, levels = c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', 'Kinase', 'TPR', 'Non-domain')), 
+  filter(domain %in% c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', '(Pseudo)kinase', 'TPR', 'Non-domain')) %>%
+  ggplot(aes(x = factor(domain, levels = c('ABBA1', 'ABBA2', 'CDII', 'GLEBS', 'KARD', '(Pseudo)kinase', 'TPR', 'Non-domain')), 
              y = entropy, fill = protein)) +
   geom_point(aes(colour = key_res, group = protein, shape = key_res, alpha = key_res, size = key_res),
              position = position_jitterdodge(jitter.width = 0.45)) +
-  scale_colour_manual(values = c('black', '#ff4d4d', '#3399ff'), guide = 'none') +
-  scale_shape_manual(values = c(15, 16, 16), guide = 'none') +
+  scale_colour_manual(values = c('#009933', '#ff4d4d', '#3399ff'), guide = 'none') +
+  scale_shape_manual(values = c(8, 16, 16), guide = 'none') +
   scale_alpha_manual(values = c(1, 0.5, 0.5), guide = 'none') +
-  scale_size_manual(values = c(2, 1.5, 1.5), guide = 'none') +
+  scale_size_manual(values = c(2.5, 1.5, 1.5), guide = 'none') +
   geom_boxplot(outlier.shape = NA, alpha = 0.3) +
   scale_fill_manual(values = c('#ff4d4d', '#3399ff')) +
   xlab('Domain') + ylab('Entropy') + 
   theme(plot.title = element_text(hjust = 0.5, face = 'bold'), 
         panel.background = element_rect(fill = "white"),
         axis.title.x = element_text(face = 'bold'), axis.title.y = element_text(face = 'bold'),
-        axis.text.x = element_text(angle = 90, size = 10, hjust = 1, vjust = 0.5),
+        axis.text.x = element_text(angle = 45, size = 10, hjust = 1, vjust = 1),
         axis.line = element_line()) +
   stat_compare_means(aes(group = protein), method = 't.test', paired = FALSE, label = 'p.format') +
   labs(fill = '') + ylim(0,2.25)
@@ -331,9 +330,9 @@ domains_human$BuBR1.GLEBS <- c(393:426) + 1085
 domains_human$`BuBR1.Other ABBA` <- c(525:536) + 1085
 domains_human$BuBR1.KARD <- c(665:686) + 1085
 domains_human$BuBR1.CDII <- c(719:751) + 1085
-domains_human$`BuBR1.Kinase-like` <- c(770:1016) + 1085
+domains_human$`BuBR1.Pseudokinase` <- c(770:1016) + 1085
 
-domain_mean_mut_info_corr_MDAT_merged <- evol_heatmap(mut_info_corr_MDAT_merged, 'Normalized MIp', domains_human, 'Merged BUB1-BuBR1')
+domain_mean_mut_info_corr_MDAT_merged <- evol_heatmap(mut_info_corr_MDAT_merged, 'Normalized MIp', domains_human, 'Co-evolution of BUB1 and BUBR1 domains')
 
 # Prepare the axes labels and their colors
 protein_colors <- sapply(domain_mean_mut_info_corr_MDAT_merged$tidy_data$var1,
@@ -352,41 +351,3 @@ final_plot <- domain_mean_mut_info_corr_MDAT_merged$plot +
 ggsave(filename = '../../Figures/FigSuppl6D.pdf',
        plot = final_plot,
        device = cairo_pdf, width = 10, height = 10, dpi = 500)
-
-#### Select only the columns for KARD and kinase from the heatmap ####
-
-KARD_kinase <- domain_mean_mut_info_corr_MDAT_merged$tidy_data_norm %>%
-  filter(var1 %in% c('BUB1.KARD', 'BuBR1.KARD', 'BUB1.Kinase', 'BuBR1.Kinase-like'))
-
-KARD_kinase$var1 <- factor(KARD_kinase$var1, levels = c('BUB1.KARD', 'BuBR1.KARD', 'BUB1.Kinase', 'BuBR1.Kinase-like'))
-
-# Prepare labels and their colors
-ordered_labels_y <- as.character(levels(KARD_kinase$var1))
-domain_split_y <- strsplit(ordered_labels_y, split = '[.]')
-new_names_y <- unlist(lapply(domain_split_y, function(x) return(x[2])))
-new_colors <- c('#ff4d4d', '#3399ff', '#ff4d4d', '#3399ff')
-
-p_merged <- ggplot(KARD_kinase, aes(x = variable, y = var1)) +
-  geom_tile(aes(fill = norm), colour = 'black', size = 1.1) +
-  scale_fill_gradient2(name = 'Normalized MIp', low = muted('blue'), mid = 'white', high = muted('red')) +
-  xlab('') + ylab('') + 
-  ggtitle('') + 
-  theme(plot.title = element_text(hjust = 0.5, face = 'plain', size = 18), 
-        panel.background = element_rect(fill = "white"),
-        axis.title.x = element_text(face = 'bold'), axis.title.y = element_text(face = 'bold'),
-        axis.ticks.x = element_blank(), axis.ticks.y = element_blank(),
-        axis.line = element_blank(),
-        axis.text.x = element_text(angle = -90, size = 18, hjust = 0, vjust = 0.5, colour = protein_colors),
-        axis.text.y = element_text(size = 18, colour = new_colors),
-        legend.position = 'top', 
-        legend.direction = 'horizontal',
-        legend.justification = 0.5,
-        legend.title = element_text(size = 14),
-        legend.text = element_text(angle = -90)) + 
-  scale_x_discrete(labels = new_names) +
-  scale_y_discrete(labels = new_names_y)
-p_merged
-
-ggsave(filename = '../../Figures/FigSuppl6D_only_KARD_kinase.pdf',
-       plot = p_merged,
-       device = cairo_pdf, width = 10, height = 5, dpi = 500)

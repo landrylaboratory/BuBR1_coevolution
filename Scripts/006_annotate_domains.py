@@ -137,7 +137,7 @@ for entry in reader:
         domain = 'kinase-like'
     elif entry[7] in ['ABBA1', 'ABBA2', 'ABBA_other']:
         domain = 'ABBA'
-    elif entry[7] in ['KEN1', 'KEN2', 'KEN_other']:
+    elif entry[7] in ['KEN1', 'KEN2', 'Other_KEN']:
         domain = 'KEN'
     else:
         domain = entry[7]
@@ -172,7 +172,7 @@ for entry in reader:
                 short_seq_pct = intersection / (min((ali_end - ali_start), (current_end - current_start)) + 1)
 
                 # If the overlap threshold is cleared or if the intersection contains most of the 
-                # shorter sequence, keep only the one with the higher scorer
+                # shorter sequence, keep only the one with the higher score
                 if overlap >= min_overlap or short_seq_pct >= shortest_domain_threshold:
                     # Then look at the bitscore to decide which to maintain
                     if score > current_best_score:
@@ -233,7 +233,10 @@ sequences = SeqIO.parse('../Data/Sequences/Ensembl_Tromer_all_BuBR1_no_duplicate
 seq_dict = OrderedDict()
 for seq in sequences:
     seq_dict[seq.id] = seq.seq
-    
+
+# Update the domain list
+domain_list = []
+
 for protein, domain_dict in domain_consensus_dict.items():
     for domain, instance_list in domain_dict.items():
         for domain_num, positions in instance_list.items():
@@ -246,9 +249,14 @@ for protein, domain_dict in domain_consensus_dict.items():
             
             # Subtract 1 to the start to change from 1-based notation to 0-based notation
             sequence = seq_dict[protein][domain_start-1:domain_end]
+       
+            domain_name = domain + '_' + str(domain_num)
             
             # Produce the output in Tromer's notation
-            new_id = protein + '||' + domain + '_' + str(domain_num) + '/' + str(domain_start) + '-' + str(domain_end)
+            new_id = protein + '||' + domain_name + '/' + str(domain_start) + '-' + str(domain_end)
+            
+            if not domain_name in domain_list:
+                domain_list.append(domain_name)
             
             record = SeqRecord(sequence, id = new_id, description = '')
             
@@ -258,22 +266,36 @@ SeqIO.write(records, os.path.join(bubr1_folder, 'BuBR1_best_hit_domain_annotatio
 
 
 # The following command saves a discretized table of presence (1) or absence (0) of each domain in each sequence.
-
 # Open output file
 handle_out = open(os.path.join(bubr1_folder, 'domain_table_BuBR1.txt'), 'w')
 writer = csv.writer(handle_out, delimiter = '\t')
 
-# Write headers
 writer.writerow(['Sequence'] + domain_list)
 
 # Look at each of the sequences
-for sequence in domains_BuBR1_dict.keys():
-    new_line = [sequence]
+for protein, domain_dict in domain_consensus_dict.items():
+    new_line = [protein]
     
     # Loop through the list of domains to get the table on which sequences have which domains
-    for domain in domain_list:
+    for domain_name in domain_list:
+        # Retrieve the domain from the list
+        domain = domain_name.split('_')[0]
+        domain_num = domain_name.split('_')[1]
+        
+        if domain_num == 'other':
+            domain_num = 3
+        else:
+            domain_num = int(domain_num)
+        
+        domain_check = domain_consensus_dict[protein].get(domain, 0)
+        
+        if domain_check != 0:
+            domain_check = domain_check.get(domain_num, 0)
+            if domain_check != 0:
+                domain_check = 1
+        
         # Get a 1 if that domain was found in that sequence or a 0 otherwise
-        new_line.append(domains_BuBR1_dict[sequence].get(domain, 0))
+        new_line.append(domain_check)
         
     # Write the new line
     writer.writerow(new_line)
@@ -466,6 +488,9 @@ sequences = SeqIO.parse('../Data/Sequences/Ensembl_Tromer_all_BUB1_no_duplicates
 seq_dict = OrderedDict()
 for seq in sequences:
     seq_dict[seq.id] = seq.seq
+
+# Update the domain list
+domain_list = []
     
 for protein, domain_dict in domain_consensus_dict.items():
     for domain, instance_list in domain_dict.items():
@@ -480,8 +505,13 @@ for protein, domain_dict in domain_consensus_dict.items():
             # Subtract 1 to the start to change from 1-based notation to 0-based notation
             sequence = seq_dict[protein][domain_start-1:domain_end]
             
+            domain_name = domain + '_' + str(domain_num)
+            
             # Produce the output in Tromer's notation
-            new_id = protein + '||' + domain + '_' + str(domain_num) + '/' + str(domain_start) + '-' + str(domain_end)
+            new_id = protein + '||' + domain_name + '/' + str(domain_start) + '-' + str(domain_end)
+            
+            if not domain_name in domain_list:
+                domain_list.append(domain_name)
             
             record = SeqRecord(sequence, id = new_id, description = '')
             
@@ -489,23 +519,37 @@ for protein, domain_dict in domain_consensus_dict.items():
             
 SeqIO.write(records, os.path.join(bub1_folder, 'BUB1_best_hit_domain_annotation.fasta'), 'fasta')
 
-
 # The next cell discretizes domain presence or absence.
 # Open output file
 handle_out = open(os.path.join(bub1_folder, 'domain_table_BUB1.txt'), 'w')
 writer = csv.writer(handle_out, delimiter = '\t')
 
-# Write headers
 writer.writerow(['Sequence'] + domain_list)
 
 # Look at each of the sequences
-for sequence in domains_BUB1_dict.keys():
-    new_line = [sequence]
+for protein, domain_dict in domain_consensus_dict.items():
+    new_line = [protein]
     
     # Loop through the list of domains to get the table on which sequences have which domains
-    for domain in domain_list:
+    for domain_name in domain_list:
+        # Retrieve the domain from the list
+        domain = domain_name.split('_')[0]
+        domain_num = domain_name.split('_')[1]
+        
+        if domain_num == 'other':
+            domain_num = 3
+        else:
+            domain_num = int(domain_num)
+        
+        domain_check = domain_consensus_dict[protein].get(domain, 0)
+        
+        if domain_check != 0:
+            domain_check = domain_check.get(domain_num, 0)
+            if domain_check != 0:
+                domain_check = 1
+        
         # Get a 1 if that domain was found in that sequence or a 0 otherwise
-        new_line.append(domains_BUB1_dict[sequence].get(domain, 0))
+        new_line.append(domain_check)
         
     # Write the new line
     writer.writerow(new_line)

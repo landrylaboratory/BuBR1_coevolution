@@ -62,7 +62,7 @@ Runs jackhmmer to have the matching regions of each protein for each domain.
 This script looks at the merged output from the jackhmmer runs and uses it to obtain an annotation with the best hits and a table indicating which domains are present in each sequence.
 
 - 007_domain_copresence.R
-This script looks at table of presence of domains in each sequence and produces figures on domain composition.
+This script looks at table of presence of domains in each sequence and produces figures Suppl1A and Suppl1F on domain co-presence in BUBR1 and BUB1, respectively.
 
 - 008_domain_alignments.sh
 Performs the multiple domain alignments with MDAT. Stores the results in the MDAT_Alignments folder. 
@@ -71,7 +71,7 @@ Performs the multiple domain alignments with MDAT. Stores the results in the MDA
 This is the script that looks at co-evolution between domains based on variation observed in the multiple domain alignments. Stores the resulting files in the Evol_results folder.
 
 - 010_coevolution_figures.R
-Uses the output from the co-evolution analysis performed in the previous script and produces the related figures.
+Uses the output from the co-evolution analysis performed in the previous script and produces figures 1B, 1C, Suppl1A, Suppl1E, and Suppl6D.
 
 
 

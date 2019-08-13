@@ -25,14 +25,10 @@ domains_BuBR1 <- read.table('../Data/Domain_annotation/BuBR1/domain_table_BuBR1.
 
 domain_counts <- domains_BuBR1 %>% select(-Sequence) %>% colSums()
 
-names(domain_counts) <- c("ABBA1", "ABBA2", "CDII", "KEN1", "KEN2", "TPR", "Kinase-like", "GLEBS1", "KARD",
+names(domain_counts) <- c("ABBA1", "ABBA2", "CDII", "KEN1", "KEN2", "TPR", "Pseudokinase", "GLEBS1", "KARD",
                           "D-Box1", "D-Box2", "Other ABBA", "MadaM", "CMI", "Other KEN", "GLEBS2")
 
-new_labels <- c('Sequence')
-for(i in 1:length(domain_counts)){
-  new_label <- paste(names(domain_counts)[i], ' (', as.character(domain_counts[i]), ')', sep = '')
-  new_labels <- c(new_labels, new_label)
-}
+new_labels <- c('Sequence', names(domain_counts))
 
 # Replace column names in the original table
 colnames(domains_BuBR1) <- new_labels
@@ -80,7 +76,7 @@ p <- ggplot(tidy_cor_BuBR1, aes(x = Domain_1, y = Domain_2)) +
 p
 
 # Save the heatmap
-ggsave(filename = '../Figures/FigSuppl1A.pdf',
+ggsave(filename = '../Figures/FigSuppl1B.pdf',
        plot = p, device = cairo_pdf, width = 10, height = 10, dpi = 500)
 
 #### BUB1 ####
@@ -94,11 +90,7 @@ names(domain_counts_BUB1) <- c("ABBA1", "CDII1", "CMI1", "D-Box", "GLEBS", "KARD
                                "CDII2", "Other ABBA", "CMI2", "Other CMI", "MadaM")
 
 
-new_labels <- c('Sequence')
-for(i in 1:length(domain_counts_BUB1)){
-  new_label <- paste(names(domain_counts_BUB1)[i], ' (', as.character(domain_counts_BUB1[i]), ')', sep = '')
-  new_labels <- c(new_labels, new_label)
-}
+new_labels <- c('Sequence', names(domain_counts_BUB1))
 
 # Replace column names in the original table
 colnames(domains_BUB1) <- new_labels
@@ -147,17 +139,4 @@ p
 
 # Save the heatmap
 ggsave(filename = '../Figures/FigSuppl1F.pdf',
-       plot = p, device = cairo_pdf, width = 10, height = 7, dpi = 500)
-
-#### Show the most abundant domain compositions with UpSetR ####
-
-# Save the plot for BuBR1
-ggsave(filename = '../Figures/FigSuppl1B.pdf', 
-       device = cairo_pdf, width = 10, height = 7, dpi = 500, 
-       plot = upset(domains_BuBR1, order.by = "freq", nsets = 16))
-
-# Save the plot for BUB1
-ggsave(filename = '../Figures/FigSuppl_BUB1_composition.pdf',
-       device = cairo_pdf, width = 10, height = 7, dpi = 500, 
-       plot = upset(domains_BUB1, order.by = "freq", nsets = 16))
-
+       plot = p, device = cairo_pdf, width = 10, height = 10, dpi = 500)
