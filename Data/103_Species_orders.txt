@@ -1,0 +1,103 @@
+Rhinopithecus bieti	Primates
+Rhinopithecus roxellana	Primates
+Colobus angolensis palliatus	Primates
+Mandrillus leucophaeus	Primates
+Cercocebus atys	Primates
+Macaca nemestrina	Primates
+Macaca fascicularis	Primates
+Papio anubis	Primates
+Macaca mulatta	Primates
+Theropithecus gelada	Primates
+Chlorocebus sabaeus	Primates
+Piliocolobus tephrosceles	Primates
+Pan troglodytes	Primates
+Pan paniscus	Primates
+Gorilla gorilla gorilla	Primates
+Homo sapiens	Primates
+Nomascus leucogenys	Primates
+Pongo abelii	Primates
+Cebus capucinus imitator	Primates
+Saimiri boliviensis boliviensis	Primates
+Aotus nancymaae	Primates
+Callithrix jacchus	Primates
+Prolemur simus	Primates
+Propithecus coquereli	Primates
+Microcebus murinus	Primates
+Otolemur garnettii	Primates
+Carlito syrichta	Primates
+Lynx canadensis	Carnivora
+Felis catus	Carnivora
+Panthera pardus	Carnivora
+Panthera tigris altaica	Carnivora
+Suricata suricatta	Carnivora
+Ursus americanus	Carnivora
+Ailuropoda melanoleuca	Carnivora
+Neovison vison	Carnivora
+Vulpes vulpes	Carnivora
+Rhinolophus ferrumequinum	Chiroptera
+Pteropus vampyrus	Chiroptera
+Myotis lucifugus	Chiroptera
+Chrysolophus pictus	Galliformes
+Phasianus colchicus	Galliformes
+Meleagris gallopavo	Galliformes
+Gallus gallus	Galliformes
+Coturnix japonica	Galliformes
+Numida meleagris	Galliformes
+Vombatus ursinus	Marsupialia
+Phascolarctos cinereus	Marsupialia
+Notamacropus eugenii	Marsupialia
+Sarcophilus harrisii	Marsupialia
+Monodelphis domestica	Marsupialia
+Procavia capensis	Afrotheria
+Loxodonta africana	Afrotheria
+Echinops telfairi	Afrotheria
+Anser cygnoides	Anseriformes
+Anser brachyrhynchus	Anseriformes
+Anas platyrhynchos platyrhynchos	Anseriformes
+Apteryx owenii	Paleognathae
+Apteryx haastii	Paleognathae
+Apteryx rowi	Paleognathae
+Struthio camelus australis	Paleognathae
+Dromaius novaehollandiae	Paleognathae
+Nothoprocta perdicaria	Paleognathae
+Taeniopygia guttata	Passeriformes
+Serinus canaria	Passeriformes
+Parus major	Passeriformes
+Ficedula albicollis	Passeriformes
+Manacus vitellinus	Passeriformes
+Aquila chrysaetos chrysaetos	Accipitriformes
+Accipiter nisus	Accipitriformes
+Calidris pygmaea	Charadriiformes
+Calidris pugnax	Charadriiformes
+Amazona collaria	Psittaciformes
+Melopsittacus undulatus	Psittaciformes
+Strigops habroptila	Psittaciformes
+Scleropages formosus	Osteoglossiformes
+Paramormyrops kingsleyae	Osteoglossiformes
+Choloepus hoffmanni	Xenarthra
+Dasypus novemcinctus	Xenarthra
+Bison bison bison	Cetartiodactyla
+Bos mutus	Cetartiodactyla
+Bos taurus	Cetartiodactyla
+Capra hircus	Cetartiodactyla
+Ovis aries	Cetartiodactyla
+Moschus moschiferus	Cetartiodactyla
+Physeter catodon	Cetartiodactyla
+Tursiops truncatus	Cetartiodactyla
+Catagonus wagneri	Cetartiodactyla
+Sus scrofa	Cetartiodactyla
+Camelus dromedarius	Cetartiodactyla
+Vicugna pacos	Cetartiodactyla
+Ornithorhynchus anatinus	Monotremata
+Chrysemys picta bellii	Testudines
+Pelodiscus sinensis	Testudines
+Pogona vitticeps	Squamata
+Anolis carolinensis	Squamata
+Salvator merianae	Squamata
+Crocodylus porosus	Crocodilia
+Lepisosteus oculatus	Lepisosteiformes
+Erpetoichthys calabaricus	Polypteriformes
+Sorex araneus	Soricidaceae
+Equus caballus	Perissodactyla
+Xenopus tropicalis	Anura
+Erinaceus europaeus	Erinacidaceae

@@ -4,7 +4,7 @@
 # Freely distributed under the GNU General Public License (GPLv3).
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # query sequence file:             TromerBUB1_MadaM.fasta
-# target sequence database:        ../../../Sequences/Human_BUB1_orthologues_2018_12_05.fa
+# target sequence database:        ../../../Sequences/Human_BUB1_orthologues_2020-04-27.fa
 # per-seq hits tabular output:     EnsemblBUB1_MadaM_jackhmmer.tblout
 # per-dom hits tabular output:     EnsemblBUB1_MadaM_jackhmmer.domtblout
 # query <seqfile> format asserted: fasta
@@ -29,15 +29,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          141  (128604 residues searched)
-Passed MSV filter:                         1  (0.0070922); expected 2.8 (0.02)
-Passed bias filter:                        1  (0.0070922); expected 2.8 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          245  (227927 residues searched)
+Passed MSV filter:                         1  (0.00408163); expected 4.9 (0.02)
+Passed bias filter:                        1  (0.00408163); expected 4.9 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                141  [actual number of targets]
+Initial search space (Z):                245  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 257.21
+# Mc/sec: 455.85
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query

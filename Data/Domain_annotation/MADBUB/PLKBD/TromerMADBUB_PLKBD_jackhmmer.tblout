@@ -1,0 +1,19 @@
+#                                                                  --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name              accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------    -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+LANA_MADBUB          -          HSAP_BUB||PLKBD/586-618 -            1.2e-14   46.5   3.2   3.4e-14   45.0   3.2   1.8   1   0   0   1   1   1   1 -
+CGIG_MADBUB          -          HSAP_BUB||PLKBD/586-618 -              3e-13   42.0   0.3   9.4e-13   40.4   0.3   1.8   1   0   0   1   1   1   1 -
+SKOW_MADBUB          -          HSAP_BUB||PLKBD/586-618 -            4.3e-13   41.5   4.2   1.1e-12   40.2   4.2   1.7   1   0   0   1   1   1   1 -
+BFLO_MADBUB          -          HSAP_BUB||PLKBD/586-618 -            7.7e-12   37.5   3.9   1.9e-11   36.2   3.9   1.7   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          HSAP_BUB||PLKBD/586-618 -            6.8e-10   31.2   0.7   3.3e-09   29.1   0.7   2.3   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          HSAP_BUB||PLKBD/586-618 -            5.2e-06   18.8   1.6   5.2e-06   18.8   1.6   2.7   2   0   0   2   2   2   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerMADBUB_PLKBD.fasta
+# Target file:     ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# Option settings: jackhmmer --tblout TromerMADBUB_PLKBD_jackhmmer.tblout --domtblout TromerMADBUB_PLKBD_jackhmmer.domtblout --qformat fasta --tformat fasta TromerMADBUB_PLKBD.fasta ../../../Sequences/Tromer_MADBUB_seqs.fasta 
+# Current dir:     /home/angelfcc/Documents/PhD_projects/BUBR1/BUBR1_coevolution_github/Data/Domain_annotation/MADBUB/PLKBD
+# Date:            Fri Jul 10 17:26:03 2020
+# [ok]

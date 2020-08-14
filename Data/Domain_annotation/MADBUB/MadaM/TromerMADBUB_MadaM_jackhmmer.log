@@ -1,0 +1,2706 @@
+# jackhmmer :: iteratively search a protein sequence against a protein database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             TromerMADBUB_MadaM.fasta
+# target sequence database:        ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# per-seq hits tabular output:     TromerMADBUB_MadaM_jackhmmer.tblout
+# per-dom hits tabular output:     TromerMADBUB_MadaM_jackhmmer.domtblout
+# query <seqfile> format asserted: fasta
+# target <seqdb> format asserted:  fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AKER_MADBUB||MadaM/372-391  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   6.5e-12   34.8   0.2    4.6e-10   29.5   0.1    3.1  2  AKER_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> AKER_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.1     6e-12   4.6e-10       1      20 []     372     391 ..     372     391 .. 0.96
+   2 ?    1.6   0.0     0.041       3.2       4      18 ..     561     575 ..     559     576 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 6e-12
+  AKER_MADBUB||MadaM/372-391   1 vlidagklkknplynfdkgl 20 
+                                 vlidagklkknplynfdkgl
+                 AKER_MADBUB 372 VLIDAGKLKKNPLYNFDKGL 391
+                                 79*****************7 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.041
+  AKER_MADBUB||MadaM/372-391   4 dagklkknplynfdk 18 
+                                 ++gk+  +p+y +d+
+                 AKER_MADBUB 561 ESGKVNMSPIYGIDE 575
+                                 589********9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         5  (0.0649351); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         1  (0.012987); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.9e-16   50.6   4.9    1.1e-15   49.5   4.9    1.6  1  AKER_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> AKER_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.5   4.9   1.4e-17   1.1e-15       1      20 []     372     391 ..     372     391 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 49.5 bits;  conditional E-value: 1.4e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  AKER_MADBUB||MadaM/372-391-i1   1 VLIDAGKLKKNPLYNFDKGL 20 
+                                    VLIDAGKLKKNPLYNFDKGL
+                    AKER_MADBUB 372 VLIDAGKLKKNPLYNFDKGL 391
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         1  (0.012987); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       ALIM_MADBUB||MadaM/407-426  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   3.4e-11   31.9   1.4      1e-09   27.8   0.2    4.1  4  ALIM_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> ALIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.2   1.3e-11     1e-09       1      20 []     407     426 ..     407     426 .. 0.97
+   2 ?   -2.5   0.0         1        77       8      19 ..     649     660 ..     639     661 .. 0.57
+   3 ?   -3.7   0.0         1        77       4      16 ..     662     677 ..     659     679 .. 0.45
+   4 ?   -1.3   0.0      0.41        32       9      18 ..     746     755 ..     740     757 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 1.3e-11
+  ALIM_MADBUB||MadaM/407-426   1 desetemlmkkplqnfgker 20 
+                                 desetemlmkkplqnfgker
+                 ALIM_MADBUB 407 DESETEMLMKKPLQNFGKER 426
+                                 8******************8 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 1
+  ALIM_MADBUB||MadaM/407-426   8 lmkkplqnfgke 19 
+                                    kp+  fg e
+                 ALIM_MADBUB 649 AAAKPFSIFGAE 660
+                                 345788888865 PP
+
+  == domain 3  score: -3.7 bits;  conditional E-value: 1
+  ALIM_MADBUB||MadaM/407-426   4 etemlmk...kplqnf 16 
+                                 ete   k   kp+  f
+                 ALIM_MADBUB 662 ETEAPSKaaaKPFSIF 677
+                                 5554333111566555 PP
+
+  == domain 4  score: -1.3 bits;  conditional E-value: 0.41
+  ALIM_MADBUB||MadaM/407-426   9 mkkplqnfgk 18 
+                                  +kp+q fg 
+                 ALIM_MADBUB 746 ARKPFQMFGD 755
+                                 589*****96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        11  (0.142857); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-17   55.6   5.2    7.6e-17   52.9   3.7    3.1  2  ALIM_MADBUB  
+  ------ inclusion threshold ------
+      0.039    6.1   7.5    0.00095   11.2   0.4    2.1  2  HPAR_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> ALIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.9   3.7     2e-18   7.6e-17       1      20 []     407     426 ..     407     426 .. 0.99
+   2 ?    0.1   0.0     0.076       2.9      10      17 ..     747     754 ..     746     756 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 52.9 bits;  conditional E-value: 2e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  ALIM_MADBUB||MadaM/407-426-i1   1 DESETEMLMKKPLQNFGKER 20 
+                                    DESETEMLMKKPLQNFGKER
+                    ALIM_MADBUB 407 DESETEMLMKKPLQNFGKER 426
+                                    9******************9 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 0.076
+                                    xxxxxxxx RF
+  ALIM_MADBUB||MadaM/407-426-i1  10 KKPLQNFG 17 
+                                    +KP Q FG
+                    ALIM_MADBUB 747 RKPFQMFG 754
+                                    5******9 PP
+
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -5.0   1.8         2        77       4       7 ..      60      63 ..      60      63 .. 0.96
+   2 ?   11.2   0.4   2.5e-05   0.00095       4      16 ..     378     390 ..     377     391 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -5.0 bits;  conditional E-value: 2
+                                   xxxx RF
+  ALIM_MADBUB||MadaM/407-426-i1  4 ETEM 7 
+                                   ETEM
+                    HPAR_MADBUB 60 ETEM 63
+                                   9*** PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 2.5e-05
+                                    xxxxxxxxxxxxx RF
+  ALIM_MADBUB||MadaM/407-426-i1   4 ETEMLMKKPLQNF 16 
+                                    E EML +KPL NF
+                    HPAR_MADBUB 378 EEEMLARKPLKNF 390
+                                    78*********** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         7  (0.0909091); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       CNEO_MADBUB||MadaM/346-365  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   4.4e-11   32.4   0.3    3.4e-10   29.9   0.3    2.6  1  CNEO_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.3   4.4e-12   3.4e-10       1      20 []     346     365 ..     346     365 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 4.4e-12
+  CNEO_MADBUB||MadaM/346-365   1 ppteaellksdplrhydttn 20 
+                                 ppteaellksdplrhydttn
+                 CNEO_MADBUB 346 PPTEAELLKSDPLRHYDTTN 365
+                                 9******************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         7  (0.0909091); expected 1.5 (0.02)
+Passed bias filter:                        7  (0.0909091); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    9.6e-17   52.9   4.0    2.3e-16   51.7   4.0    1.7  1  CNEO_MADBUB  
++   3.9e-05   15.9   0.3    0.00015   14.1   0.3    2.1  1  KFLA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.7   4.0   5.8e-18   2.3e-16       1      20 []     346     365 ..     346     365 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 51.7 bits;  conditional E-value: 5.8e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  CNEO_MADBUB||MadaM/346-365-i1   1 PPTEAELLKSDPLRHYDTTN 20 
+                                    PPTEAELLKSDPLRHYDTTN
+                    CNEO_MADBUB 346 PPTEAELLKSDPLRHYDTTN 365
+                                    9******************9 PP
+
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.3   3.8e-06   0.00015       3      16 ..     364     377 ..     363     378 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 3.8e-06
+                                    xxxxxxxxxxxxxx RF
+  CNEO_MADBUB||MadaM/346-365-i1   3 TEAELLKSDPLRHY 16 
+                                    TE E LK DPLRH+
+                    KFLA_MADBUB 364 TESESLKEDPLRHF 377
+                                    9************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         5  (0.0649351); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 3 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.1e-16   51.3   4.0    6.9e-16   50.1   4.0    1.7  1  CNEO_MADBUB  
+    4.2e-10   31.7   1.2    1.8e-09   29.6   1.2    2.2  1  KFLA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.1   4.0   1.8e-17   6.9e-16       1      20 []     346     365 ..     346     365 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 50.1 bits;  conditional E-value: 1.8e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  CNEO_MADBUB||MadaM/346-365-i2   1 PPTEAElLKsDPLRHYDTTN 20 
+                                    PPTEAElLKsDPLRHYDTTN
+                    CNEO_MADBUB 346 PPTEAELLKSDPLRHYDTTN 365
+                                    9******************9 PP
+
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.6   1.2   4.8e-11   1.8e-09       3      16 ..     364     377 ..     363     379 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 29.6 bits;  conditional E-value: 4.8e-11
+                                    xxxxxxxxxxxxxx RF
+  CNEO_MADBUB||MadaM/346-365-i2   3 TEAElLKsDPLRHY 16 
+                                    TE+E+LK+DPLRH+
+                    KFLA_MADBUB 364 TESESLKEDPLRHF 377
+                                    9************* PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 3 rounds). 
+@@
+
+//
+Query:       DDIS_MADBUB||MadaM/394-413  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   5.8e-10   28.5   3.3    3.2e-09   26.5   0.4    4.1  2  DDIS_MADBUB  
++   0.00019   13.3   0.1     0.0036    9.8   0.1    3.2  1  PPAL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> DDIS_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.5   0.4   8.3e-11   3.2e-09       1      20 []     394     413 ..     394     413 .. 0.96
+   2 ?   -3.6   0.1         2        77       6      15 ..     797     805 ..     791     806 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 26.5 bits;  conditional E-value: 8.3e-11
+  DDIS_MADBUB||MadaM/394-413   1 qqskleqiqnnplanfpkvs 20 
+                                 qqskleqiqnnplanfpkvs
+                 DDIS_MADBUB 394 QQSKLEQIQNNPLANFPKVS 413
+                                 89****************97 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 2
+  DDIS_MADBUB||MadaM/394-413   6 eqiqnnplan 15 
+                                  q+  npl n
+                 DDIS_MADBUB 797 SQL-QNPLKN 805
+                                 233.367765 PP
+
+>> PPAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.1   9.4e-05    0.0036       3      18 ..     372     387 ..     370     389 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 9.4e-05
+  DDIS_MADBUB||MadaM/394-413   3 skleqiqnnplanfpk 18 
+                                 + +eqiqnnplan  k
+                 PPAL_MADBUB 372 NTVEQIQNNPLANHLK 387
+                                 568**********866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       12  (0.155844); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    6.8e-12   37.2   3.6    3.3e-11   35.0   3.6    2.3  1  PPAL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PPAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.0   3.6   4.3e-13   3.3e-11       3      18 ..     372     387 ..     371     389 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 35.0 bits;  conditional E-value: 4.3e-13
+                                    xxxxxxxxxxxxxxxx RF
+  DDIS_MADBUB||MadaM/394-413-i1   3 sklEQIQNNPLANFpK 18 
+                                    +++EQIQNNPLAN++K
+                    PPAL_MADBUB 372 NTVEQIQNNPLANHLK 387
+                                    8*************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       EGLA_MADBUB||MadaM/342-361  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   8.9e-11   31.3   0.1    6.6e-10   28.9   0.1    2.6  1  EGLA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.1   8.6e-12   6.6e-10       1      20 []     342     361 ..     342     361 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 8.6e-12
+  EGLA_MADBUB||MadaM/342-361   1 gtseaellrrdpfrnygkda 20 
+                                 gtseaellrrdpfrnygkda
+                 EGLA_MADBUB 342 GTSEAELLRRDPFRNYGKDA 361
+                                 8******************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        10  (0.12987); expected 1.5 (0.02)
+Passed bias filter:                       10  (0.12987); expected 1.5 (0.02)
+Passed Vit filter:                         6  (0.0779221); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.6e-17   54.8   0.9    3.9e-17   53.6   0.9    1.7  1  EGLA_MADBUB  
++   0.00064   11.5   1.2      0.003    9.4   0.0    2.3  2  WMEL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.6   0.9     1e-18   3.9e-17       1      20 []     342     361 ..     342     361 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 53.6 bits;  conditional E-value: 1e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i1   1 GTSEAELLRRDPFRNYGKDA 20 
+                                    GTSEAELLRRDPFRNYGKDA
+                    EGLA_MADBUB 342 GTSEAELLRRDPFRNYGKDA 361
+                                    9******************9 PP
+
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.2     0.071       2.7      11      16 ..      83      88 ..      82      89 .. 0.90
+   2 !    9.4   0.0   7.8e-05     0.003       3      16 ..     335     348 ..     334     349 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.071
+                                   xxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i1 11 DPFRNY 16
+                                   DPFR Y
+                    WMEL_MADBUB 83 DPFRVY 88
+                                   9***88 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 7.8e-05
+                                    xxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i1   3 SEAELLRRDPFRNY 16 
+                                    SEAE LR  PF N+
+                    WMEL_MADBUB 335 SEAEQLRLNPFKNF 348
+                                    9************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 3 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    8.8e-17   52.5   0.6    2.4e-16   51.2   0.6    1.8  1  EGLA_MADBUB  
+    2.1e-09   29.0   2.0    3.4e-09   28.4   0.3    2.1  2  WMEL_MADBUB  
++   7.6e-05   14.5   0.0    0.00022   13.0   0.0    1.8  1  RSOL_MADBUB  
++   0.00019   13.3   0.0    0.00047   12.0   0.0    1.7  1  UMAY_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.2   0.6   1.2e-17   2.4e-16       1      20 []     342     361 ..     342     361 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 51.2 bits;  conditional E-value: 1.2e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i2   1 GTSEAElLRrdPFrNYGKDA 20 
+                                    GTSEAElLRrdPFrNYGKDA
+                    EGLA_MADBUB 342 GTSEAELLRRDPFRNYGKDA 361
+                                    9******************9 PP
+
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.1       0.4       7.7      11      16 ..      83      88 ..      83      90 .. 0.87
+   2 !   28.4   0.3   1.8e-10   3.4e-09       3      16 ..     335     348 ..     334     349 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.4
+                                   xxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i2 11 dPFrNY 16
+                                   dPFr Y
+                    WMEL_MADBUB 83 DPFRVY 88
+                                   9***88 PP
+
+  == domain 2  score: 28.4 bits;  conditional E-value: 1.8e-10
+                                    xxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i2   3 SEAElLRrdPFrNY 16 
+                                    SEAE+LR++PF+N+
+                    WMEL_MADBUB 335 SEAEQLRLNPFKNF 348
+                                    9************9 PP
+
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   1.2e-05   0.00022       4      16 ..     345     357 ..     344     359 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.2e-05
+                                    xxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i2   4 EAElLRrdPFrNY 16 
+                                    E E LR +PF+N+
+                    RSOL_MADBUB 345 ESEALRQNPFKNW 357
+                                    7899********8 PP
+
+>> UMAY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   2.5e-05   0.00047       3      19 ..     437     453 ..     436     454 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 2.5e-05
+                                    xxxxxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i2   3 SEAElLRrdPFrNYGKD 19 
+                                    SE  lLR +PF  +GKD
+                    UMAY_MADBUB 437 SETDLLRSNPFAYWGKD 453
+                                    9***************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        10  (0.12987); expected 1.5 (0.02)
+Passed bias filter:                       10  (0.12987); expected 1.5 (0.02)
+Passed Vit filter:                         6  (0.0779221); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0519481); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   2
+@@ New alignment includes: 5 subseqs (was 3), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  4
+@@ Included in MSA:        5 subsequences (query + 4 subseqs from 4 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.5e-16   49.6   0.5    1.8e-15   48.4   0.5    1.7  1  EGLA_MADBUB  
+    4.2e-12   37.7   0.1      1e-11   36.4   0.1    1.7  1  UMAY_MADBUB  
+      1e-08   26.8   1.1    2.2e-08   25.8   0.1    2.0  2  WMEL_MADBUB  
+    1.8e-08   26.0   0.2    5.3e-08   24.6   0.2    1.8  1  RSOL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.4   0.5   9.4e-17   1.8e-15       1      20 []     342     361 ..     342     361 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 48.4 bits;  conditional E-value: 9.4e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i3   1 GTSEAElLRrnPFrNyGKDA 20 
+                                    GTSEAElLRr+PFrNyGKDA
+                    EGLA_MADBUB 342 GTSEAELLRRDPFRNYGKDA 361
+                                    9******************8 PP
+
+>> UMAY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   0.1   5.4e-13     1e-11       3      19 ..     437     453 ..     436     454 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 36.4 bits;  conditional E-value: 5.4e-13
+                                    xxxxxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i3   3 SEAElLRrnPFrNyGKD 19 
+                                    SE++lLR+nPF+++GKD
+                    UMAY_MADBUB 437 SETDLLRSNPFAYWGKD 453
+                                    9**************** PP
+
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.1      0.54        10      11      16 ..      83      88 ..      82      88 .. 0.84
+   2 !   25.8   0.1   1.1e-09   2.2e-08       3      16 ..     335     348 ..     334     348 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.54
+                                   xxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i3 11 nPFrNy 16
+                                   +PFr y
+                    WMEL_MADBUB 83 DPFRVY 88
+                                   9***77 PP
+
+  == domain 2  score: 25.8 bits;  conditional E-value: 1.1e-09
+                                    xxxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i3   3 SEAElLRrnPFrNy 16 
+                                    SEAE+LR+nPF+N+
+                    WMEL_MADBUB 335 SEAEQLRLNPFKNF 348
+                                    9************9 PP
+
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   0.2   2.7e-09   5.3e-08       4      16 ..     345     357 ..     345     359 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 2.7e-09
+                                    xxxxxxxxxxxxx RF
+  EGLA_MADBUB||MadaM/342-361-i3   4 EAElLRrnPFrNy 16 
+                                    E+E+LR+nPF+N+
+                    RSOL_MADBUB 345 ESEALRQNPFKNW 357
+                                    9************ PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        8  (0.103896); expected 1.5 (0.02)
+Passed Vit filter:                         6  (0.0779221); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0519481); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 5 subseqs (was 5), including original query
+@@
+@@ CONVERGED (in 4 rounds). 
+@@
+
+//
+Query:       HPAR_MADBUB||MadaM/375-394  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   6.9e-10   27.9   0.1    7.6e-09   25.1   0.1    2.8  1  HPAR_MADBUB  
++   3.4e-08   23.3   0.1    3.5e-07   20.6   0.1    2.7  1  PINF_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   0.1     2e-10   7.6e-09       1      20 []     375     394 ..     375     394 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 2e-10
+  HPAR_MADBUB||MadaM/375-394   1 vateeemlarkplknftase 20 
+                                 vateeemlarkplknftase
+                 HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                 79****************97 PP
+
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   0.1     9e-09   3.5e-07       1      20 []     373     392 ..     373     392 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 9e-09
+  HPAR_MADBUB||MadaM/375-394   1 vateeemlarkplknftase 20 
+                                 vateeemla++plknftas+
+                 PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                 79****************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.1e-16   51.9   4.5    2.7e-16   51.5   2.5    2.2  2  HPAR_MADBUB  
+    2.1e-16   51.8   3.0    3.8e-16   51.0   1.3    2.3  2  PINF_MADBUB  
++   0.00038   12.7   0.3     0.0012   11.1   0.3    1.9  1  ALIM_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.5   2.5     1e-17   2.7e-16       1      20 []     375     394 ..     375     394 .. 0.99
+   2 ?   -1.0   0.0      0.29       7.5       6      12 ..     984     990 ..     984     991 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 51.5 bits;  conditional E-value: 1e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i1   1 VATEEEMLArkPLKNFTASe 20 
+                                    VATEEEMLArkPLKNFTASe
+                    HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                    9******************9 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.29
+                                    xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i1   6 EMLArkP 12 
+                                    EML + P
+                    HPAR_MADBUB 984 EMLTQRP 990
+                                    9****99 PP
+
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.0   1.3   1.5e-17   3.8e-16       1      20 []     373     392 ..     373     392 .. 0.99
+   2 ?   -1.0   0.0      0.29       7.5       6      12 ..    1001    1007 ..    1001    1008 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 51.0 bits;  conditional E-value: 1.5e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i1   1 VATEEEMLArkPLKNFTASe 20 
+                                    VATEEEMLA++PLKNFTAS+
+                    PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                    9******************8 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.29
+                                     xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i1    6 EMLArkP 12  
+                                     EML + P
+                    PINF_MADBUB 1001 EMLTQRP 1007
+                                     9****99 PP
+
+>> ALIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.3   4.8e-05    0.0012       4      16 ..     410     422 ..     409     423 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 4.8e-05
+                                    xxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i1   4 EEEMLArkPLKNF 16 
+                                    E EML +kPL NF
+                    ALIM_MADBUB 410 ETEMLMKKPLQNF 422
+                                    77*********** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         5  (0.0649351); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         3  (0.038961); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 4 subseqs (was 3), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        4 subsequences (query + 3 subseqs from 3 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    8.7e-16   49.9   2.2    8.7e-16   49.9   2.2    2.5  3  HPAR_MADBUB  
+      1e-15   49.7   2.9    2.4e-15   48.5   1.4    2.4  2  PINF_MADBUB  
+    9.8e-09   27.3   0.5    9.8e-09   27.3   0.5    2.2  2  ALIM_MADBUB  
++   0.00028   13.1   1.2     0.0037    9.5   0.3    2.4  2  SARC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.3   0.5         4        77       4       7 ..      60      63 ..      60      65 .. 0.95
+   2 !   49.9   2.2   4.5e-17   8.7e-16       1      20 []     375     394 ..     375     394 .. 0.99
+   3 ?   -0.9   0.0      0.35       6.7       6      12 ..     984     990 ..     984     991 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -4.3 bits;  conditional E-value: 4
+                                   xxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2  4 EEEM 7 
+                                   E+EM
+                    HPAR_MADBUB 60 ETEM 63
+                                   9*** PP
+
+  == domain 2  score: 49.9 bits;  conditional E-value: 4.5e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   1 VATEEEMLArKPLKNFTASe 20 
+                                    VATEEEMLArKPLKNFTASe
+                    HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                    9******************9 PP
+
+  == domain 3  score: -0.9 bits;  conditional E-value: 0.35
+                                    xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   6 EMLArKP 12 
+                                    EML + P
+                    HPAR_MADBUB 984 EMLTQRP 990
+                                    9****99 PP
+
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.5   1.4   1.2e-16   2.4e-15       1      20 []     373     392 ..     373     392 .. 0.99
+   2 ?   -0.9   0.0      0.35       6.7       6      12 ..    1001    1007 ..    1001    1008 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 48.5 bits;  conditional E-value: 1.2e-16
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   1 VATEEEMLArKPLKNFTASe 20 
+                                    VATEEEMLA++PLKNFTAS+
+                    PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                    9******************8 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.35
+                                     xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2    6 EMLArKP 12  
+                                     EML + P
+                    PINF_MADBUB 1001 EMLTQRP 1007
+                                     9****99 PP
+
+>> ALIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.3   0.5   5.1e-10   9.8e-09       4      16 ..     410     422 ..     409     423 .. 0.97
+   2 ?   -2.5   0.3       1.1        22       9      16 ..     746     753 ..     746     753 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 27.3 bits;  conditional E-value: 5.1e-10
+                                    xxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   4 EEEMLArKPLKNF 16 
+                                    E+EML++KPL+NF
+                    ALIM_MADBUB 410 ETEMLMKKPLQNF 422
+                                    9************ PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 1.1
+                                    xxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   9 ArKPLKNF 16 
+                                    ArKP + F
+                    ALIM_MADBUB 746 ARKPFQMF 753
+                                    8***9855 PP
+
+>> SARC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.5   0.3   0.00019    0.0037       8      16 ..     243     251 ..     240     251 .. 0.90
+   2 ?    1.7   0.0     0.054         1      10      16 ..     252     258 ..     252     261 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 0.00019
+                                    xxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2   8 LArKPLKNF 16 
+                                    L++ PL+NF
+                    SARC_MADBUB 243 LMQNPLQNF 251
+                                    9******** PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.054
+                                    xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i2  10 rKPLKNF 16 
+                                    rKP KNF
+                    SARC_MADBUB 252 RKPAKNF 258
+                                    8****** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0519481); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 5 subseqs (was 4), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  4
+@@ Included in MSA:        5 subsequences (query + 4 subseqs from 4 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.5e-16   50.0   1.9    7.5e-16   50.0   1.9    2.4  2  HPAR_MADBUB  
+    1.7e-15   48.9   1.6    1.7e-15   48.9   1.6    2.3  2  PINF_MADBUB  
+    6.9e-09   27.8   0.6    6.9e-09   27.8   0.6    1.9  2  ALIM_MADBUB  
+      3e-05   16.1   1.7    0.00019   13.6   0.7    2.3  2  SARC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.0   1.9   3.9e-17   7.5e-16       1      20 []     375     394 ..     375     394 .. 0.99
+   2 ?   -1.2   0.1       0.4       7.8       6      12 ..     984     990 ..     984     990 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 50.0 bits;  conditional E-value: 3.9e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   1 VATEEEMLarkPLkNFTASe 20 
+                                    VATEEEMLarkPLkNFTASe
+                    HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                    9******************9 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.4
+                                    xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   6 EMLarkP 12 
+                                    EML + P
+                    HPAR_MADBUB 984 EMLTQRP 990
+                                    9****98 PP
+
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.9   1.6   8.6e-17   1.7e-15       1      20 []     373     392 ..     373     392 .. 0.99
+   2 ?   -1.2   0.1       0.4       7.8       6      12 ..    1001    1007 ..    1001    1007 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 48.9 bits;  conditional E-value: 8.6e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   1 VATEEEMLarkPLkNFTASe 20 
+                                    VATEEEMLa++PLkNFTAS+
+                    PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                    9******************8 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.4
+                                     xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3    6 EMLarkP 12  
+                                     EML + P
+                    PINF_MADBUB 1001 EMLTQRP 1007
+                                     9****98 PP
+
+>> ALIM_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.6   3.6e-10   6.9e-09       4      16 ..     410     422 ..     409     423 .. 0.97
+   2 ?   -3.2   0.3       1.7        33       9      14 ..     746     751 ..     746     753 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 3.6e-10
+                                    xxxxxxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   4 EEEMLarkPLkNF 16 
+                                    E+EML++kPL+NF
+                    ALIM_MADBUB 410 ETEMLMKKPLQNF 422
+                                    9************ PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 1.7
+                                    xxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   9 arkPLk 14 
+                                    arkP +
+                    ALIM_MADBUB 746 ARKPFQ 751
+                                    8***88 PP
+
+>> SARC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.7     1e-05   0.00019       8      16 ..     243     251 ..     240     251 .. 0.90
+   2 ?    0.9   0.0     0.094       1.8      10      16 ..     252     258 ..     252     261 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 1e-05
+                                    xxxxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3   8 LarkPLkNF 16 
+                                    L+++PL+NF
+                    SARC_MADBUB 243 LMQNPLQNF 251
+                                    9******** PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.094
+                                    xxxxxxx RF
+  HPAR_MADBUB||MadaM/375-394-i3  10 rkPLkNF 16 
+                                    rkP kNF
+                    SARC_MADBUB 252 RKPAKNF 258
+                                    8****** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0519481); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 85.73
+
+@@ New targets included:   0
+@@ New alignment includes: 5 subseqs (was 5), including original query
+@@
+@@ CONVERGED (in 4 rounds). 
+@@
+
+//
+Query:       KFLA_MADBUB||MadaM/362-381  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   2.8e-10   29.6   0.2    2.4e-09   27.0   0.2    2.6  1  KFLA_MADBUB  
+  ------ inclusion threshold ------
+     0.0014   11.0   1.2     0.0088    8.8   0.0    3.0  2  CNEO_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.2   6.1e-11   2.4e-09       1      20 []     362     381 ..     362     381 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 6.1e-11
+  KFLA_MADBUB||MadaM/362-381   1 krteseslkedplrhftkvq 20 
+                                 krteseslkedplrhftkvq
+                 KFLA_MADBUB 362 KRTESESLKEDPLRHFTKVQ 381
+                                 8*****************98 PP
+
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.0   0.00023    0.0088       3      17 ..     348     362 ..     346     365 .. 0.89
+   2 ?   -2.9   0.2         2        77       3      12 ..     776     785 ..     774     790 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.00023
+  KFLA_MADBUB||MadaM/362-381   3 teseslkedplrhft 17 
+                                 te+e lk dplrh+ 
+                 CNEO_MADBUB 348 TEAELLKSDPLRHYD 362
+                                 89***********96 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 2
+  KFLA_MADBUB||MadaM/362-381   3 teseslkedp 12 
+                                  e e +ke+p
+                 CNEO_MADBUB 776 EEKEKVKEEP 785
+                                 5889999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        13  (0.168831); expected 1.5 (0.02)
+Passed bias filter:                       13  (0.168831); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.7e-16   51.8   2.6    1.7e-16   51.8   2.6    2.2  2  KFLA_MADBUB  
++   2.6e-05   16.3   0.2    7.6e-05   14.8   0.2    1.8  1  CNEO_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.2      0.31        12       4       8 ..      83      87 ..      82      88 .. 0.92
+   2 !   51.8   2.6   4.5e-18   1.7e-16       1      20 []     362     381 ..     362     381 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.31
+                                   xxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i1  4 ESESL 8 
+                                   ESESL
+                    KFLA_MADBUB 83 ESESL 87
+                                   9***9 PP
+
+  == domain 2  score: 51.8 bits;  conditional E-value: 4.5e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i1   1 KRTESESLKEDPLRHFTKVQ 20 
+                                    KRTESESLKEDPLRHFTKVQ
+                    KFLA_MADBUB 362 KRTESESLKEDPLRHFTKVQ 381
+                                    9******************9 PP
+
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.2     2e-06   7.6e-05       3      16 ..     348     361 ..     347     363 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2e-06
+                                    xxxxxxxxxxxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i1   3 TESESLKEDPLRHF 16 
+                                    TE E LK DPLRH+
+                    CNEO_MADBUB 348 TEAELLKSDPLRHY 361
+                                    9************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 3 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.8e-16   50.8   2.2    3.8e-16   50.8   2.2    2.1  2  KFLA_MADBUB  
+    1.4e-09   29.8   0.7    3.3e-09   28.6   0.7    1.6  1  CNEO_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> KFLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   1.3       1.5        58       4       8 ..      83      87 ..      83      87 .. 0.95
+   2 !   50.8   2.2   9.8e-18   3.8e-16       1      20 []     362     381 ..     362     381 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 1.5
+                                   xxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i2  4 EsEsL 8 
+                                   EsEsL
+                    KFLA_MADBUB 83 ESESL 87
+                                   9***9 PP
+
+  == domain 2  score: 50.8 bits;  conditional E-value: 9.8e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i2   1 KRTEsEsLKeDPLRHFTKVQ 20 
+                                    KRTEsEsLKeDPLRHFTKVQ
+                    KFLA_MADBUB 362 KRTESESLKEDPLRHFTKVQ 381
+                                    9******************9 PP
+
+>> CNEO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.7   8.6e-11   3.3e-09       3      16 ..     348     361 ..     347     363 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 8.6e-11
+                                    xxxxxxxxxxxxxx RF
+  KFLA_MADBUB||MadaM/362-381-i2   3 TEsEsLKeDPLRHF 16 
+                                    TE+E+LK+DPLRH+
+                    CNEO_MADBUB 348 TEAELLKSDPLRHY 361
+                                    9************* PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         7  (0.0909091); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 3 rounds). 
+@@
+
+//
+Query:       NGAD_MADBUB||MadaM/350-369  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++     1e-11   34.5   0.1    6.1e-11   32.2   0.1    2.4  1  NGAD_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> NGAD_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.1   7.9e-13   6.1e-11       1      20 []     350     369 ..     350     369 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 7.9e-13
+  NGAD_MADBUB||MadaM/350-369   1 gpkdmerlcaaplrhfdtdl 20 
+                                 gpkdmerlcaaplrhfdtdl
+                 NGAD_MADBUB 350 GPKDMERLCAAPLRHFDTDL 369
+                                 9******************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         7  (0.0909091); expected 1.5 (0.02)
+Passed bias filter:                        7  (0.0909091); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.8e-18   56.3   3.2    1.9e-17   55.1   3.2    1.7  1  NGAD_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> NGAD_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.1   3.2   2.4e-19   1.9e-17       1      20 []     350     369 ..     350     369 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 55.1 bits;  conditional E-value: 2.4e-19
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  NGAD_MADBUB||MadaM/350-369-i1   1 GPKDMERLCAAPLRHFDTDL 20 
+                                    GPKDMERLCAAPLRHFDTDL
+                    NGAD_MADBUB 350 GPKDMERLCAAPLRHFDTDL 369
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         4  (0.0519481); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       PINF_MADBUB||MadaM/373-392  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   7.4e-10   27.9   0.1      6e-09   25.4   0.1    2.6  1  PINF_MADBUB  
++   4.9e-08   22.9   0.1    3.7e-07   20.5   0.1    2.5  1  HPAR_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   0.1   1.6e-10     6e-09       1      20 []     373     392 ..     373     392 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 1.6e-10
+  PINF_MADBUB||MadaM/373-392   1 vateeemlaqeplknftasd 20 
+                                 vateeemlaqeplknftasd
+                 PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                 79****************98 PP
+
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5   0.1   9.7e-09   3.7e-07       1      20 []     375     394 ..     375     394 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 9.7e-09
+  PINF_MADBUB||MadaM/373-392   1 vateeemlaqeplknftasd 20 
+                                 vateeemla++plknftas+
+                 HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                 79****************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       12  (0.155844); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.5e-17   53.2   3.9    1.2e-16   52.5   1.8    2.3  2  PINF_MADBUB  
+    4.8e-16   50.7   4.0    7.1e-16   50.1   1.9    2.2  2  HPAR_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PINF_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.5   1.8   3.2e-18   1.2e-16       1      20 []     373     392 ..     373     392 .. 0.99
+   2 ?   -0.5   0.0      0.13       5.1       6      12 ..    1001    1007 ..    1001    1008 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 52.5 bits;  conditional E-value: 3.2e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  PINF_MADBUB||MadaM/373-392-i1   1 VATEEEMLAqePLKNFTASd 20 
+                                    VATEEEMLAqePLKNFTASd
+                    PINF_MADBUB 373 VATEEEMLAQEPLKNFTASD 392
+                                    9******************9 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.13
+                                     xxxxxxx RF
+  PINF_MADBUB||MadaM/373-392-i1    6 EMLAqeP 12  
+                                     EML q P
+                    PINF_MADBUB 1001 EMLTQRP 1007
+                                     9****99 PP
+
+>> HPAR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.1   1.9   1.8e-17   7.1e-16       1      20 []     375     394 ..     375     394 .. 0.98
+   2 ?   -0.5   0.0      0.13       5.1       6      12 ..     984     990 ..     984     991 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 50.1 bits;  conditional E-value: 1.8e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  PINF_MADBUB||MadaM/373-392-i1   1 VATEEEMLAqePLKNFTASd 20 
+                                    VATEEEMLA++PLKNFTAS+
+                    HPAR_MADBUB 375 VATEEEMLARKPLKNFTASE 394
+                                    9******************8 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.13
+                                    xxxxxxx RF
+  PINF_MADBUB||MadaM/373-392-i1   6 EMLAqeP 12 
+                                    EML q P
+                    HPAR_MADBUB 984 EMLTQRP 990
+                                    9****99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       PPAL_MADBUB||MadaM/370-389  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   8.4e-11   30.7   0.7    1.7e-09   27.2   0.7    3.3  1  PPAL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PPAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.7   2.2e-11   1.7e-09       1      20 []     370     389 ..     370     389 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 2.2e-11
+  PPAL_MADBUB||MadaM/370-389   1 rsntveqiqnnplanhlkns 20 
+                                 rsntveqiqnnplanhlkns
+                 PPAL_MADBUB 370 RSNTVEQIQNNPLANHLKNS 389
+                                 89*****************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         4  (0.0519481); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    9.2e-17   52.7   5.4    3.1e-16   51.0   5.4    2.0  1  PPAL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PPAL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.0   5.4   4.1e-18   3.1e-16       1      20 []     370     389 ..     370     389 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 51.0 bits;  conditional E-value: 4.1e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  PPAL_MADBUB||MadaM/370-389-i1   1 RSNTVEQIQNNPLANHLKNS 20 
+                                    RSNTVEQIQNNPLANHLKNS
+                    PPAL_MADBUB 370 RSNTVEQIQNNPLANHLKNS 389
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         3  (0.038961); expected 1.5 (0.02)
+Passed bias filter:                        3  (0.038961); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 85.73
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       PTRI_MADBUB||MadaM/392-411  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   7.8e-11   31.5   0.0    4.9e-10   29.2   0.0    2.4  1  PTRI_MADBUB  
++   0.00046   12.4   0.0     0.0027   10.2   0.0    2.3  1  TPSE_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PTRI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.0   1.3e-11   4.9e-10       1      20 []     392     411 ..     392     411 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 1.3e-11
+  PTRI_MADBUB||MadaM/392-411   1 tvgvaerlskdplhymrnpe 20 
+                                 tvgvaerlskdplhymrnpe
+                 PTRI_MADBUB 392 TVGVAERLSKDPLHYMRNPE 411
+                                 89*****************8 PP
+
+>> TPSE_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0   7.1e-05    0.0027       3      19 ..     462     478 ..     460     479 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 7.1e-05
+  PTRI_MADBUB||MadaM/392-411   3 gvaerlskdplhymrnp 19 
+                                 g a+r+ +dp++ym+np
+                 TPSE_MADBUB 462 GTADRIMRDPVRYMKNP 478
+                                 89**************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         2  (0.025974); expected 1.5 (0.02)
+Passed bias filter:                        2  (0.025974); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.5e-16   52.2   0.1      4e-16   50.8   0.1    1.8  1  PTRI_MADBUB  
+      2e-12   39.0   0.7      2e-12   39.0   0.7    2.3  2  TPSE_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> PTRI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.8   0.1     1e-17     4e-16       1      20 []     392     411 ..     392     411 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 50.8 bits;  conditional E-value: 1e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  PTRI_MADBUB||MadaM/392-411-i1   1 TVGvAeRlskDPlhYMrNPE 20 
+                                    TVGvAeRlskDPlhYMrNPE
+                    PTRI_MADBUB 392 TVGVAERLSKDPLHYMRNPE 411
+                                    9******************8 PP
+
+>> TPSE_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.3      0.11       4.1      11      15 ..     132     136 ..     127     137 .. 0.85
+   2 !   39.0   0.7   5.3e-14     2e-12       3      19 ..     462     478 ..     461     479 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.11
+                                    xxxxx RF
+  PTRI_MADBUB||MadaM/392-411-i1  11 DPlhY 15 
+                                    DPl+Y
+                    TPSE_MADBUB 132 DPLRY 136
+                                    ***** PP
+
+  == domain 2  score: 39.0 bits;  conditional E-value: 5.3e-14
+                                    xxxxxxxxxxxxxxxxx RF
+  PTRI_MADBUB||MadaM/392-411-i1   3 GvAeRlskDPlhYMrNP 19 
+                                    G+A+R+++DP++YM+NP
+                    TPSE_MADBUB 462 GTADRIMRDPVRYMKNP 478
+                                    9**************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         7  (0.0909091); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       RSOL_MADBUB||MadaM/342-361  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   3.2e-11   32.6   0.3    2.3e-10   30.2   0.3    2.5  1  RSOL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.3     3e-12   2.3e-10       1      20 []     342     361 ..     342     361 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 3e-12
+  RSOL_MADBUB||MadaM/342-361   1 qpkesealrqnpfknwdsat 20 
+                                 qpkesealrqnpfknwdsat
+                 RSOL_MADBUB 342 QPKESEALRQNPFKNWDSAT 361
+                                 8*****************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        11  (0.142857); expected 1.5 (0.02)
+Passed bias filter:                        9  (0.116883); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.4e-18   56.3   2.9      2e-17   54.9   2.9    1.8  1  RSOL_MADBUB  
++   0.00059   12.0   0.9     0.0016   10.6   0.9    1.7  1  WMEL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.9   2.9   5.1e-19     2e-17       1      20 []     342     361 ..     342     361 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 54.9 bits;  conditional E-value: 5.1e-19
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  RSOL_MADBUB||MadaM/342-361-i1   1 QPKESEALRQNPFKNWDSAT 20 
+                                    QPKESEALRQNPFKNWDSAT
+                    RSOL_MADBUB 342 QPKESEALRQNPFKNWDSAT 361
+                                    9******************9 PP
+
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.9   4.3e-05    0.0016       4      15 ..     336     347 ..     335     349 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 4.3e-05
+                                    xxxxxxxxxxxx RF
+  RSOL_MADBUB||MadaM/342-361-i1   4 ESEALRQNPFKN 15 
+                                    E E LR NPFKN
+                    WMEL_MADBUB 336 EAEQLRLNPFKN 347
+                                    7899******** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 3 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.9e-17   54.9   3.0    4.4e-17   53.8   3.0    1.7  1  RSOL_MADBUB  
+    9.4e-08   23.9   1.7    3.2e-07   22.2   1.7    2.0  1  WMEL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.8   3.0   1.1e-18   4.4e-17       1      20 []     342     361 ..     342     361 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 53.8 bits;  conditional E-value: 1.1e-18
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  RSOL_MADBUB||MadaM/342-361-i2   1 QPKESEaLRqNPFKNWDSAT 20 
+                                    QPKESEaLRqNPFKNWDSAT
+                    RSOL_MADBUB 342 QPKESEALRQNPFKNWDSAT 361
+                                    9******************9 PP
+
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   1.7   8.4e-09   3.2e-07       4      15 ..     336     347 ..     335     349 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 8.4e-09
+                                    xxxxxxxxxxxx RF
+  RSOL_MADBUB||MadaM/342-361-i2   4 ESEaLRqNPFKN 15 
+                                    E+E+LR+NPFKN
+                    WMEL_MADBUB 336 EAEQLRLNPFKN 347
+                                    9*********** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 3 rounds). 
+@@
+
+//
+Query:       SARC_MADBUB||MadaM/236-255  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   8.6e-11   31.1   0.3    6.7e-10   28.6   0.3    2.6  1  SARC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> SARC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.3   8.7e-12   6.7e-10       1      20 []     236     255 ..     236     255 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 8.7e-12
+  SARC_MADBUB||MadaM/236-255   1 srkrgeelmqnplqnfrkpa 20 
+                                 srkrgeelmqnplqnfrkpa
+                 SARC_MADBUB 236 SRKRGEELMQNPLQNFRKPA 255
+                                 79*****************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        13  (0.168831); expected 1.5 (0.02)
+Passed bias filter:                       13  (0.168831); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      3e-17   54.2   3.6    6.4e-17   53.2   3.6    1.6  1  SARC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> SARC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.2   3.6   8.3e-19   6.4e-17       1      20 []     236     255 ..     236     255 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 53.2 bits;  conditional E-value: 8.3e-19
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  SARC_MADBUB||MadaM/236-255-i1   1 SRKRGEELMQNPLQNFRKPA 20 
+                                    SRKRGEELMQNPLQNFRKPA
+                    SARC_MADBUB 236 SRKRGEELMQNPLQNFRKPA 255
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        6  (0.0779221); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       TPSE_MADBUB||MadaM/460-479  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   2.1e-11   33.2   0.6    2.4e-10   30.2   0.1    3.0  2  TPSE_MADBUB  
++   0.00036   12.7   0.0     0.0022   10.5   0.0    2.3  1  PTRI_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> TPSE_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0       1.2        45       6      15 ..     127     136 ..     122     138 .. 0.81
+   2 !   30.2   0.1   6.1e-12   2.4e-10       1      20 []     460     479 ..     460     479 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 1.2
+  TPSE_MADBUB||MadaM/460-479   6 drimrdpvry 15 
+                                 d+i  dp+ry
+                 TPSE_MADBUB 127 DNIDYDPLRY 136
+                                 77899****9 PP
+
+  == domain 2  score: 30.2 bits;  conditional E-value: 6.1e-12
+  TPSE_MADBUB||MadaM/460-479   1 dggtadrimrdpvrymknps 20 
+                                 dggtadrimrdpvrymknps
+                 TPSE_MADBUB 460 DGGTADRIMRDPVRYMKNPS 479
+                                 8******************7 PP
+
+>> PTRI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.5   0.0   5.7e-05    0.0022       3      19 ..     394     410 ..     392     411 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 5.7e-05
+  TPSE_MADBUB||MadaM/460-479   3 gtadrimrdpvrymknp 19 
+                                 g a+r+ +dp++ym+np
+                 PTRI_MADBUB 394 GVAERLSKDPLHYMRNP 410
+                                 89**************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         2  (0.025974); expected 1.5 (0.02)
+Passed bias filter:                        2  (0.025974); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   2
+@@ New alignment includes: 3 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    5.5e-16   50.4   2.7    5.5e-16   50.4   2.7    2.5  2  TPSE_MADBUB  
+    1.6e-12   39.3   0.0    4.5e-12   37.9   0.0    1.8  1  PTRI_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> TPSE_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.3     0.089       3.4      10      15 ..     131     136 ..     127     137 .. 0.81
+   2 !   50.4   2.7   1.4e-17   5.5e-16       1      20 []     460     479 ..     460     479 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.089
+                                    xxxxxx RF
+  TPSE_MADBUB||MadaM/460-479-i1  10 rDPvrY 15 
+                                     DP+rY
+                    TPSE_MADBUB 131 YDPLRY 136
+                                    5***** PP
+
+  == domain 2  score: 50.4 bits;  conditional E-value: 1.4e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  TPSE_MADBUB||MadaM/460-479-i1   1 DGGtAdRimrDPvrYMkNPS 20 
+                                    DGGtAdRimrDPvrYMkNPS
+                    TPSE_MADBUB 460 DGGTADRIMRDPVRYMKNPS 479
+                                    9******************8 PP
+
+>> PTRI_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.0   1.2e-13   4.5e-12       3      19 ..     394     410 ..     393     411 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 37.9 bits;  conditional E-value: 1.2e-13
+                                    xxxxxxxxxxxxxxxxx RF
+  TPSE_MADBUB||MadaM/460-479-i1   3 GtAdRimrDPvrYMkNP 19 
+                                    G+A+R+++DP++YM+NP
+                    PTRI_MADBUB 394 GVAERLSKDPLHYMRNP 410
+                                    9**************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 3 subseqs (was 3), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       TTRA_MADBUB||MadaM/410-429  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   3.9e-10   29.0   0.2    3.8e-09   26.3   0.2    2.7  1  TTRA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> TTRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.2     5e-11   3.8e-09       1      20 []     410     429 ..     410     429 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 5e-11
+  TTRA_MADBUB||MadaM/410-429   1 eatevanlranplknfakps 20 
+                                 eatevanlranplknfakps
+                 TTRA_MADBUB 410 EATEVANLRANPLKNFAKPS 429
+                                 89*****************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    5.8e-16   50.3   3.9    1.5e-15   49.0   3.9    1.8  1  TTRA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> TTRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.0   3.9     2e-17   1.5e-15       1      20 []     410     429 ..     410     429 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 49.0 bits;  conditional E-value: 2e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  TTRA_MADBUB||MadaM/410-429-i1   1 EATEVANLRANPLKNFAKPS 20 
+                                    EATEVANLRANPLKNFAKPS
+                    TTRA_MADBUB 410 EATEVANLRANPLKNFAKPS 429
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         9  (0.116883); expected 1.5 (0.02)
+Passed bias filter:                        7  (0.0909091); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       UMAY_MADBUB||MadaM/435-454  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   3.8e-11   32.5   0.1      2e-10   30.5   0.1    2.3  1  UMAY_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> UMAY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.5   0.1   2.6e-12     2e-10       1      20 []     435     454 ..     435     454 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 30.5 bits;  conditional E-value: 2.6e-12
+  UMAY_MADBUB||MadaM/435-454   1 qssetdllrsnpfaywgkdt 20 
+                                 qssetdllrsnpfaywgkdt
+                 UMAY_MADBUB 435 QSSETDLLRSNPFAYWGKDT 454
+                                 89*****************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         6  (0.0779221); expected 1.5 (0.02)
+Passed bias filter:                        5  (0.0649351); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.1e-18   57.3   0.7    6.7e-18   56.3   0.7    1.6  1  UMAY_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> UMAY_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.3   0.7   8.7e-20   6.7e-18       1      20 []     435     454 ..     435     454 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 56.3 bits;  conditional E-value: 8.7e-20
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  UMAY_MADBUB||MadaM/435-454-i1   1 QSSETDLLRSNPFAYWGKDT 20 
+                                    QSSETDLLRSNPFAYWGKDT
+                    UMAY_MADBUB 435 QSSETDLLRSNPFAYWGKDT 454
+                                    9******************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         4  (0.0519481); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0519481); expected 1.5 (0.02)
+Passed Vit filter:                         2  (0.025974); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 171.46
+
+@@ New targets included:   0
+@@ New alignment includes: 2 subseqs (was 2), including original query
+@@
+@@ CONVERGED (in 2 rounds). 
+@@
+
+//
+Query:       WMEL_MADBUB||MadaM/333-352  [L=20]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   1.4e-10   30.6   0.5    1.1e-09   28.1   0.5    2.6  1  WMEL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.1   0.5   1.4e-11   1.1e-09       1      20 []     333     352 ..     333     352 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 28.1 bits;  conditional E-value: 1.4e-11
+  WMEL_MADBUB||MadaM/333-352   1 evseaeqlrlnpfknfeqpp 20 
+                                 evseaeqlrlnpfknfeqpp
+                 WMEL_MADBUB 333 EVSEAEQLRLNPFKNFEQPP 352
+                                 89*****************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        13  (0.168831); expected 1.5 (0.02)
+Passed bias filter:                       12  (0.155844); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.6e-16   50.8   6.0    8.6e-16   49.6   6.0    1.7  1  WMEL_MADBUB  
++   0.00014   13.8   0.1    0.00058   11.9   0.1    2.1  1  RSOL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.6   6.0   2.2e-17   8.6e-16       1      20 []     333     352 ..     333     352 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 49.6 bits;  conditional E-value: 2.2e-17
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i1   1 EVSEAEQLRLNPFKNFEQPP 20 
+                                    EVSEAEQLRLNPFKNFEQPP
+                    WMEL_MADBUB 333 EVSEAEQLRLNPFKNFEQPP 352
+                                    9******************9 PP
+
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.1   1.5e-05   0.00058       4      16 ..     345     357 ..     344     359 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.5e-05
+                                    xxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i1   4 EAEQLRLNPFKNF 16 
+                                    E E LR NPFKN 
+                    RSOL_MADBUB 345 ESEALRQNPFKNW 357
+                                    8899********6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        7  (0.0909091); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.025974); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 85.73
+
+@@ New targets included:   1
+@@ New alignment includes: 3 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        3 subsequences (query + 2 subseqs from 2 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-15   49.2   5.8    2.5e-15   48.1   5.8    1.7  1  WMEL_MADBUB  
+    1.3e-09   29.9   0.4      4e-09   28.3   0.4    1.9  1  RSOL_MADBUB  
++   0.00022   13.2   0.0    0.00055   11.9   0.0    1.6  1  EGLA_MADBUB  
+  ------ inclusion threshold ------
+     0.0039    9.2   3.6     0.0013   10.7   0.2    2.0  2  TTRA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.1   5.8   1.3e-16   2.5e-15       1      20 []     333     352 ..     333     352 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 48.1 bits;  conditional E-value: 1.3e-16
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i2   1 EVSEAEqLRlNPFKNFEQPP 20 
+                                    EVSEAEqLRlNPFKNFEQPP
+                    WMEL_MADBUB 333 EVSEAEQLRLNPFKNFEQPP 352
+                                    9******************9 PP
+
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.4   2.1e-10     4e-09       4      16 ..     345     357 ..     344     359 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 2.1e-10
+                                    xxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i2   4 EAEqLRlNPFKNF 16 
+                                    E+E+LR+NPFKN+
+                    RSOL_MADBUB 345 ESEALRQNPFKNW 357
+                                    9************ PP
+
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.0   2.8e-05   0.00055       3      16 ..     344     357 ..     343     358 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.8e-05
+                                    xxxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i2   3 SEAEqLRlNPFKNF 16 
+                                    SEAE LR  PF N+
+                    EGLA_MADBUB 344 SEAELLRRDPFRNY 357
+                                    9************8 PP
+
+>> TTRA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.2     7e-05    0.0013       3      18 ..     407     427 ..     406     428 .. 0.78
+   2 ?   -3.6   0.3       2.1        40       4      10 ..     567     573 ..     566     573 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 7e-05
+                                    xxxxx.....xxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i2   3 SEAEq.....LRlNPFKNFEQ 18 
+                                    SEAE+     LR NP KNF  
+                    TTRA_MADBUB 407 SEAEAtevanLRANPLKNFAK 427
+                                    7888666666*********65 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 2.1
+                                    xxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i2   4 EAEqLRl 10 
+                                    EAE+ R+
+                    TTRA_MADBUB 567 EAEAKRQ 573
+                                    9**9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        7  (0.0909091); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0519481); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   1
+@@ New alignment includes: 4 subseqs (was 3), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  4
+@@ Included in MSA:        4 subsequences (query + 3 subseqs from 3 targets)
+@@ Model size:             20 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.5e-15   48.1   5.4    6.4e-15   46.8   5.4    1.8  1  WMEL_MADBUB  
+    2.8e-09   28.8   0.0    7.5e-09   27.4   0.0    1.7  1  EGLA_MADBUB  
+      6e-09   27.7   0.5      2e-08   26.1   0.5    1.9  1  RSOL_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> WMEL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.8   5.4   2.5e-16   6.4e-15       1      20 []     333     352 ..     333     352 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 46.8 bits;  conditional E-value: 2.5e-16
+                                    xxxxxxxxxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i3   1 EVSEAEqLRlNPFKNfEQPP 20 
+                                    EVSEAEqLRlNPFKNfEQPP
+                    WMEL_MADBUB 333 EVSEAEQLRLNPFKNFEQPP 352
+                                    9******************9 PP
+
+>> EGLA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.4   0.0   2.9e-10   7.5e-09       3      16 ..     344     357 ..     343     358 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 27.4 bits;  conditional E-value: 2.9e-10
+                                    xxxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i3   3 SEAEqLRlNPFKNf 16 
+                                    SEAE+LR++PF+N+
+                    EGLA_MADBUB 344 SEAELLRRDPFRNY 357
+                                    9************9 PP
+
+>> RSOL_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.1   0.5   7.7e-10     2e-08       4      16 ..     345     357 ..     344     358 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 26.1 bits;  conditional E-value: 7.7e-10
+                                    xxxxxxxxxxxxx RF
+  WMEL_MADBUB||MadaM/333-352-i3   4 EAEqLRlNPFKNf 16 
+                                    E+E+LR+NPFKN+
+                    RSOL_MADBUB 345 ESEALRQNPFKNW 357
+                                    9************ PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (20 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        11  (0.142857); expected 1.5 (0.02)
+Passed bias filter:                        8  (0.103896); expected 1.5 (0.02)
+Passed Vit filter:                         5  (0.0649351); expected 0.1 (0.001)
+Passed Fwd filter:                         3  (0.038961); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 85.73
+
+@@ New targets included:   0
+@@ New alignment includes: 4 subseqs (was 4), including original query
+@@
+@@ CONVERGED (in 4 rounds). 
+@@
+
+//
+[ok]

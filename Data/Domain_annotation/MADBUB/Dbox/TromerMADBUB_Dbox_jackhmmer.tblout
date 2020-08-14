@@ -1,0 +1,123 @@
+#                                                                    --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------      -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+ACAS_MADBUB          -          ACAS_MADBUB||Dbox/234-246 -            9.1e-09   27.3   4.6   4.9e-08   25.1   4.6   2.4   1   0   0   1   1   1   1 -
+ACYR_MADBUB          -          ACYR_MADBUB||Dbox/223-235 -            4.1e-10   31.6   1.3   1.8e-09   29.6   1.3   2.2   1   0   0   1   1   1   1 -
+AKER_MADBUB          -          AKER_MADBUB||Dbox/218-230 -            5.7e-10   31.3   1.1   1.6e-09   30.0   1.1   1.8   1   0   0   1   1   1   1 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/530-542 -            3.1e-51  162.5 171.4   3.3e-08   25.5   8.3  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/423-435 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/566-578 -            2.9e-51  162.4 172.0   3.4e-08   25.5   7.9  11.3  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/243-255 -            6.9e-50  157.9 141.0   2.9e-08   25.5   5.4  11.3  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/494-506 -              1e-43  138.4 151.4     2e-07   23.1   9.5  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/351-363 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/279-291 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/315-327 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/387-399 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+AQUE_MADBUB          -          AQUE_MADBUB||Dbox/459-471 -            4.4e-54  171.3 163.7   2.7e-08   25.7   8.0  11.2  11   0   0  11  11  11  10 -
+BDEN_MADBUB          -          BDEN_MADBUB||Dbox/226-238 -            2.6e-09   28.8   0.9   9.1e-09   27.1   0.9   2.0   1   0   0   1   1   1   1 -
+BFLO_MADBUB          -          BFLO_MADBUB||Dbox/797-809 -            4.8e-09   28.2   1.5   4.8e-09   28.2   1.5   2.3   2   0   0   2   2   2   1 -
+BFLO_MADBUB          -          BFLO_MADBUB||Dbox/248-260 -            4.8e-08   25.1   2.8   4.8e-08   25.1   2.8   2.7   3   0   0   3   3   3   1 -
+CTEL_MADBUB          -          BFLO_MADBUB||Dbox/248-260 -            7.4e-07   21.4   3.3   1.8e-06   20.1   3.3   1.7   1   0   0   1   1   1   1 -
+LANA_MADBUB          -          BFLO_MADBUB||Dbox/248-260 -            1.6e-06   20.4   1.4   5.7e-06   18.6   1.4   2.0   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          BFLO_MADBUB||Dbox/248-260 -            5.3e-06   18.7   0.8   5.3e-06   18.7   0.8   2.4   2   0   0   2   2   2   1 -
+BMOR_MADBUB          -          BMOR_MADBUB||Dbox/203-215 -            5.4e-09   28.1   1.9   1.4e-08   26.8   1.9   1.8   1   0   0   1   1   1   1 -
+CGIG_MADBUB          -          CGIG_MADBUB||Dbox/202-214 -            1.9e-06   20.3   6.1   1.9e-06   20.3   6.1   2.5   2   0   0   2   2   2   1 -
+CINT_MADBUB          -          CINT_MADBUB||Dbox/226-238 -            1.5e-08   26.4   4.5   3.5e-08   25.3   4.5   1.7   1   0   0   1   1   1   1 -
+CINT_MADBUB          -          CINT_MADBUB||Dbox/622-634 -            1.7e-09   29.6   0.7   3.3e-09   28.7   0.7   1.5   1   0   0   1   1   1   1 -
+LANA_MADBUB          -          CINT_MADBUB||Dbox/622-634 -            3.9e-09   28.5   1.4   1.1e-08   27.1   1.4   1.8   1   0   0   1   1   1   1 -
+CMER_MADBUB          -          CMER_MADBUB||Dbox/340-352 -            8.9e-08   24.3   3.1   8.9e-08   24.3   3.1   3.3   3   0   0   3   3   3   1 -
+CNEO_MADBUB          -          CNEO_MADBUB||Dbox/223-235 -            3.2e-09   28.6   1.9   1.2e-08   26.8   1.9   2.1   1   0   0   1   1   1   1 -
+CPAR_MADBUB          -          CPAR_MADBUB||Dbox/232-244 -            1.4e-08   26.9   2.5   1.4e-08   26.9   2.5   3.5   3   0   0   3   3   3   1 -
+CREI_MADBUB          -          CREI_MADBUB||Dbox/197-209 -            1.9e-08   26.5   1.2   1.9e-08   26.5   1.2   2.8   2   0   0   2   2   2   1 -
+CSUB_MADBUB          -          CSUB_MADBUB||Dbox/219-231 -            7.1e-08   25.0   6.0   4.9e-07   22.4   6.0   2.6   1   0   0   1   1   1   1 -
+CTEL_MADBUB          -          CTEL_MADBUB||Dbox/214-226 -            1.2e-08   26.8   2.7   3.5e-08   25.3   2.7   1.8   1   0   0   1   1   1   1 -
+LANA_MADBUB          -          CTEL_MADBUB||Dbox/214-226 -              2e-08   26.1   0.6   6.8e-08   24.4   0.6   2.0   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          CTEL_MADBUB||Dbox/214-226 -            2.6e-06   19.5   0.9   2.6e-06   19.5   0.9   2.6   2   0   0   2   2   2   1 -
+BFLO_MADBUB          -          CTEL_MADBUB||Dbox/214-226 -              0.024    7.1   9.3   0.00037   12.7   1.0   2.5   2   0   0   2   2   2   0 -
+DDIS_MADBUB          -          DDIS_MADBUB||Dbox/221-233 -            5.9e-08   24.7   3.6     2e-07   23.1   3.6   2.0   1   0   0   1   1   1   1 -
+DHAN_MADBUB          -          DHAN_MADBUB||Dbox/206-218 -              3e-09   28.8   0.7   7.9e-09   27.5   0.7   1.8   1   0   0   1   1   1   1 -
+DMAG_MADBUB          -          DMAG_MADBUB||Dbox/206-218 -            9.9e-10   30.3   0.8   2.7e-09   29.0   0.8   1.8   1   0   0   1   1   1   1 -
+DMAG_MADBUB          -          DMAG_MADBUB||Dbox/716-728 -            2.7e-09   28.6   0.6   8.6e-09   27.1   0.6   2.0   1   0   0   1   1   1   1 -
+DMAG_MADBUB          -          DMAG_MADBUB||Dbox/677-689 -            2.5e-08   26.0   3.6   2.5e-08   26.0   3.6   2.3   2   0   0   2   2   2   1 -
+EGLA_MADBUB          -          EGLA_MADBUB||Dbox/226-238 -            1.7e-07   23.8   9.4     2e-07   23.6   5.3   2.6   2   0   0   2   2   2   1 -
+EHUX_MADBUB          -          EHUX_MADBUB||Dbox/217-229 -            9.8e-08   24.0   6.8   3.4e-07   22.3   6.8   2.0   1   0   0   1   1   1   1 -
+GSUL_MADBUB          -          GSUL_MADBUB||Dbox/215-227 -            1.6e-10   32.6   0.3   3.9e-10   31.4   0.3   1.7   1   0   0   1   1   1   1 -
+HPAR_MADBUB          -          HPAR_MADBUB||Dbox/221-233 -            1.6e-09   29.6   3.6   6.8e-09   27.6   3.6   2.2   1   0   0   1   1   1   1 -
+PINF_MADBUB          -          HPAR_MADBUB||Dbox/221-233 -            5.5e-09   27.9   2.2     2e-08   26.2   2.2   2.1   1   0   0   1   1   1   1 -
+KFLA_MADBUB          -          KFLA_MADBUB||Dbox/213-225 -            4.8e-08   25.0   3.4   4.8e-08   25.0   3.4   3.3   3   0   0   3   3   3   1 -
+LAMPREY_MADBUB       -          LAMPREY_MADBUB||Dbox/227-239 -            1.6e-09   29.4   0.7   1.6e-09   29.4   0.7   2.2   2   0   0   2   2   2   1 -
+LANA_MADBUB          -          LANA_MADBUB||Dbox/719-731 -            8.8e-09   27.4   3.1   2.2e-08   26.1   3.1   1.7   1   0   0   1   1   1   1 -
+CINT_MADBUB          -          LANA_MADBUB||Dbox/719-731 -            2.9e-08   25.8   0.2   5.8e-08   24.8   0.2   1.5   1   0   0   1   1   1   1 -
+LANA_MADBUB          -          LANA_MADBUB||Dbox/212-224 -            4.5e-09   28.1   1.2   1.3e-08   26.7   1.2   1.9   1   0   0   1   1   1   1 -
+CTEL_MADBUB          -          LANA_MADBUB||Dbox/212-224 -            2.4e-08   25.9   1.7   6.7e-08   24.5   1.7   1.8   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          LANA_MADBUB||Dbox/212-224 -             0.0011   11.3   4.4   0.00035   12.9   0.3   2.3   2   0   0   2   2   2   0 -
+BFLO_MADBUB          -          LANA_MADBUB||Dbox/212-224 -              0.035    6.6   9.8   0.00043   12.6   1.1   2.5   2   0   0   2   2   2   0 -
+LANA_MADBUB          -          LANA_MADBUB||Dbox/720-732 -            2.3e-09   29.2   1.9   6.4e-09   27.8   1.9   1.8   1   0   0   1   1   1   1 -
+CINT_MADBUB          -          LANA_MADBUB||Dbox/720-732 -            3.5e-09   28.6   0.4     7e-09   27.7   0.4   1.5   1   0   0   1   1   1   1 -
+LSAL_MADBUB          -          LSAL_MADBUB||Dbox/203-215 -            1.3e-07   23.9   3.5   1.3e-07   23.9   3.5   2.1   2   0   0   2   2   2   1 -
+MBRE_MADBUB          -          MBRE_MADBUB||Dbox/206-218 -              1e-08   27.3   3.3     1e-08   27.3   3.3   2.7   2   0   0   2   2   2   1 -
+SPUR_MADBUB          -          MBRE_MADBUB||Dbox/206-218 -                2.2    1.4  14.4     0.057    6.3   0.8   3.2   3   0   0   3   3   3   0 -
+MBRE_MADBUB          -          MBRE_MADBUB||Dbox/620-632 -            1.7e-09   29.9   0.9     4e-09   28.8   0.9   1.7   1   0   0   1   1   1   1 -
+SROS_MADBUB          -          MBRE_MADBUB||Dbox/620-632 -            1.4e-05   17.6   1.0   3.6e-05   16.4   1.0   1.7   1   0   0   1   1   1   1 -
+MELO_MADBUB          -          MELO_MADBUB||Dbox/262-274 -            1.1e-07   24.3   5.6   3.3e-07   22.8   5.6   1.9   1   0   0   1   1   1   1 -
+MVER_MADBUB          -          MELO_MADBUB||Dbox/262-274 -            3.4e-06   19.6   0.2   7.5e-06   18.6   0.2   1.5   1   0   0   1   1   1   1 -
+MVER_MADBUB          -          MVER_MADBUB||Dbox/238-250 -              1e-08   27.5   1.9   2.2e-08   26.5   1.9   1.6   1   0   0   1   1   1   1 -
+MELO_MADBUB          -          MVER_MADBUB||Dbox/238-250 -            3.9e-05   16.4   1.9   3.9e-05   16.4   1.9   1.9   2   0   0   2   2   2   1 -
+NCRA_MADBUB          -          NCRA_MADBUB||Dbox/812-824 -            9.6e-08   24.3   3.2   9.6e-08   24.3   3.2   3.0   3   1   1   4   4   4   1 -
+NCRA_MADBUB          -          NCRA_MADBUB||Dbox/235-247 -            6.1e-09   28.1   2.0   2.3e-08   26.3   2.0   2.1   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          NVEC_MADBUB||Dbox/827-839 -            4.7e-09   28.3   3.8   1.4e-08   26.9   3.8   1.9   1   0   0   1   1   1   1 -
+PCAU_MADBUB          -          NVEC_MADBUB||Dbox/827-839 -            2.5e-08   26.0   1.4   8.6e-08   24.3   1.4   1.9   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          NVEC_MADBUB||Dbox/208-220 -            1.5e-09   30.3   1.3   4.6e-09   28.7   1.3   1.9   1   0   0   1   1   1   1 -
+NVIT_MADBUB          -          NVIT_MADBUB||Dbox/204-216 -              2e-09   29.4   1.6   7.8e-09   27.5   1.6   2.1   1   0   0   1   1   1   1 -
+OBIM_MADBUB          -          OBIM_MADBUB||Dbox/200-212 -            9.8e-10   30.1   0.8   2.4e-09   28.9   0.8   1.7   1   0   0   1   1   1   1 -
+PBRA_MADBUB          -          PBRA_MADBUB||Dbox/197-209 -            1.2e-08   26.9   1.4   1.2e-08   26.9   1.4   2.7   3   0   0   3   3   3   1 -
+PCAR_MADBUB          -          PCAR_MADBUB||Dbox/202-214 -            6.1e-09   28.0   4.1   1.4e-08   26.8   4.1   1.7   1   0   0   1   1   1   1 -
+PCAU_MADBUB          -          PCAU_MADBUB||Dbox/215-227 -            7.3e-09   27.7   2.8   1.8e-08   26.5   2.8   1.7   1   0   0   1   1   1   1 -
+PCAU_MADBUB          -          PCAU_MADBUB||Dbox/742-754 -            1.2e-09   30.1   1.0   3.6e-09   28.5   1.0   1.9   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          PCAU_MADBUB||Dbox/742-754 -            4.7e-08   25.0   2.8   1.4e-07   23.5   2.8   1.9   1   0   0   1   1   1   1 -
+PINF_MADBUB          -          PINF_MADBUB||Dbox/216-228 -            2.2e-09   29.1   2.5     8e-09   27.4   2.5   2.1   1   0   0   1   1   1   1 -
+HPAR_MADBUB          -          PINF_MADBUB||Dbox/216-228 -            3.8e-09   28.4   3.2   1.5e-08   26.5   3.2   2.1   1   0   0   1   1   1   1 -
+PPAL_MADBUB          -          PPAL_MADBUB||Dbox/210-222 -            3.1e-08   25.9   2.7   7.9e-08   24.7   2.7   1.7   1   0   0   1   1   1   1 -
+PTRI_MADBUB          -          PTRI_MADBUB||Dbox/214-226 -            2.7e-08   26.0   1.9   8.3e-08   24.5   1.9   1.9   1   0   0   1   1   1   1 -
+RIRR_MADBUB          -          RIRR_MADBUB||Dbox/240-252 -            7.9e-08   24.3   5.1   3.2e-07   22.5   5.1   2.1   1   0   0   1   1   1   1 -
+RSOL_MADBUB          -          RSOL_MADBUB||Dbox/217-229 -              2e-09   29.7   1.0   7.6e-09   27.9   1.0   2.1   1   0   0   1   1   1   1 -
+SARC_MADBUB          -          SARC_MADBUB||Dbox/97-109 -            1.7e-08   26.5   4.0     4e-08   25.4   4.0   1.7   1   0   0   1   1   1   1 -
+SKOW_MADBUB          -          SKOW_MADBUB||Dbox/161-173 -            3.8e-08   25.7   6.2     1e-07   24.3   6.2   1.8   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          SKOW_MADBUB||Dbox/161-173 -            1.2e-06   21.0   3.9     2e-06   20.3   0.4   3.0   2   0   0   2   2   2   1 -
+SMIM_MADBUB          -          SMIM_MADBUB||Dbox/210-222 -            8.8e-10   30.7   2.2   4.3e-09   28.5   1.9   2.5   3   0   0   3   3   3   1 -
+ZNEV_MADBUB          -          SMIM_MADBUB||Dbox/650-662 -            6.7e-09   27.7   1.3   2.7e-07   22.7   0.1   2.8   2   0   0   2   2   2   1 -
+SMIM_MADBUB          -          SMIM_MADBUB||Dbox/650-662 -            5.8e-08   24.8   0.6   5.8e-08   24.8   0.6   2.3   2   0   0   2   2   2   1 -
+SPUR_MADBUB          -          SMIM_MADBUB||Dbox/650-662 -            2.7e-07   22.7   0.2   7.8e-07   21.3   0.2   1.9   1   0   0   1   1   1   1 -
+NVEC_MADBUB          -          SMIM_MADBUB||Dbox/650-662 -            2.1e-05   16.8   0.4   5.4e-05   15.5   0.4   1.7   1   0   0   1   1   1   1 -
+PCAU_MADBUB          -          SMIM_MADBUB||Dbox/650-662 -            2.2e-05   16.7   2.1   3.7e-05   16.0   0.1   2.4   2   0   0   2   2   2   1 -
+SPUN_MADBUB          -          SPUN_MADBUB||Dbox/202-214 -            1.5e-08   26.9   3.8   5.6e-08   25.2   3.8   2.1   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          SPUR_MADBUB||Dbox/214-226 -            7.4e-08   24.4   3.9   7.4e-08   24.4   3.9   2.6   2   0   0   2   2   2   1 -
+CTEL_MADBUB          -          SPUR_MADBUB||Dbox/214-226 -            1.4e-06   20.4   2.6   4.1e-06   18.9   2.6   1.8   1   0   0   1   1   1   1 -
+SPUR_MADBUB          -          SPUR_MADBUB||Dbox/876-888 -            3.1e-09   28.8   0.8     1e-08   27.1   0.8   2.0   1   0   0   1   1   1   1 -
+ZNEV_MADBUB          -          SPUR_MADBUB||Dbox/876-888 -            5.9e-09   27.9   2.0   1.1e-07   23.9   0.2   2.8   2   0   0   2   2   2   1 -
+SMIM_MADBUB          -          SPUR_MADBUB||Dbox/876-888 -             0.0013   11.2   0.0    0.0013   11.2   0.0   2.3   2   0   0   2   2   2   0 -
+SROS_MADBUB          -          SROS_MADBUB||Dbox/642-654 -            6.8e-09   27.9   2.2   1.6e-08   26.7   2.2   1.7   1   0   0   1   1   1   1 -
+MBRE_MADBUB          -          SROS_MADBUB||Dbox/642-654 -            5.8e-06   18.7   0.2   1.4e-05   17.5   0.2   1.6   1   0   0   1   1   1   1 -
+SROS_MADBUB          -          SROS_MADBUB||Dbox/216-228 -              5e-10   31.3   0.7   1.4e-09   29.9   0.7   1.8   1   0   0   1   1   1   1 -
+TADH_MADBUB          -          TADH_MADBUB||Dbox/549-561 -            3.3e-09   28.8   1.9   8.9e-09   27.4   1.9   1.8   1   0   0   1   1   1   1 -
+TADH_MADBUB          -          TADH_MADBUB||Dbox/229-241 -            7.2e-09   27.8   4.2   1.9e-08   26.5   4.2   1.8   1   0   0   1   1   1   1 -
+TDEF_MADBUB          -          TDEF_MADBUB||Dbox/212-224 -            7.7e-09   28.0   2.3   1.8e-08   26.8   2.3   1.7   1   0   0   1   1   1   1 -
+TPSE_MADBUB          -          TPSE_MADBUB||Dbox/290-302 -            5.6e-08   24.7   4.8   2.5e-07   22.7   4.8   2.2   1   0   0   1   1   1   1 -
+TTRA_MADBUB          -          TTRA_MADBUB||Dbox/260-272 -            4.6e-08   25.3   3.5   1.1e-07   24.1   3.5   1.7   1   0   0   1   1   1   1 -
+UMAY_MADBUB          -          UMAY_MADBUB||Dbox/269-281 -            2.1e-09   29.0   2.6     1e-08   26.8   2.6   2.3   1   0   0   1   1   1   1 -
+VCAR_MADBUB          -          VCAR_MADBUB||Dbox/197-209 -            3.3e-09   28.5   1.8   9.5e-09   27.1   1.8   1.9   1   0   0   1   1   1   1 -
+WMEL_MADBUB          -          WMEL_MADBUB||Dbox/223-235 -            6.2e-08   24.5   2.4   6.2e-08   24.5   2.4   3.2   3   0   0   3   3   3   1 -
+YLIP_MADBUB          -          YLIP_MADBUB||Dbox/203-215 -            1.4e-09   29.9   1.1   3.7e-09   28.6   1.1   1.8   1   0   0   1   1   1   1 -
+ZNEV_MADBUB          -          ZNEV_MADBUB||Dbox/204-216 -            1.3e-08   26.8   2.0   2.9e-08   25.8   2.0   1.6   1   0   0   1   1   1   1 -
+ZNEV_MADBUB          -          ZNEV_MADBUB||Dbox/231-243 -            1.9e-08   26.3   4.2   1.9e-08   26.3   4.2   2.4   2   0   0   2   2   2   1 -
+ZNEV_MADBUB          -          ZNEV_MADBUB||Dbox/787-799 -            2.4e-09   29.5   0.7   2.4e-09   29.5   0.7   2.5   2   0   0   2   2   2   1 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerMADBUB_Dbox.fasta
+# Target file:     ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# Option settings: jackhmmer --tblout TromerMADBUB_Dbox_jackhmmer.tblout --domtblout TromerMADBUB_Dbox_jackhmmer.domtblout --qformat fasta --tformat fasta TromerMADBUB_Dbox.fasta ../../../Sequences/Tromer_MADBUB_seqs.fasta 
+# Current dir:     /home/angelfcc/Documents/PhD_projects/BUBR1/BUBR1_coevolution_github/Data/Domain_annotation/MADBUB/Dbox
+# Date:            Fri Jul 10 17:24:20 2020
+# [ok]

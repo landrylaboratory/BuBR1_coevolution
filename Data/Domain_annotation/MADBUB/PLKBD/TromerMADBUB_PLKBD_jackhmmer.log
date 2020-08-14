@@ -1,0 +1,460 @@
+# jackhmmer :: iteratively search a protein sequence against a protein database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             TromerMADBUB_PLKBD.fasta
+# target sequence database:        ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# per-seq hits tabular output:     TromerMADBUB_PLKBD_jackhmmer.tblout
+# per-dom hits tabular output:     TromerMADBUB_PLKBD_jackhmmer.domtblout
+# query <seqfile> format asserted: fasta
+# target <seqdb> format asserted:  fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       HSAP_MAD||PLKBD/597-626  [L=30]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each sequence (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (30 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         9  (0.116883); expected 1.5 (0.02)
+Passed bias filter:                        9  (0.116883); expected 1.5 (0.02)
+Passed Vit filter:                         3  (0.038961); expected 0.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 128.59
+
+@@ New targets included:   0
+@@ New alignment includes: 1 subseqs (was 1), including original query
+@@
+@@ CONVERGED (in 1 rounds). 
+@@
+
+//
+Query:       HSAP_BUB||PLKBD/586-618  [L=32]
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
++   0.00039   13.6   0.1     0.0032   10.9   0.1    2.6  1  LANA_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.1   4.1e-05    0.0032       4      29 ..     776     800 ..     773     802 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 4.1e-05
+  HSAP_BUB||PLKBD/586-618   4 tlapspkspgdftsaaqlastpfhkl 29 
+                              t+ap    p++f +aa+lastpf+ l
+              LANA_MADBUB 776 TFAPQ-GGPSNFAAAARLASTPFNPL 800
+                              56665.479**************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (32 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                         8  (0.103896); expected 1.5 (0.02)
+Passed bias filter:                        8  (0.103896); expected 1.5 (0.02)
+Passed Vit filter:                         4  (0.0519481); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+
+@@ New targets included:   1
+@@ New alignment includes: 2 subseqs (was 1), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  2
+@@ Included in MSA:        2 subsequences (query + 1 subseqs from 1 targets)
+@@ Model size:             32 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    5.1e-16   51.0   3.8    1.3e-15   49.7   3.8    1.7  1  LANA_MADBUB  
++   4.9e-06   19.1   2.0    1.4e-05   17.6   2.0    1.8  1  SKOW_MADBUB  
++   5.6e-06   18.9   0.1    1.9e-05   17.2   0.1    1.9  1  CGIG_MADBUB  
++   1.6e-05   17.4   1.2    4.1e-05   16.1   1.2    1.7  1  BFLO_MADBUB  
+  ------ inclusion threshold ------
+     0.0028   10.2   9.8    0.00067   12.3   2.3    2.6  2  NVEC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.7   3.8   8.6e-17   1.3e-15       4      29 ..     776     800 ..     774     801 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 49.7 bits;  conditional E-value: 8.6e-17
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1   4 TlAPsPksPgdFtsAArLASTPFhkL 29 
+                                 T+AP+ ++P++F++AArLASTPF++L
+                 LANA_MADBUB 776 TFAPQ-GGPSNFAAAARLASTPFNPL 800
+                                 9****.*******************9 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   2.0     9e-07   1.4e-05       2      28 ..    1059    1085 ..    1058    1087 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 9e-07
+                                  xxxxxxxxxxx..xxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1    2 nKTlAPsPksP..gdFtsAArLASTPFhk 28  
+                                  n TlA    +P   +F  AAr+ASTPF++
+                 SKOW_MADBUB 1059 NTTLANT--GPqsDNFQRAARMASTPFNP 1085
+                                  6788866..442259*************8 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.1   1.2e-06   1.9e-05       4      27 ..     730     752 ..     728     754 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 1.2e-06
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1   4 TlAPsPksPgdFtsAArLASTPFh 27 
+                                 T+AP  +s   F++ Ar ASTPF 
+                 CGIG_MADBUB 730 TIAPV-GSHQSFAAMARCASTPFS 752
+                                 99***.*****************5 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   1.2   2.7e-06   4.1e-05       4      27 ..     837     859 ..     835     861 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 2.7e-06
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1   4 TlAPsPksPgdFtsAArLASTPFh 27 
+                                 T+A   +  + F   ArLASTPF+
+                 BFLO_MADBUB 837 TFASA-GNQSSFCTMARLASTPFN 859
+                                 88887.9999*************9 PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.9      0.11       1.7       6      18 ..     737     749 ..     735     750 .. 0.94
+   2 ?   12.3   2.3   4.3e-05   0.00067      15      27 ..     880     892 ..     878     893 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.11
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1   6 APsPksPgdFtsA 18 
+                                 AP P + gdF +A
+                 NVEC_MADBUB 737 APEPAGRGDFEAA 749
+                                 9*********998 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 4.3e-05
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i1  15 FtsAArLASTPFh 27 
+                                 F +AA  ASTPFh
+                 NVEC_MADBUB 880 FSAAAHVASTPFH 892
+                                 9***********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (32 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        13  (0.168831); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         7  (0.0909091); expected 0.1 (0.001)
+Passed Fwd filter:                         5  (0.0649351); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 68.58
+
+@@ New targets included:   3
+@@ New alignment includes: 5 subseqs (was 2), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  3
+@@ Included in MSA:        5 subsequences (query + 4 subseqs from 4 targets)
+@@ Model size:             32 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.9e-15   47.7   3.6    1.4e-14   46.2   3.6    1.8  1  LANA_MADBUB  
+    9.7e-14   43.6   0.3      3e-13   42.0   0.3    1.8  1  CGIG_MADBUB  
+    3.1e-13   42.0   4.6    8.2e-13   40.6   4.6    1.7  1  SKOW_MADBUB  
+    2.1e-12   39.3   4.3    5.4e-12   38.0   4.3    1.7  1  BFLO_MADBUB  
++   7.8e-07   21.5   0.6    7.8e-07   21.5   0.6    2.3  2  SPUR_MADBUB  
++   0.00029   13.3   5.0    0.00019   13.8   0.7    2.6  2  NVEC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.2   3.6   1.1e-15   1.4e-14       4      29 ..     776     800 ..     774     801 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 46.2 bits;  conditional E-value: 1.1e-15
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2   4 TlApsPgspsnFaaaArlASTPFnkL 29 
+                                 T+Ap+ g+psnFaaaArlASTPFn+L
+                 LANA_MADBUB 776 TFAPQ-GGPSNFAAAARLASTPFNPL 800
+                                 *****.******************98 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.0   0.3   2.3e-14     3e-13       4      27 ..     730     752 ..     728     753 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 42.0 bits;  conditional E-value: 2.3e-14
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2   4 TlApsPgspsnFaaaArlASTPFn 27 
+                                 T+Ap+ gs+++Faa+Ar+ASTPF+
+                 CGIG_MADBUB 730 TIAPV-GSHQSFAAMARCASTPFS 752
+                                 9****.*****************8 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.6   4.6   6.4e-14   8.2e-13       2      28 ..    1059    1085 ..    1058    1086 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 40.6 bits;  conditional E-value: 6.4e-14
+                                  xxxxxxxxxxx..xxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2    2 NkTlApsPgsp..snFaaaArlASTPFnk 28  
+                                  N+TlA++  +p  +nF++aAr+ASTPFn+
+                 SKOW_MADBUB 1059 NTTLANT--GPqsDNFQRAARMASTPFNP 1085
+                                  9******..55599**************7 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   4.3   4.2e-13   5.4e-12       4      27 ..     837     859 ..     835     861 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 38.0 bits;  conditional E-value: 4.2e-13
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2   4 TlApsPgspsnFaaaArlASTPFn 27 
+                                 T+A++ g++s+F+++ArlASTPFn
+                 BFLO_MADBUB 837 TFASA-GNQSSFCTMARLASTPFN 859
+                                 *****.*****************9 PP
+
+>> SPUR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.3   0.5         6        77       6      14 ..     624     632 ..     624     632 .. 0.77
+   2 !   21.5   0.6     6e-08   7.8e-07      11      27 ..     939     955 ..     929     957 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -4.3 bits;  conditional E-value: 6
+                                 xxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2   6 ApsPgspsn 14 
+                                 Ap+P +ps+
+                 SPUR_MADBUB 624 APTPCNPSS 632
+                                 888888875 PP
+
+  == domain 2  score: 21.5 bits;  conditional E-value: 6e-08
+                                 xxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2  11 spsnFaaaArlASTPFn 27 
+                                 s  +F  aAr+ASTPFn
+                 SPUR_MADBUB 939 SNYSFEVAARMASTPFN 955
+                                 3579************9 PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.2      0.37       4.7       6      18 ..     737     749 ..     736     749 .. 0.93
+   2 !   13.8   0.7   1.5e-05   0.00019      15      27 ..     880     892 ..     877     893 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.37
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2   6 ApsPgspsnFaaa 18 
+                                 Ap P + ++F aa
+                 NVEC_MADBUB 737 APEPAGRGDFEAA 749
+                                 9*********987 PP
+
+  == domain 2  score: 13.8 bits;  conditional E-value: 1.5e-05
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i2  15 FaaaArlASTPFn 27 
+                                 F aaA  ASTPF+
+                 NVEC_MADBUB 880 FSAAAHVASTPFH 892
+                                 99**********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (32 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         9  (0.116883); expected 0.1 (0.001)
+Passed Fwd filter:                         6  (0.0779221); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 91.44
+
+@@ New targets included:   2
+@@ New alignment includes: 7 subseqs (was 5), including original query
+@@ Continuing to next round.
+
+@@
+@@ Round:                  4
+@@ Included in MSA:        7 subsequences (query + 6 subseqs from 6 targets)
+@@ Model size:             32 positions
+@@
+
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.2e-14   46.5   3.2    3.4e-14   45.0   3.2    1.8  1  LANA_MADBUB  
+      3e-13   42.0   0.3    9.4e-13   40.4   0.3    1.8  1  CGIG_MADBUB  
+    4.3e-13   41.5   4.2    1.1e-12   40.2   4.2    1.7  1  SKOW_MADBUB  
+    7.7e-12   37.5   3.9    1.9e-11   36.2   3.9    1.7  1  BFLO_MADBUB  
+    6.8e-10   31.2   0.7    3.3e-09   29.1   0.7    2.3  1  SPUR_MADBUB  
+    5.2e-06   18.8   1.6    5.2e-06   18.8   1.6    2.7  2  NVEC_MADBUB  
+
+
+Domain annotation for each sequence (and alignments):
+>> LANA_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.0   3.2   2.7e-15   3.4e-14       4      29 ..     776     800 ..     774     801 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 45.0 bits;  conditional E-value: 2.7e-15
+                                 xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3   4 TlApsPgspssFaaAArlASTPFnkL 29 
+                                 T+Ap+ g+ps+FaaAArlASTPFn+L
+                 LANA_MADBUB 776 TFAPQ-GGPSNFAAAARLASTPFNPL 800
+                                 *****.******************98 PP
+
+>> CGIG_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.4   0.3   7.3e-14   9.4e-13       4      27 ..     730     752 ..     728     753 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 40.4 bits;  conditional E-value: 7.3e-14
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3   4 TlApsPgspssFaaAArlASTPFn 27 
+                                 T+Ap+ gs++sFaa+Ar+ASTPF+
+                 CGIG_MADBUB 730 TIAPV-GSHQSFAAMARCASTPFS 752
+                                 9****.*****************8 PP
+
+>> SKOW_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   4.2   8.6e-14   1.1e-12       2      28 ..    1059    1085 ..    1058    1086 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 8.6e-14
+                                  xxxxxxxxxxx..xxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3    2 NkTlApsPgsp..ssFaaAArlASTPFnk 28  
+                                  N+TlA++  +p  ++F++AAr+ASTPFn+
+                 SKOW_MADBUB 1059 NTTLANT--GPqsDNFQRAARMASTPFNP 1085
+                                  9******..66599**************7 PP
+
+>> BFLO_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.2   3.9   1.5e-12   1.9e-11       4      27 ..     837     859 ..     835     861 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 36.2 bits;  conditional E-value: 1.5e-12
+                                 xxxxxxxxxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3   4 TlApsPgspssFaaAArlASTPFn 27 
+                                 T+A++ g++ssF+++ArlASTPFn
+                 BFLO_MADBUB 837 TFASA-GNQSSFCTMARLASTPFN 859
+                                 9****.****************** PP
+
+>> SPUR_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.7   2.6e-10   3.3e-09      11      27 ..     939     955 ..     929     957 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 2.6e-10
+                                 xxxxxxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3  11 spssFaaAArlASTPFn 27 
+                                 s++sF++AAr+ASTPFn
+                 SPUR_MADBUB 939 SNYSFEVAARMASTPFN 955
+                                 68*************** PP
+
+>> NVEC_MADBUB  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.3      0.15       1.9       6      18 ..     737     749 ..     736     749 .. 0.95
+   2 !   18.8   1.6   4.1e-07   5.2e-06      15      27 ..     880     892 ..     876     893 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.15
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3   6 ApsPgspssFaaA 18 
+                                 Ap P + ++F+aA
+                 NVEC_MADBUB 737 APEPAGRGDFEAA 749
+                                 9**********98 PP
+
+  == domain 2  score: 18.8 bits;  conditional E-value: 4.1e-07
+                                 xxxxxxxxxxxxx RF
+  HSAP_BUB||PLKBD/586-618-i3  15 FaaAArlASTPFn 27 
+                                 F+aAA++ASTPF+
+                 NVEC_MADBUB 880 FSAAAHVASTPFH 892
+                                 ************* PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (32 nodes)
+Target sequences:                           77  (85728 residues searched)
+Passed MSV filter:                        12  (0.155844); expected 1.5 (0.02)
+Passed bias filter:                       11  (0.142857); expected 1.5 (0.02)
+Passed Vit filter:                         9  (0.116883); expected 0.1 (0.001)
+Passed Fwd filter:                         6  (0.0779221); expected 0.0 (1e-05)
+Initial search space (Z):                 77  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 91.44
+
+@@ New targets included:   0
+@@ New alignment includes: 7 subseqs (was 7), including original query
+@@
+@@ CONVERGED (in 4 rounds). 
+@@
+
+//
+[ok]

@@ -1,0 +1,2 @@
+HSAP_BUB||kinase/777-1038
+HSAP_MAD||_pseudo_kinase/784-1030

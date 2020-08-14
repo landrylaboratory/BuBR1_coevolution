@@ -1,0 +1,20 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name              accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----    -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+LANA_MADBUB          -           1327 HSAP_BUB||PLKBD/586-618 -             32   1.2e-14   46.5   3.2   1   1   2.7e-15   3.4e-14   45.0   3.2     4    29   776   800   774   801 0.96 -
+CGIG_MADBUB          -           1226 HSAP_BUB||PLKBD/586-618 -             32     3e-13   42.0   0.3   1   1   7.3e-14   9.4e-13   40.4   0.3     4    27   730   752   728   753 0.96 -
+SKOW_MADBUB          -           1752 HSAP_BUB||PLKBD/586-618 -             32   4.3e-13   41.5   4.2   1   1   8.6e-14   1.1e-12   40.2   4.2     2    28  1059  1085  1058  1086 0.92 -
+BFLO_MADBUB          -           1335 HSAP_BUB||PLKBD/586-618 -             32   7.7e-12   37.5   3.9   1   1   1.5e-12   1.9e-11   36.2   3.9     4    27   837   859   835   861 0.96 -
+SPUR_MADBUB          -           1532 HSAP_BUB||PLKBD/586-618 -             32   6.8e-10   31.2   0.7   1   1   2.6e-10   3.3e-09   29.1   0.7    11    27   939   955   929   957 0.85 -
+NVEC_MADBUB          -           1327 HSAP_BUB||PLKBD/586-618 -             32   5.2e-06   18.8   1.6   1   2      0.15       1.9    1.0   0.3     6    18   737   749   736   749 0.95 -
+NVEC_MADBUB          -           1327 HSAP_BUB||PLKBD/586-618 -             32   5.2e-06   18.8   1.6   2   2   4.1e-07   5.2e-06   18.8   1.6    15    27   880   892   876   893 0.94 -
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerMADBUB_PLKBD.fasta
+# Target file:     ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# Option settings: jackhmmer --tblout TromerMADBUB_PLKBD_jackhmmer.tblout --domtblout TromerMADBUB_PLKBD_jackhmmer.domtblout --qformat fasta --tformat fasta TromerMADBUB_PLKBD.fasta ../../../Sequences/Tromer_MADBUB_seqs.fasta 
+# Current dir:     /home/angelfcc/Documents/PhD_projects/BUBR1/BUBR1_coevolution_github/Data/Domain_annotation/MADBUB/PLKBD
+# Date:            Fri Jul 10 17:26:03 2020
+# [ok]

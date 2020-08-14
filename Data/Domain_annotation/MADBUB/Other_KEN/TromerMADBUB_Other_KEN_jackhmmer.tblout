@@ -1,0 +1,13 @@
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                     accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------           -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         jackhmmer
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      TromerMADBUB_Other_KEN.fasta
+# Target file:     ../../../Sequences/Tromer_MADBUB_seqs.fasta
+# Option settings: jackhmmer --tblout TromerMADBUB_Other_KEN_jackhmmer.tblout --domtblout TromerMADBUB_Other_KEN_jackhmmer.domtblout --qformat fasta --tformat fasta TromerMADBUB_Other_KEN.fasta ../../../Sequences/Tromer_MADBUB_seqs.fasta 
+# Current dir:     /home/angelfcc/Documents/PhD_projects/BUBR1/BUBR1_coevolution_github/Data/Domain_annotation/MADBUB/Other_KEN
+# Date:            Fri Jul 10 17:26:03 2020
+# [ok]

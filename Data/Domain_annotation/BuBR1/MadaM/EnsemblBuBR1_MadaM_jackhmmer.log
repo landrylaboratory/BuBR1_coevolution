@@ -4,7 +4,7 @@
 # Freely distributed under the GNU General Public License (GPLv3).
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # query sequence file:             TromerBuBR1_MadaM.fasta
-# target sequence database:        ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa
+# target sequence database:        ../../../Sequences/Human_BUB1B_orthologues_2020-04-27.fa
 # per-seq hits tabular output:     EnsemblBuBR1_MadaM_jackhmmer.tblout
 # per-dom hits tabular output:     EnsemblBuBR1_MadaM_jackhmmer.domtblout
 # query <seqfile> format asserted: fasta
@@ -29,15 +29,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         0  (0); expected 5.0 (0.02)
+Passed bias filter:                        0  (0); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -64,15 +64,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         3  (0.0120482); expected 5.0 (0.02)
+Passed bias filter:                        3  (0.0120482); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 182.05
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -99,15 +99,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         1  (0.00680272); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         2  (0.00803213); expected 5.0 (0.02)
+Passed bias filter:                        1  (0.00401606); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -134,15 +134,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         0  (0); expected 5.0 (0.02)
+Passed bias filter:                        0  (0); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 182.05
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -169,15 +169,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         3  (0.0120482); expected 5.0 (0.02)
+Passed bias filter:                        3  (0.0120482); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -204,15 +204,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         0  (0); expected 5.0 (0.02)
+Passed bias filter:                        0  (0); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: inf
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -239,15 +239,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         1  (0.00401606); expected 5.0 (0.02)
+Passed bias filter:                        1  (0.00401606); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
-# Mc/sec: 114.37
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -274,15 +274,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         1  (0.00680272); expected 2.9 (0.02)
-Passed bias filter:                        1  (0.00680272); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         3  (0.0120482); expected 5.0 (0.02)
+Passed bias filter:                        3  (0.0120482); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: inf
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -309,15 +309,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         4  (0.0160643); expected 5.0 (0.02)
+Passed bias filter:                        4  (0.0160643); expected 5.0 (0.02)
+Passed Vit filter:                         1  (0.00401606); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -344,15 +344,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         0  (0); expected 5.0 (0.02)
+Passed bias filter:                        0  (0); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query
@@ -379,15 +379,15 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (20 nodes)
-Target sequences:                          147  (114366 residues searched)
-Passed MSV filter:                         0  (0); expected 2.9 (0.02)
-Passed bias filter:                        0  (0); expected 2.9 (0.02)
-Passed Vit filter:                         0  (0); expected 0.1 (0.001)
+Target sequences:                          249  (182051 residues searched)
+Passed MSV filter:                         0  (0); expected 5.0 (0.02)
+Passed bias filter:                        0  (0); expected 5.0 (0.02)
+Passed Vit filter:                         0  (0); expected 0.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-Initial search space (Z):                147  [actual number of targets]
+Initial search space (Z):                249  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 228.73
+# Mc/sec: 364.10
 
 @@ New targets included:   0
 @@ New alignment includes: 1 subseqs (was 1), including original query

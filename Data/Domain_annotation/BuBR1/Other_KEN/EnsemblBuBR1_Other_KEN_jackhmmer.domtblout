@@ -6,8 +6,8 @@
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
 # Query file:      TromerBuBR1_Other_KEN.fasta
-# Target file:     ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa
-# Option settings: jackhmmer --tblout EnsemblBuBR1_Other_KEN_jackhmmer.tblout --domtblout EnsemblBuBR1_Other_KEN_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_Other_KEN.fasta ../../../Sequences/Human_BUB1B_orthologues_2018_12_05.fa 
-# Current dir:     /media/axelle/Angel_backup/Dropbox/BuBR1/BuBR1_coevolution/Data/Domain_annotation/BuBR1/Other_KEN
-# Date:            Thu Aug  8 09:53:31 2019
+# Target file:     ../../../Sequences/Human_BUB1B_orthologues_2020-04-27.fa
+# Option settings: jackhmmer --tblout EnsemblBuBR1_Other_KEN_jackhmmer.tblout --domtblout EnsemblBuBR1_Other_KEN_jackhmmer.domtblout --qformat fasta --tformat fasta TromerBuBR1_Other_KEN.fasta ../../../Sequences/Human_BUB1B_orthologues_2020-04-27.fa 
+# Current dir:     /home/angelfcc/Documents/PhD_projects/BUBR1/BUBR1_coevolution_github/Data/Domain_annotation/BuBR1/Other_KEN
+# Date:            Fri Jul 10 17:23:09 2020
 # [ok]

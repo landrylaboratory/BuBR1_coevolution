@@ -5,23 +5,21 @@ Supplementary files for "The human BUBR1 pseudokinase domain is required for eff
 #	Annotations			#
 #########################################
 
-- BUB1_domain_annotation.fasta: Positions and sequences for each annotated domain for the BUB1 orthologs used in this study.
-- BUBR1_domain_annotation.fasta: Positions and sequences for each annotated domain for the BUBR1 orthologs used in this study.
+- BUB1_best_hit_domain_annotation.fasta: Positions and sequences for each annotated domain for the BUB1 orthologs used in this study.
+- BUBR1_best_hit_domain_annotation.fasta: Positions and sequences for each annotated domain for the BUBR1 orthologs used in this study.
+- MADBUB_best_hit_domain_annotation.fasta: Positions and sequences for each annotated domain for the MADBUB orthologs used in this study.
 
 #########################################
-#	MDAT_Alignments			#
+#	MAFFT_Alignments			#
 #########################################
 
-- BUB1_mdat_alignment.fasta: Multiple domain alignment for the 173 BUB1 orthologs used in this study.
-- BUBR1_mdat_alignment.fasta: Multiple domain alignment for the 176 BUBR1 orthologs used in this study.
-- Merged_BUB1-BUBR1_alignment_filtered_sequences.fasta: Multiple domain alignments for the concatenated BUB1-BUBR1 sequences from the same organism. Only 77 organisms for which both sequences had 20% or fewer gaps were included in this alignment.
+- BUB1_refined_aln_mafft.fasta: Refined alignments for the filtered set of 103 BUB1 sequences. Used for the entropy measurements.
+- BUBR1_refined_aln_mafft.fasta: Refined alignments for the filtered set of 103 BUBR1 sequences. Used for the entropy measurements.
+- Tree_sequences_aln_mafft.fasta: MAFFT alignment of the 103 BUB1, 103 BUBR1 sequences and 5 MADBUB outgroups used for the tree.
 
 #########################################
 #	Sequences			#
 #########################################
 
-- BUB1_sequences.fa: Sequences for the 173 BUB1 orthologs used in this study.
-- BUBR1_sequences.fa: Sequences for the 176 BUBR1 orthologs used in this study.
-
-
-
+- Human_BUB1_orthologues_2020-04-27.fa: Sequences for the 245 BUB1 orthologs used in this study.
+- Human_BUB1B_orthologues_2020-04-27.fa: Sequences for the 249 BUBR1 orthologs used in this study.
