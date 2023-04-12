@@ -1,7 +1,5 @@
 Scripts for "The human BUBR1 pseudokinase domain is required for efficient Spindle Checkpoint silencing and chromosome alignment via allosteric activation of KARD phosphorylation" by Gama-Braga, L., Cisneros, A. F., Mathieu, M., Clerc, M., Garcia, P., Lottin, B., Garand, C., Thebault, P., Landry, C. R., & Elowe, S.
 
-#### Just need to rewrite the sections where I talk about the figures ####
-
 #########################################
 #	Dependencies			#
 #########################################
